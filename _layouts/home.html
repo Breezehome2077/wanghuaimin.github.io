@@ -1,0 +1,31 @@
+---
+layout: default
+---
+<div class="page page-index">
+    {%- include default_bg.html -%}
+    <main id="site-content" class="site-content site-index-content" role="main">
+        <div class="container-lg">
+            <div class="card-columns post-list">
+                {%- if site.posts.size > 0 -%}
+                {%- assign date_format = site.minima.date_format | default: "%Y年%m月%d日" -%}
+                {%- for post in paginator.posts -%}
+                <article class="card post-list-item">
+                    <header class="post-list-item-header">
+                        <h1 class="post-list-item-title">
+                            <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+                        </h1>
+                    </header>
+                    <div class="post-list-item-excerpt">
+                        {{ post.excerpt }}
+                    </div>
+                    <footer class="post-list-item-footer">
+                        <span>{{ post.date | date: date_format }}</span>
+                    </footer>
+                </article>
+                {%- endfor -%}
+                {%- endif -%}
+            </div>
+            {%- include page_paginate.html -%}
+        </div>
+    </main>
+</div>

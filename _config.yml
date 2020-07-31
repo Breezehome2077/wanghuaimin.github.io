@@ -1,1 +1,53 @@
-theme: jekyll-theme-cayman
+# Welcome to Jekyll!
+#
+#此配置文件用于影响整个博客的设置值
+#你需要设置一次，之后很少再编辑。如果你发现
+#如果您经常编辑此文件，请考虑使用Jekyll的数据文件
+#需要经常更新的数据的特性。
+#
+#由于技术原因，使用时不会自动重新加载此文件
+#'bundle exec jekyll serve'。如果更改此文件，请重新启动服务器进程。
+#
+# 如果您需要有关YAML语法的帮助，以下是一些快速参考资料：
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+#站点设置
+#这些是用来个性化你的新网站。如果你查看HTML文件，
+#您将看到它们通过{{site.title}}, {{ site.email }}，以此类推。
+#您可以创建任何您想要的自定义变量，并且可以访问它们
+#在模板中通过{{ site.*** }}.
+
+title: 望朝门
+email: hetieliancheng@outlook.com
+description: >- # this means to ignore newlines until "baseurl:"
+  人对了，世界就对了。
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+# 生成设置
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+
+# 分页代码
+paginate: 12
+
+#从处理中排除。
+#默认情况下，不会处理以下项目。
+#此处“exclude:”键下列出的任何项都将自动添加到内部“默认列表”。
+#
+#可以通过显式列出目录或它们在“include:”列表中的文件路径。
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
