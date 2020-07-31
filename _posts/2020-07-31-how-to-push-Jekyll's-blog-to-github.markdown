@@ -80,17 +80,25 @@ OK，又回到了之前的仓库界面，继续点击<mark>Settings</mark>选项
 
 如果不需要的话，请直接跳到第五步。
 
-首先，在第四步中的<mark>GitHub Pages</mark>部分的<mark>Custom domain</mark>一栏，填入你购买的域名。
+1.在第三步中的<mark>GitHub Pages</mark>部分的<mark>Custom domain</mark>一栏，填入你购买的域名。
 
 域名这里推荐使用<mark>www.****.com</mark>的形式,原因是[www子域不受GitHub服务器IP地址更改的影响，因此可以有效地防止DOS攻击，所以您的站点也将加载得更快](https://docs.github.com/en/github/working-with-github-pages/about-custom-domains-and-github-pages#using-a-subdomain-for-your-github-pages-site)。
 
 <figure class="post-content-img row justify-content-center">
     <div class="col-12 col-lg-10">
-        <img class="w-100" src="/assets/post/2020-07-31-how-to-push-Jekyll's-blog-to-github/github_pages_news_domain.PNG" alt="GitHub Pages 绑定域名">
+        <img class="w-100" src="/assets/post/2020-07-31-how-to-push-Jekyll's-blog-to-github/github_pages_new_domain.PNG" alt="GitHub Pages 绑定域名">
     </div>
 </figure>
 
 注：途中的<mark>Enforce HTTPS</mark>选项，需要新仓库创建12个小时之后才能勾选；这里可以直接使用的原因是之前已经绑定过了，为了写这篇文章又删掉了。
+
+2.在域名服务商那里做一下域名解析：添加一个<mark>CNAME</mark>记录，将子域名<mark>www</mark>解析到<mark>username.github.io</mark>。
+
+<figure class="post-content-img row justify-content-center">
+    <div class="col-12 col-lg-12">
+        <img class="w-100" src="/assets/post/2020-07-31-how-to-push-Jekyll's-blog-to-github/github_pages_new_domain_2.PNG" alt="GitHub Pages 绑定域名2">
+    </div>
+</figure>
 
 ## 第五步：安装 Gitbash 
 
@@ -229,9 +237,19 @@ git push -u origin master   # 推送到线上仓库
 
 注：在执行以上命令过程时，会提示你输入账号密码，请按提示输入即可。
 
-最后：
-* 感谢[《GitHub教程 Git Bash详细教程》](https://blog.csdn.net/qq_36667170/article/details/79085301) 让我知道了 Git Bash 的大概用法。
-* 感谢[《官方文档》](https://pages.github.com/) 让我知道了推送的大概流程。
-* 感谢[《Jekyll本地搭建开发环境以及Github部署流程》](https://blog.csdn.net/weixin_43513465/article/details/86764299) 让我知道原来要在仓库目录下运行 jekyll。
+注：如果推送时提示<mark>fatal: HttpRequestException encountered 发送请求时出错</mark>，
+请安装[用于Windows的Git凭据管理器（Git-Credential-Manager-for-Windows）](https://github.com/microsoft/Git-Credential-Manager-for-Windows/releases/download/v1.14.0/GCMW-1.14.0.exe)；
+安装完成后重新执行命令即可。
 
-就这样，博客摇摇晃晃的上线了，相信日后会稳定起来的。
+<figure class="post-content-img row justify-content-center">
+    <div class="col-12 col-lg-12">
+        <img class="w-100" src="/assets/post/2020-07-31-how-to-push-Jekyll's-blog-to-github/git_8.png" alt="fatal: HttpRequestException ……">
+    </div>
+</figure>
+
+最后感谢众多文章的作者，尤其是以下文章的作者，可算是帮了大忙了：
+* 感谢[《GitHub教程 Git Bash详细教程》](https://blog.csdn.net/qq_36667170/article/details/79085301)让我知道了 Git Bash 的大概用法。
+* 感谢[《官方文档》](https://pages.github.com/)让我知道了推送的大概流程。
+* 感谢[《Jekyll本地搭建开发环境以及Github部署流程》](https://blog.csdn.net/weixin_43513465/article/details/86764299)让我发现原来要在仓库目录下运行 jekyll 才行。
+
+就这样，博客摇摇晃晃的上线了，相信日后越来越稳定的。

@@ -17,6 +17,14 @@ tags:   jekyll
 permalink: /post/:title     # 参数介绍：http://jekyllcn.com/docs/permalinks/
 {% endhighlight %}
 
+## 新窗口打开
+
+{% highlight javascript %}
+$(document).ready(function(){
+    $("#articleBody").find("a").attr('target','_blank')
+});
+{% endhighlight %}
+
 ## 不想使用任何模板
 
 {% highlight plaintext %}

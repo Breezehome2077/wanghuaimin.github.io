@@ -224,7 +224,7 @@ tags:   jekyll
 
 ……
 
-关于代码高亮，可以参考此处[《文档》](https://jekyllrb.com/docs/liquid/tags/)。
+关于代码高亮，可以参考[《高亮代码介绍》](https://jekyllrb.com/docs/liquid/tags/)和[短名称列表](https://github.com/rouge-ruby/rouge/wiki/List-of-supported-languages-and-lexers)。
 
 ……
 

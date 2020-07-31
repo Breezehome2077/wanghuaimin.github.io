@@ -657,13 +657,14 @@ pre::-webkit-scrollbar-thumb { border-radius: .8rem;}
 }
 .page-tags-group-item a span {
     position: relative;
-    top: -.5rem;
+    top: -.4rem;
     margin-left: .5rem;
     display: inline-block;
-    padding: .1rem .5rem;
+    padding: 0 .5rem;
     color: #212529;
     font-size: 70%;
     font-weight: bold;
+    line-height: 2rem;
     background-color: #fcf8e3;
     border-radius: .2rem;
     transition: color .3s linear;

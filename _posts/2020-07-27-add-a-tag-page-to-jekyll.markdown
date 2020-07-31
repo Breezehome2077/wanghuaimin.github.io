@@ -6,7 +6,7 @@ categories: jekyll
 tags:   jekyll
 ---
 
-根据别人的方法修改而来，稍微改改还可以做“目录页”和“时光轴”。
+根据[别人的方法](https://blog.fooleap.org/jekyll-tags-page.html)修改而来，稍微改改还可以做“目录页”和“时光轴”。
 
 因为是借用别人的方法，所以没啥好说的，所以东西放这里，自己看吧。
 
