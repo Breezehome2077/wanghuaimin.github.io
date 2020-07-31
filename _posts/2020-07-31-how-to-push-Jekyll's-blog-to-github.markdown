@@ -247,7 +247,9 @@ git push -u origin master   # 推送到线上仓库，之后直接输入 git pus
     </div>
 </figure>
 
-有好多不一样的地方，得多翻翻文章才行。最后感谢众多文章的作者，尤其是以下文章的作者，可算是帮了大忙了。
+有好多不一样的地方，得多翻翻文章才行。
+
+最后感谢众多文章的作者，尤其是以下文章的作者，可算是帮了大忙了。
 
 * 感谢[《GitHub教程 Git Bash详细教程》](https://blog.csdn.net/qq_36667170/article/details/79085301)让我知道了 Git Bash 的大概用法。
 * 感谢[《官方文档》](https://pages.github.com/)让我知道了推送的大概流程。
