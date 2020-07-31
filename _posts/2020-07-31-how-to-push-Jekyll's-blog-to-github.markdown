@@ -98,6 +98,131 @@ OK，又回到了之前的仓库界面，继续点击<mark>Settings</mark>选项
 
 安装完成后，点击“开始菜单”，在“最新添加”一栏可以看到多出了3个图标，分别是 “Git Bash”、“Git GUI” 和 “Git CMD”。
 
-## 第六步：
+## 第六步：克隆仓库到本地
 
 运行 “Git Bash”。（大家都用这个，所以咱们也用吧。）另外，如果感觉字号偏小，可以看[这里](https://jingyan.baidu.com/article/d7130635faa67613fdf47520.html)修改。
+
+不过在克隆仓库之前，我们需要配置身份信息，告诉 GitHub 你是谁。
+
+{% highlight plaintext %}
+
+git config --global user.name "Your Name"   # 注意前边是“- -global”，有两个横线。
+git config --global user.email "Your Email@example.com"
+
+{% endhighlight %}
+
+<figure class="post-content-img row justify-content-center">
+    <div class="col-12 col-lg-12">
+        <img class="w-100" src="/assets/post/2020-07-31-how-to-push-Jekyll's-blog-to-github/git_1.png" alt="Gitbash 配置身份信息">
+    </div>
+</figure>
+
+然后开始克隆仓库到本地。
+
+{% highlight plaintext %}
+
+/cd e:/git   # 选定存放位置：E盘Git文件夹，'cd' 前面多加了一个'/'。
+
+git clone https://github.com/username/username.github.io    # 克隆仓库到本地，username 别忘了替换成你的用户名。
+
+{% endhighlight %}
+
+<figure class="post-content-img row justify-content-center">
+    <div class="col-12 col-lg-12">
+        <img class="w-100" src="/assets/post/2020-07-31-how-to-push-Jekyll's-blog-to-github/git_2.png" alt="克隆仓库到本地">
+    </div>
+</figure>
+
+可以看到仓库已经克隆下来了，具体是不是呢，咱们可以打开文件管理器确认一下。
+
+<figure class="post-content-img row justify-content-center">
+    <div class="col-12 col-lg-12">
+        <img class="w-100" src="/assets/post/2020-07-31-how-to-push-Jekyll's-blog-to-github/git_2_2.png" alt="克隆仓库到本地2">
+    </div>
+</figure>
+
+## 第七步：复制博客文件到本地仓库
+
+1.将除<mark>CANME</mark>文件和隐藏文件夹<mark>.git</mark>以外的所有文件都删掉。
+
+<figure class="post-content-img row justify-content-center">
+    <div class="col-12 col-lg-12">
+        <img class="w-100" src="/assets/post/2020-07-31-how-to-push-Jekyll's-blog-to-github/git_3.png" alt="删除本地仓库部分文件">
+    </div>
+</figure>
+
+2.将博客文件全都复制过来。
+
+<figure class="post-content-img row justify-content-center">
+    <div class="col-12 col-lg-12">
+        <img class="w-100" src="/assets/post/2020-07-31-how-to-push-Jekyll's-blog-to-github/git_4.png" alt="复制博客文件到本地仓库">
+    </div>
+</figure>
+
+<figure class="post-content-img row justify-content-center">
+    <div class="col-12 col-lg-12">
+        <img class="w-100" src="/assets/post/2020-07-31-how-to-push-Jekyll's-blog-to-github/git_4_2.png" alt="复制博客文件到本地仓库2">
+    </div>
+</figure>
+
+## 第八步：在仓库文件夹运行 Jekyll
+
+依旧要先做一些前期工作才行呢。
+
+转到仓库文件夹，打开文件<mark>Gemfile</mark>，找到以下内容：
+
+<figure class="post-content-img row justify-content-center">
+    <div class="col-12 col-lg-12">
+        <img class="w-100" src="/assets/post/2020-07-31-how-to-push-Jekyll's-blog-to-github/git_5.png" alt="修改 Gemfile 文件">
+    </div>
+</figure>
+
+按照提示，删除 `gem "jekyll"` 语句，然后取消 `gem "github-pages",group: :jekyll_plugins` 的注释。
+
+<figure class="post-content-img row justify-content-center">
+    <div class="col-12 col-lg-12">
+        <img class="w-100" src="/assets/post/2020-07-31-how-to-push-Jekyll's-blog-to-github/git_5_2.png" alt="修改 Gemfile 文件2">
+    </div>
+</figure>
+
+将 git 命令行窗口缩小到最小化，然后打开 jekyll 命令行窗口。
+
+前进到本地仓库目录，然后执行命令 `bundle update`，更新环境（不更新就会报错）。
+
+<figure class="post-content-img row justify-content-center">
+    <div class="col-12 col-lg-12">
+        <img class="w-100" src="/assets/post/2020-07-31-how-to-push-Jekyll's-blog-to-github/git_6.png" alt="jekyll 进入仓库目录">
+    </div>
+</figure>
+
+<figure class="post-content-img row justify-content-center">
+    <div class="col-12 col-lg-12">
+        <img class="w-100" src="/assets/post/2020-07-31-how-to-push-Jekyll's-blog-to-github/git_6_2.png" alt="jekyll 进行更新">
+    </div>
+</figure>
+
+等待几分钟后，更新完成，即可执行命令 `bundle exec jekyll s` 运行 jekyll 了。
+
+<figure class="post-content-img row justify-content-center">
+    <div class="col-12 col-lg-12">
+        <img class="w-100" src="/assets/post/2020-07-31-how-to-push-Jekyll's-blog-to-github/git_7.png" alt="运行 jekyll">
+    </div>
+</figure>
+
+至此， jekyll 博客就迁移到仓库目录了，修改添加文章都是在此进行了。（原先的就可以删掉了。）
+
+## 第九步：推送 Jekyll 到 GitHub
+
+OK，经过重重险阻，我们终于抵达了最后，只要接下来我们将 jekyll 推送到 Github ，就算大功告成了。
+
+推送到 github 只需要以下三条命令：
+
+{% highlight plaintext %}
+
+git add --all   # 添加文件
+
+git commit -m "***"  # 提交 -m “这里要写点什么，什么都行”
+
+git push -u origin master   # 推送到线上仓库
+
+{% endhighlight %}

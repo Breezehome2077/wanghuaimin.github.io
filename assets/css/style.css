@@ -11,12 +11,16 @@ p { text-indent: 2em; }
 a { padding: 0 .5rem; text-decoration: none;transition: color .3s linear; }
 a:hover, a:focus { color: #cd2653; text-decoration: none; }
 i,b { padding: 0 .5rem; color: #cd2653; font-weight: normal; font-style: normal; }
+
 /*特定标签的样式设置，用于突出显示*/
 span { color: #cd2653; }
 mark { color: #cd2653; background-color: transparent; padding: 0.5rem;}
 code { color: #cd2653; }
 mark::before, code::before, i:before { content: '"';}
 mark::after, code::after, i:after { content: '"';}
+/*代码高亮部分，另外设置*/
+pre code::before,pre code::after { content: none}
+
 /* bootstrap 设置 */
 .container-fluid, .container-lg, .container-md, .container-sm, .container-xl { padding-left: 1.5rem; padding-right: 1.5rem; }
 .row { margin-left: -1.5rem; margin-right: -1.5rem; }
@@ -73,11 +77,11 @@ h5,h6 { font-size: 1.4rem; line-height: 2.26537216828479rem; margin: 1.832825378
 
 /*	各种间距设置
 /* -------------------------------------------------------------------------- */
-figure+p { margin-top: 3rem; }
+figure+p,figure+figure { margin-top: 3rem; }
 p+h1,p+h2,p+h3,p+h4,p+h5,p+h6,
 figure+h1,figure+h2,figure+h3,figure+h4,figure+h5,figure+h6 { margin-top: 6rem; }
 @media (min-width: 1200px) {
-    figure+p { margin-top: 5rem; }
+    figure+p,figure+figure  { margin-top: 5rem; }
     p+h1,p+h2,p+h3,p+h4,p+h5,p+h6,
     figure+h1,figure+h2,figure+h3,figure+h4,figure+h5,figure+h6 { margin-top: 10rem }
 }
@@ -266,7 +270,7 @@ pre::-webkit-scrollbar-thumb { border-radius: .8rem;}
     color: #cd2653;
 }
 .post-content-img {
-    margin: 0 0 3rem 0;
+    margin-left: 0;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     width: 100%;
