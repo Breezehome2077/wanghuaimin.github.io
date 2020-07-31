@@ -10,7 +10,7 @@ tags:   jekyll github
 
 ## 第一步：注册 GitHub 账号
 
-略。
+这个就不说了，直接略过了哈。
 
 ## 第二步：创建一个仓库
 
@@ -226,3 +226,12 @@ git commit -m "***"  # 提交 -m “这里要写点什么，什么都行”
 git push -u origin master   # 推送到线上仓库
 
 {% endhighlight %}
+
+注：在执行以上命令过程时，会提示你输入账号密码，请按提示输入即可。
+
+最后：
+* 感谢[《GitHub教程 Git Bash详细教程》](https://blog.csdn.net/qq_36667170/article/details/79085301) 让我知道了 Git Bash 的大概用法。
+* 感谢[《官方文档》](https://pages.github.com/) 让我知道了推送的大概流程。
+* 感谢[《Jekyll本地搭建开发环境以及Github部署流程》](https://blog.csdn.net/weixin_43513465/article/details/86764299) 让我知道原来要在仓库目录下运行 jekyll。
+
+就这样，博客摇摇晃晃的上线了，相信日后会稳定起来的。
