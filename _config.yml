@@ -51,3 +51,8 @@ paginate: 12
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+
+exclude:
+  - .jekyll-cache/
+  - .idea/
