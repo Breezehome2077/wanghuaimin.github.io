@@ -26,9 +26,9 @@ add_action( 'wp_enqueue_scripts', 'replace_core_jquery_version' );
 
 {% endhighlight %}
 
-注：不推荐在函数中设置为“在底部显示”，原因是设置后 jquery.min.js 会显示在所有 js 文件的最底部。
+注：不推荐在函数中设置为“在底部显示”，原因是设置后 jquery.min.js 会显示在其他 js 文件的最底下。
 
-或者还可以直接删除，然后重新加载 js 脚本。
+或者还可以直接删除，然后重新引入 js 脚本。
 
 {% highlight php %}
 function replace_core_jquery_version() {
@@ -47,4 +47,4 @@ add_action( 'wp_enqueue_scripts', 'wzm_register_scripts' );
 
 {% endhighlight %}
 
-注：重新引入时，注册的脚本名称要与默认的不相同。
+注：重新引入时，脚本的注册名称要与默认的不相同。
