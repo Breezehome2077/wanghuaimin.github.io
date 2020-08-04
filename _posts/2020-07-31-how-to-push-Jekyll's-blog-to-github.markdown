@@ -237,7 +237,17 @@ git push -u origin master   # 推送到线上仓库，之后直接输入 git pus
 
 注：在执行以上命令过程时，会提示你输入账号密码，请按提示输入即可。
 
-注：如果推送时提示<mark>fatal: HttpRequestException encountered 发送请求时出错</mark>，
+最后感谢众多文章的作者，尤其是以下文章的作者，可算是帮了大忙了。
+
+* 感谢[《GitHub教程 Git Bash详细教程》](https://blog.csdn.net/qq_36667170/article/details/79085301)让我知道了 Git Bash 的大概用法。
+* 感谢[《官方文档》](https://pages.github.com/)让我知道了推送的大概流程。
+* 感谢[《Jekyll本地搭建开发环境以及Github部署流程》](https://blog.csdn.net/weixin_43513465/article/details/86764299)让我发现原来要在仓库目录下运行 jekyll 才行。
+
+就这样，博客摇摇晃晃的上线了，相信之后会越来越好的。
+
+<br />
+
+附1：如果推送时提示<mark>fatal: HttpRequestException encountered 发送请求时出错</mark>，
 请安装[用于Windows的Git凭据管理器（Git-Credential-Manager-for-Windows）](https://github.com/microsoft/Git-Credential-Manager-for-Windows/releases/download/v1.14.0/GCMW-1.14.0.exe)；
 安装完成后重新执行命令即可。
 
@@ -251,10 +261,15 @@ git push -u origin master   # 推送到线上仓库，之后直接输入 git pus
 
 我这边也是出现了多次，但之后推送的时候又好了，没有这个提示了；而且有提示的时候发现线上也依旧更改过来了，所以我选择无视它。
 
-最后感谢众多文章的作者，尤其是以下文章的作者，可算是帮了大忙了。
+附2：如果推送失败，导致再次推送时出现以下错误：`hint: Updates were rejected because the remote contains work that you do`，
+你可以执行命令 `git push origin master -f`（强制推送）即可，该命令会直接用本地数据覆盖掉远程数据，因此有可能会损失数据，所以请谨慎使用。
 
-* 感谢[《GitHub教程 Git Bash详细教程》](https://blog.csdn.net/qq_36667170/article/details/79085301)让我知道了 Git Bash 的大概用法。
-* 感谢[《官方文档》](https://pages.github.com/)让我知道了推送的大概流程。
-* 感谢[《Jekyll本地搭建开发环境以及Github部署流程》](https://blog.csdn.net/weixin_43513465/article/details/86764299)让我发现原来要在仓库目录下运行 jekyll 才行。
+<figure class="post-content-img row justify-content-center">
+    <div class="col-12 col-lg-12">
+        <img class="w-100" src="/assets/post/2020-07-31-how-to-push-Jekyll's-blog-to-github/git_8_2.png" alt="fatal: HttpRequestException ……">
+    </div>
+</figure>
 
-就这样，博客摇摇晃晃的上线了，相信之后会越来越好的。
+参考：[《问题1》](https://stackoverflow.com/questions/24357108/git-updates-were-rejected-because-the-remote-contains-work-that-you-do-not-have)、
+[《问题2》](https://stackoverflow.com/questions/20939648/issue-pushing-new-code-in-github)、
+[《问题3》](https://stackoverflow.com/questions/18328800/github-updates-were-rejected-because-the-remote-contains-work-that-you-do-not-h)
