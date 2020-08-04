@@ -33,26 +33,3 @@ plugins:
 
 # 分页代码
 paginate: 12
-
-#从处理中排除。
-#默认情况下，不会处理以下项目。
-#此处“exclude:”键下列出的任何项都将自动添加到内部“默认列表”。
-#
-#可以通过显式列出目录或它们在“include:”列表中的文件路径。
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
-
-
-exclude:
-  - .jekyll-cache/
-  - .idea/

@@ -10,6 +10,19 @@ tags:   jekyll
 
 关于[《Liquid》](https://shopify.github.io/liquid/basics/introduction/)语法的更多介绍。
 
+## 推送时忽略某个文件夹
+
+编辑根目录下文件<mark>.gitignore</mark>文件，在其中添加对应的文件夹名字或文件名即可。
+
+{% highlight plaintext %}
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+{% endhighlight %}
+
+
 ## 更改固定链接
 编辑网站根目录下的<mark>_config.yml</mark>文件，在其中添加以下内容：
 
