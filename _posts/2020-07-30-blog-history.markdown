@@ -24,6 +24,8 @@ tags:   blog
     <table class="table">
         <thead><tr><th>日期</th><th>事件</th></tr></thead>
         <tbody>
+            <tr><th>2020-08-04</th>
+                <td>网站首页（大屏幕下）标题添加下划线。（学自博客<a href="https://nathanrice.me/about/">Nathan Rice</a>）</td></tr>
             <tr><th>2020-07-31</th>
                 <td>网站字体改为新宋体，并调整字号。</td></tr>
             <tr><th>2020-07-30</th>
