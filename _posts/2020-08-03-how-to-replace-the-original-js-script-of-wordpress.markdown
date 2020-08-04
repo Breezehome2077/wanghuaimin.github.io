@@ -8,7 +8,7 @@ tags:   wordpress jquery
 
 如题。
 
-打开网站根目录下的<mark>functions.php</mark>文件，添加以下代码即可。
+编辑网站根目录下的<mark>functions.php</mark>文件，在其中添加以下代码即可。
 
 {% highlight php %}
 
@@ -26,15 +26,9 @@ add_action( 'wp_enqueue_scripts', 'replace_core_jquery_version' );
 
 {% endhighlight %}
 
-注：如果将在函数中将其设置为在 `footer` 显示，即：
+注：不推荐在函数中设置为“在底部显示”，原因是设置后 jquery.min.js 会显示在所有 js 文件的最底部。
 
-{% highlight php %}
-wp_register_script('jquery-core', get_template_directory_uri() . '/js/jquery-3.5.1.min.js',array(),'',true);
-{% endhighlight %}
-
-则 jquery.min.js 会显示在所有 js 文件的最底部。
-
-另外还可以直接移除，然后重新引入；但重新引入时，注册的脚本名称要与之前的不相同。
+或者还可以直接删除，然后重新加载 js 脚本。
 
 {% highlight php %}
 function replace_core_jquery_version() {
@@ -52,3 +46,5 @@ function wzm_register_scripts() {
 add_action( 'wp_enqueue_scripts', 'wzm_register_scripts' );
 
 {% endhighlight %}
+
+注：重新引入时，注册的脚本名称要与默认的不相同。
