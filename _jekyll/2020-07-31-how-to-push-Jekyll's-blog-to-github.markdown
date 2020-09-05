@@ -239,9 +239,9 @@ git push -u origin master   # 推送到线上仓库，之后直接输入 git pus
 
 最后感谢众多文章的作者，尤其是以下文章的作者，可算是帮了大忙了。
 
-* 感谢[《GitHub教程 Git Bash详细教程》](https://blog.csdn.net/qq_36667170/article/details/79085301)让我知道了 Git Bash 的大概用法。
-* 感谢[《官方文档》](https://pages.github.com/)让我知道了推送的大概流程。
-* 感谢[《Jekyll本地搭建开发环境以及Github部署流程》](https://blog.csdn.net/weixin_43513465/article/details/86764299)让我发现原来要在仓库目录下运行 jekyll 才行。
+* 感谢[《GitHub教程 Git Bash详细教程》](https://blog.csdn.net/qq_36667170/article/details/79085301) 讲解了 Git Bash 的大概用法。
+* 感谢[《官方文档》](https://pages.github.com/) 讲述了推送的大概流程。
+* 感谢[《Jekyll本地搭建开发环境以及Github部署流程》](https://blog.csdn.net/weixin_43513465/article/details/86764299) 让我知道了 github 和 jekyll 是如何关联起来的。
 
 就这样，博客摇摇晃晃的上线了，相信之后会越来越好的。
 
