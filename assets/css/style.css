@@ -706,3 +706,41 @@ pre::-webkit-scrollbar-thumb { border-radius: .8rem;}
 .blog-history-table tbody th {
     min-width: 10rem;
 }
+
+
+
+/* -------------------------------------------------------------------------- */
+
+/*  集合列表页样式设置
+/* -------------------------------------------------------------------------- */
+.collections-loop-item {
+    background-color: transparent;
+    border: none;
+}
+.collections-loop-item .card-body {
+    padding: 0;
+    border-radius: .8rem .8rem 0 0;
+    background: url(../img/article-bg.png) repeat;
+    overflow: hidden;
+}
+.collections-loop-item .card-footer {
+    padding: 0;
+    border: none;
+}
+@media (min-width: 768px) {
+    .collections-loop .collections-loop-item {
+        margin-bottom: 1.5rem;
+    }
+    .collections-loop-item
+}
+@media (min-width: 992px) {
+    .collections-loop-item .card-body {
+        border-radius: 1rem 1rem 0 0;
+    }
+    .collections-loop {
+        margin: auto -2.5rem;
+    }
+    .collections-loop .collections-loop-item {
+        margin: 0 2.5rem 5rem;
+    }
+}

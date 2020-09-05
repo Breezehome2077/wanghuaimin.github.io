@@ -20,10 +20,10 @@
 
 title: 望朝门
 email: hetieliancheng@outlook.com
-description: >- # this means to ignore newlines until "baseurl:"
+description: >- # 这意味着在“baseurl:”之前忽略换行符：
   人对了，世界就对了。
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # 站点的子路径，例如/blog
+url: "" # 站点的基本主机名和协议，例如：http://example.com
 
 # 生成设置
 theme: minima
@@ -33,3 +33,9 @@ plugins:
 
 # 分页代码
 paginate: 12
+
+# 集合
+collections:
+  jekyll: # 这是专题名称
+    output: true  # 允许渲染输出
+    permalink: /jekyll/:path/ # 设置文章路径
