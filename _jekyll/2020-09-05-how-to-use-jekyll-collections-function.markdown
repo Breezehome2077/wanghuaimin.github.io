@@ -87,7 +87,7 @@ qinyuanchunxue.github.io
 1. 将<mark>_posts</mark>目录中和 jekyll 相关的文章移动到<mark>_jekyll</mark>目录中;
 2. 编辑相应的文章，修改文章布局：`layout: post` => `layout: jekyll`；
 4. 编辑专题内容页（根目录/_layouts/jekyll.html），删除“标签”和“分类”的超链接；
-5. 访问<mark>http://localhost:4000/jekyll.html</mark>即可浏览到最终效果。
+5. 访问<mark>http://localhost:4000/jekyll/</mark>即可浏览到最终效果。
 
 <figure class="post-content-img row justify-content-center">
     <div class="col-12 col-lg-12">
