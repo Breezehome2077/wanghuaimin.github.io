@@ -7,10 +7,9 @@ tags:   jekyll
 
 jekyll 的集合（collections）功能相当于将围绕同一主题的多篇文章集合起来，组织成“专题”形式。
 
-所以以下将用“专题”来指代 jekyll 的集合功能。
+所以下文将用“专题”来指代 jekyll 的集合功能。
 
 参考文章：[《集合（Collections）》](http://jekyllcn.com/docs/collections/) 、[《11. Introduction to collections》](https://learn.cloudcannon.com/jekyll/introduction-to-jekyll-collections/)
-
 
 
 ## 第一步：修改配置文件，注册自定义专题
