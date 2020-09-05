@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "如何将 Jekyll 博客推送到 GitHub"  
 date:   2020-07-31 15:06 +0800
 categories: jekyll

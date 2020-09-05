@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "如何使用 jekyll 的集合（collections）功能"  
 date:   2020-09-05 10:27 +0800
 categories: jekyll
@@ -85,9 +84,9 @@ qinyuanchunxue.github.io
 
 ## 第五步：文件搬家
 
-将<mark>_posts.html</mark>目录中和<mark>jekyll</mark>相关的文章移动到<mark>_jekyll</mark>目录中。
-
-然后访问<mark>http://localhost:4000/jekyll/</mark>即可浏览到最终效果。
+1. 将<mark>_posts.html</mark>目录中和<mark>jekyll</mark>相关的文章移动到<mark>_jekyll</mark>目录中;
+2. 修改文章布局 `layout: post` 为 `layout: jekyll`；
+3. 访问<mark>http://localhost:4000/jekyll/</mark>即可浏览到最终效果。
 
 <figure class="post-content-img row justify-content-center">
     <div class="col-12 col-lg-12">
@@ -95,6 +94,26 @@ qinyuanchunxue.github.io
     </div>
 </figure>
 
+注1：如果不想每次写文章都手动注明“布局的名称”，那就可以在<mark>_config.yml</mark>文件底部添加以下内容：
 
+参考文章：[《Front matter defaults》](https://jekyllrb.com/docs/step-by-step/09-collections/#front-matter-defaults")
 
-附：分页功能未实现（原因：不知道怎么整，目前只知道分页功能仅在文件名为index.html的文件下才可以使用）。
+{% highlight plaintext %}
+defaults:   # 默认设置属性
+  - scope:
+      path: ""
+      type: "jekyll"
+    values:
+      layout: "jekyll"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+{% endhighlight %}
+
+注2：分页功能未实现（原因：不知道怎么整，目前只知道分页功能仅在文件名为index.html的文件下才可以使用）。

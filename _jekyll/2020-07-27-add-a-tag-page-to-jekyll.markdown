@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "给 Jekyll 添加一个标签页面"  
 date:   2020-07-27 18:02 +0800
 categories: jekyll

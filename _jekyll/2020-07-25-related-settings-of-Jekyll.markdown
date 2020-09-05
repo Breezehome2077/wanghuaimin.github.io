@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "关于Jekyll的一些相关设置"  
 date:   2020-07-25 21:12 +0800
 categories: jekyll

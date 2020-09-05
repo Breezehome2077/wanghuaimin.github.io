@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "如何在 Linux 系统上使用宝塔面板"  
 date:   2020-07-30 11:25 +0800
 categories: linux

@@ -39,3 +39,20 @@ collections:
   jekyll: # 这是专题名称
     output: true  # 允许渲染输出
     permalink: /jekyll/:path/ # 设置文章路径
+
+# 默认设置，文章类型不同，使用的模板也不同
+defaults:
+  - scope:
+      path: ""
+      type: "jekyll"
+    values:
+      layout: "jekyll"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"

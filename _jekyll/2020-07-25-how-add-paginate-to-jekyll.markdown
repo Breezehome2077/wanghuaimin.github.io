@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "如何在 Jekyll 上添加分页功能"  
 date:   2020-07-25 16:39 +0800
 categories: jekyll
