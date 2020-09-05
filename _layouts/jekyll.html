@@ -14,13 +14,13 @@ layout: default
                             <li class="col-auto post-meta-categories">Categories:
                                 {% assign sort_categories = page.categories | sort %}
                                 {%- for category in sort_categories -%}
-                                <a href="/page/categories/#{{ category }}" title="{{ category }}">{{ category | capitalize }}</a><span>, </span>
+                                {{ category | capitalize }}<span>, </span>
                                 {%- endfor -%}
                             </li>
                             <li class="col-auto post-meta-tags">Tags:
                                 {% assign sort_tags = page.tags | sort %}
                                 {%- for tag in sort_tags -%}
-                                <a href="/page/tags/#{{ tag }}" title="{{ tag }}">{{ tag | capitalize }}</a><span>, </span>
+                                {{ tag | capitalize }}<span>, </span>
                                 {%- endfor -%}
                             </li>
                         </ul>

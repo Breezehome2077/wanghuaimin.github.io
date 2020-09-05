@@ -38,7 +38,7 @@
             if (tag_name_value) {
                 // 读取json传来的数据;
                 $.ajax({
-                    url:"/tool/posts.json",
+                    url:"/tools/posts.json",
                     dataType: "text",
                     success: function(data){
                         // 将字符串转化为json对象。
@@ -78,7 +78,7 @@
                         $("#page-tags-table-tbody").html(page_tags_html);
                     },
                     error:function(){
-                        $('#error').html('<p>加载失败，请点击右侧（或下方的）“发现错误”按钮，在收到信息后我会尽快前来修复。</p>');
+                        $('#error').html('<p>发现错误：加载失败，请点击右侧（或下方的）“发现错误”按钮，在收到信息后我会尽快前来修复。</p>');
                     }
                 });
             }

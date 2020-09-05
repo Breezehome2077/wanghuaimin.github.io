@@ -84,9 +84,11 @@ qinyuanchunxue.github.io
 
 ## 第五步：文件搬家
 
-1. 将<mark>_posts.html</mark>目录中和<mark>jekyll</mark>相关的文章移动到<mark>_jekyll</mark>目录中;
-2. 修改文章布局 `layout: post` 为 `layout: jekyll`；
-3. 访问<mark>http://localhost:4000/jekyll/</mark>即可浏览到最终效果。
+1. 将<mark>_posts</mark>目录中和 jekyll 相关的文章移动到<mark>_jekyll</mark>目录中;
+2. 编辑相应的文章，修改文章布局：`layout: post` => `layout: jekyll`；
+3. 编辑专题列表页（根目录/jekyll.html），设置固定链接：`permalink: /jekyll/`；
+4. 编辑专题内容页（根目录/_layouts/jekyll.html），删除“标签”和“分类”的超链接；
+5. 访问<mark>http://localhost:4000/jekyll/</mark>即可浏览到最终效果。
 
 <figure class="post-content-img row justify-content-center">
     <div class="col-12 col-lg-12">
@@ -117,3 +119,5 @@ defaults:   # 默认设置属性
 {% endhighlight %}
 
 注2：分页功能未实现（原因：不知道怎么整，目前只知道分页功能仅在文件名为index.html的文件下才可以使用）。
+
+注3：标签页和分类页未制作（原因：太麻烦，而且当前用不到，所以直接略过了。）

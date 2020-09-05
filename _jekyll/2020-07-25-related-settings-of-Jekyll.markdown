@@ -98,3 +98,19 @@ layout: null
 {% endhighlight %}
 
 
+## for 循环插入 if 语句
+
+{% highlight plaintext %}
+{ %- if site.jekyll.size > 0 -%}
+{ %- assign date_format = site.minima.date_format | default: "%Y年%m月%d日" -%}
+{ %- for post in site.jekyll -%}
+    { % assign mod3 = forloop.index | modulo: 3 %}
+    <article class="card collections-loop-item">
+    ……
+    </article>
+    { % if mod3 == 0 %}
+        <div class="w-100"></div>
+    { % endif %}
+{ %- endfor -%}
+{ %- endif -%}
+{% endhighlight %}
