@@ -1,31 +1,28 @@
 ---
 layout: default
 ---
-<div class="page page-index">
-    {%- include default_bg.html -%}
-    <main id="site-content" class="site-content site-index-content" role="main">
-        <div class="container-lg">
-            <div class="card-columns post-list">
-                {%- if site.posts.size > 0 -%}
-                {%- assign date_format = site.minima.date_format | default: "%Y年%m月%d日" -%}
-                {%- for post in paginator.posts -%}
-                <article class="card post-list-item">
-                    <header class="post-list-item-header">
-                        <h1 class="post-list-item-title">
-                            <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-                        </h1>
-                    </header>
-                    <div class="post-list-item-excerpt">
-                        {{ post.excerpt }}
-                    </div>
-                    <footer class="post-list-item-footer">
-                        <span>{{ post.date | date: date_format }}</span>
-                    </footer>
-                </article>
-                {%- endfor -%}
-                {%- endif -%}
+<div class="container-lg">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 post-list">
+    {%- if site.posts.size > 0 -%}
+    {%- assign date_format = site.minima.date_format | default: "%Y年%m月%d日" -%}
+    {%- for post in paginator.posts -%}
+        <article class="col post-list-item">
+            <div class="card h-100">
+                <header class="card-header">
+                    <h2 class="card-title mb-0">
+                        <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+                    </h2>
+                </header>
+                <div class="card-body">
+                    {{ post.excerpt }}
+                </div>
+                <footer class="card-footer">
+                    <small class="text-muted">{{ post.date | date: date_format }}</small>
+                </footer>
             </div>
-            {%- include page_paginate.html -%}
-        </div>
-    </main>
+        </article>
+        {%- endfor -%}
+        {%- endif -%}
+    </div>
+    {%- include page_paginate.html -%}
 </div>

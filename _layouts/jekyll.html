@@ -1,36 +1,23 @@
 ---
 layout: default
 ---
-<div class="page page-jekyll">
-    {%- include default_bg.html -%}
-    <main id="site-content" class="site-content" role="main">
-        <div class="container-lg">
-            <article class="post">
-                <header class="post-header row">
-                    <h1 class="post-title col-12 order-lg-2">{{ page.title | escape }}</h1>
-                    <div class="post-meta col-12 order-lg-1">
-                        <ul class="list-unstyled mb-0 row justify-content-start justify-content-md-center justify-content-lg-end">
-                            <li class="col-auto post-meta-time">Data: <span>{{ page.date | date: "%Y-%m-%d" }}</span></li>
-                            <li class="col-auto post-meta-categories">Categories:
-                                {% assign sort_categories = page.categories | sort %}
-                                {%- for category in sort_categories -%}
-                                {{ category | capitalize }}<span>, </span>
-                                {%- endfor -%}
-                            </li>
-                            <li class="col-auto post-meta-tags">Tags:
-                                {% assign sort_tags = page.tags | sort %}
-                                {%- for tag in sort_tags -%}
-                                {{ tag | capitalize }}<span>, </span>
-                                {%- endfor -%}
-                            </li>
-                        </ul>
-                    </div>
-                </header>
-                <div id="articleBody" class="post-content" itemprop="articleBody">
-                    {{ content }}
-                </div>
-                <!--                这里还缺少一个相关文章列表-->
-            </article>
-        </div>
-    </main>
+<div class="container-lg">
+    <div class="post-wrap">
+        <article class="post rounded">
+            <header class="post-header">
+                <h1 class="post-title">
+                    {{ page.title | escape }}
+                </h1>
+                <p class="post-date text-muted">
+                    <small>发布时间: <span>{{ page.date | date: "%Y-%m-%d" }}</span></small>
+                </p>
+            </header>
+            <div class="post-body">
+                {{ content }}
+            </div>
+            <footer class="post-footer">
+
+            </footer>
+        </article>
+    </div>
 </div>

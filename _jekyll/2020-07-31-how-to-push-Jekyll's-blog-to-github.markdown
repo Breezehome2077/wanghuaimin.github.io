@@ -17,17 +17,21 @@ tags:   jekyll github
 仓库名称为：<mark>username.github.io</mark>的新存储库，其中<mark>username</mark>是您在 GitHub 上的用户名（或组织名称）。
 其他默认，点击创建就可以了。
 
-<figure class="post-content-img row justify-content-center">
-    <div class="col-12 col-lg-8">
-        <img class="w-100" src="/assets/post/2020-07-31-how-to-push-Jekyll's-blog-to-github/new_public.png" alt="新建存储库">
+<figure class="post-body-img-wrap rounded">
+    <div class="row">
+        <div class="col-12 col-lg-8">
+            <img class="w-100 post-body-img" src="/assets/post/2020-07-31-how-to-push-Jekyll's-blog-to-github/new_public.png" alt="新建存储库">
+        </div>
     </div>
 </figure>
 
 接下来会跳转到新界面，（如图，）记录下当前链接地址（HTTPS）
 
-<figure class="post-content-img row justify-content-center">
-    <div class="col-12 col-lg-12">
-        <img class="w-100" src="/assets/post/2020-07-31-how-to-push-Jekyll's-blog-to-github/public_info.png" alt="存储库界面">
+<figure class="post-body-img-wrap rounded">
+    <div class="row">
+        <div class="col-12 col-lg-12">
+            <img class="w-100 post-body-img" src="/assets/post/2020-07-31-how-to-push-Jekyll's-blog-to-github/public_info.png" alt="存储库界面">
+        </div>
     </div>
 </figure>
 
@@ -35,41 +39,51 @@ tags:   jekyll github
 
 然后点击<mark>Settings</mark>选项；新界面打开后下拉网页，找到<mark>GitHub Pages</mark>部分，点击按钮<mark>Choose a theme</mark>。
 
-<figure class="post-content-img row justify-content-center">
-    <div class="col-12 col-lg-10">
-        <img class="w-100" src="/assets/post/2020-07-31-how-to-push-Jekyll's-blog-to-github/choose_a_theme.png" alt="开通 github pages 界面">
+<figure class="post-body-img-wrap rounded">
+    <div class="row">
+        <div class="col-12 col-lg-10">
+            <img class="w-100 post-body-img" src="/assets/post/2020-07-31-how-to-push-Jekyll's-blog-to-github/choose_a_theme.png" alt="开通 github pages 界面">
+        </div>
     </div>
 </figure>
 
 在新界面点击<mark>Select theme</mark>按钮，进入下一步。（由于之前咱们已经做好了自己的主题，所以这里直接默认确定就行。）
 
-<figure class="post-content-img row justify-content-center">
-    <div class="col-12 col-lg-12">
-        <img class="w-100" src="/assets/post/2020-07-31-how-to-push-Jekyll's-blog-to-github/select_theme.png" alt="选择主题界面">
+<figure class="post-body-img-wrap rounded">
+    <div class="row">
+        <div class="col-12 col-lg-12">
+            <img class="w-100 post-body-img" src="/assets/post/2020-07-31-how-to-push-Jekyll's-blog-to-github/select_theme.png" alt="选择主题界面">
+        </div>
     </div>
 </figure>
 
 在新界面直接点击按钮<mark>Commit changes</mark>，进入下一步。
 
-<figure class="post-content-img row justify-content-center">
-    <div class="col-12 col-lg-12">
-        <img class="w-100" src="/assets/post/2020-07-31-how-to-push-Jekyll's-blog-to-github/commit_changes.png" alt="存储库界面">
+<figure class="post-body-img-wrap rounded">
+    <div class="row">
+        <div class="col-12 col-lg-12">
+            <img class="w-100 post-body-img" src="/assets/post/2020-07-31-how-to-push-Jekyll's-blog-to-github/commit_changes.png" alt="存储库界面">
+        </div>
     </div>
 </figure>
 
 OK，又回到了之前的仓库界面，继续点击<mark>Settings</mark>选项，在新界面仍旧下拉找到<mark>GitHub Pages</mark>部分，会发现它已经变成了这个样子：
 
-<figure class="post-content-img row justify-content-center">
-    <div class="col-12 col-lg-10">
-        <img class="w-100" src="/assets/post/2020-07-31-how-to-push-Jekyll's-blog-to-github/github_pages_new.PNG" alt="GitHub Pages 新样子">
+<figure class="post-body-img-wrap rounded">
+    <div class="row">
+        <div class="col-12 col-lg-10">
+            <img class="w-100 post-body-img" src="/assets/post/2020-07-31-how-to-push-Jekyll's-blog-to-github/github_pages_new.PNG" alt="GitHub Pages 新样子">
+        </div>
     </div>
 </figure>
 
 看到上面的提示了吗？现在就可以通过在浏览器地址栏中输入<mark>username.github.io</mark>来访问你的仓库了。
 
-<figure class="post-content-img row justify-content-center">
-    <div class="col-12 col-lg-12">
-        <img class="w-100" src="/assets/post/2020-07-31-how-to-push-Jekyll's-blog-to-github/public_new.PNG" alt="GitHub Pages 开通了">
+<figure class="post-body-img-wrap rounded">
+    <div class="row">
+        <div class="col-12 col-lg-12">
+            <img class="w-100 post-body-img" src="/assets/post/2020-07-31-how-to-push-Jekyll's-blog-to-github/public_new.PNG" alt="GitHub Pages 开通了">
+        </div>
     </div>
 </figure>
 
@@ -83,9 +97,11 @@ OK，又回到了之前的仓库界面，继续点击<mark>Settings</mark>选项
 
 域名这里推荐使用<mark>www.****.com</mark>的形式,原因是[www子域不受GitHub服务器IP地址更改的影响，因此可以有效地防止DOS攻击，所以您的站点也将加载得更快](https://docs.github.com/en/github/working-with-github-pages/about-custom-domains-and-github-pages#using-a-subdomain-for-your-github-pages-site)。
 
-<figure class="post-content-img row justify-content-center">
-    <div class="col-12 col-lg-10">
-        <img class="w-100" src="/assets/post/2020-07-31-how-to-push-Jekyll's-blog-to-github/github_pages_new_domain.PNG" alt="GitHub Pages 绑定域名">
+<figure class="post-body-img-wrap rounded">
+    <div class="row">
+        <div class="col-12 col-lg-10">
+            <img class="w-100 post-body-img" src="/assets/post/2020-07-31-how-to-push-Jekyll's-blog-to-github/github_pages_new_domain.PNG" alt="GitHub Pages 绑定域名">
+        </div>
     </div>
 </figure>
 
@@ -93,9 +109,11 @@ OK，又回到了之前的仓库界面，继续点击<mark>Settings</mark>选项
 
 2.在域名服务商那里做一下域名解析：添加一个<mark>CNAME</mark>记录，将子域名<mark>www</mark>解析到<mark>username.github.io</mark>。
 
-<figure class="post-content-img row justify-content-center">
-    <div class="col-12 col-lg-12">
-        <img class="w-100" src="/assets/post/2020-07-31-how-to-push-Jekyll's-blog-to-github/github_pages_new_domain_2.PNG" alt="GitHub Pages 绑定域名2">
+<figure class="post-body-img-wrap rounded">
+    <div class="row">
+        <div class="col-12 col-lg-12">
+            <img class="w-100 post-body-img" src="/assets/post/2020-07-31-how-to-push-Jekyll's-blog-to-github/github_pages_new_domain_2.PNG" alt="GitHub Pages 绑定域名2">
+        </div>
     </div>
 </figure>
 
@@ -118,9 +136,11 @@ git config --global user.email "Your Email@example.com"
 
 {% endhighlight %}
 
-<figure class="post-content-img row justify-content-center">
-    <div class="col-12 col-lg-12">
-        <img class="w-100" src="/assets/post/2020-07-31-how-to-push-Jekyll's-blog-to-github/git_1.png" alt="Gitbash 配置身份信息">
+<figure class="post-body-img-wrap rounded">
+    <div class="row">
+        <div class="col-12 col-lg-12">
+            <img class="w-100 post-body-img" src="/assets/post/2020-07-31-how-to-push-Jekyll's-blog-to-github/git_1.png" alt="Gitbash 配置身份信息">
+        </div>
     </div>
 </figure>
 
@@ -134,17 +154,21 @@ git clone https://github.com/username/username.github.io    # 克隆仓库到本
 
 {% endhighlight %}
 
-<figure class="post-content-img row justify-content-center">
-    <div class="col-12 col-lg-12">
-        <img class="w-100" src="/assets/post/2020-07-31-how-to-push-Jekyll's-blog-to-github/git_2.png" alt="克隆仓库到本地">
+<figure class="post-body-img-wrap rounded">
+    <div class="row">
+        <div class="col-12 col-lg-12">
+            <img class="w-100 post-body-img" src="/assets/post/2020-07-31-how-to-push-Jekyll's-blog-to-github/git_2.png" alt="克隆仓库到本地">
+        </div>
     </div>
 </figure>
 
 可以看到仓库已经克隆下来了，具体是不是呢，咱们可以打开文件管理器确认一下。
 
-<figure class="post-content-img row justify-content-center">
-    <div class="col-12 col-lg-12">
-        <img class="w-100" src="/assets/post/2020-07-31-how-to-push-Jekyll's-blog-to-github/git_2_2.png" alt="克隆仓库到本地2">
+<figure class="post-body-img-wrap rounded">
+    <div class="row">
+        <div class="col-12 col-lg-12">
+            <img class="w-100 post-body-img" src="/assets/post/2020-07-31-how-to-push-Jekyll's-blog-to-github/git_2_2.png" alt="克隆仓库到本地2">
+        </div>
     </div>
 </figure>
 
@@ -152,23 +176,29 @@ git clone https://github.com/username/username.github.io    # 克隆仓库到本
 
 1.将除<mark>CANME</mark>文件和隐藏文件夹<mark>.git</mark>以外的所有文件都删掉。
 
-<figure class="post-content-img row justify-content-center">
-    <div class="col-12 col-lg-12">
-        <img class="w-100" src="/assets/post/2020-07-31-how-to-push-Jekyll's-blog-to-github/git_3.png" alt="删除本地仓库部分文件">
+<figure class="post-body-img-wrap rounded">
+    <div class="row">
+        <div class="col-12 col-lg-12">
+            <img class="w-100 post-body-img" src="/assets/post/2020-07-31-how-to-push-Jekyll's-blog-to-github/git_3.png" alt="删除本地仓库部分文件">
+        </div>
     </div>
 </figure>
 
 2.将博客文件全都复制过来。
 
-<figure class="post-content-img row justify-content-center">
-    <div class="col-12 col-lg-12">
-        <img class="w-100" src="/assets/post/2020-07-31-how-to-push-Jekyll's-blog-to-github/git_4.png" alt="复制博客文件到本地仓库">
+<figure class="post-body-img-wrap rounded">
+    <div class="row">
+        <div class="col-12 col-lg-12">
+            <img class="w-100 post-body-img" src="/assets/post/2020-07-31-how-to-push-Jekyll's-blog-to-github/git_4.png" alt="复制博客文件到本地仓库">
+        </div>
     </div>
 </figure>
 
-<figure class="post-content-img row justify-content-center">
-    <div class="col-12 col-lg-12">
-        <img class="w-100" src="/assets/post/2020-07-31-how-to-push-Jekyll's-blog-to-github/git_4_2.png" alt="复制博客文件到本地仓库2">
+<figure class="post-body-img-wrap rounded">
+    <div class="row">
+        <div class="col-12 col-lg-12">
+            <img class="w-100 post-body-img" src="/assets/post/2020-07-31-how-to-push-Jekyll's-blog-to-github/git_4_2.png" alt="复制博客文件到本地仓库2">
+        </div>
     </div>
 </figure>
 
@@ -178,17 +208,21 @@ git clone https://github.com/username/username.github.io    # 克隆仓库到本
 
 转到仓库文件夹，打开文件<mark>Gemfile</mark>，找到以下内容：
 
-<figure class="post-content-img row justify-content-center">
-    <div class="col-12 col-lg-12">
-        <img class="w-100" src="/assets/post/2020-07-31-how-to-push-Jekyll's-blog-to-github/git_5.png" alt="修改 Gemfile 文件">
+<figure class="post-body-img-wrap rounded">
+    <div class="row">
+        <div class="col-12 col-lg-12">
+            <img class="w-100 post-body-img" src="/assets/post/2020-07-31-how-to-push-Jekyll's-blog-to-github/git_5.png" alt="修改 Gemfile 文件">
+        </div>
     </div>
 </figure>
 
 按照提示，删除 `gem "jekyll"` 语句，然后取消 `gem "github-pages",group: :jekyll_plugins` 的注释。
 
-<figure class="post-content-img row justify-content-center">
-    <div class="col-12 col-lg-12">
-        <img class="w-100" src="/assets/post/2020-07-31-how-to-push-Jekyll's-blog-to-github/git_5_2.png" alt="修改 Gemfile 文件2">
+<figure class="post-body-img-wrap rounded">
+    <div class="row">
+        <div class="col-12 col-lg-12">
+            <img class="w-100 post-body-img" src="/assets/post/2020-07-31-how-to-push-Jekyll's-blog-to-github/git_5_2.png" alt="修改 Gemfile 文件2">
+        </div>
     </div>
 </figure>
 
@@ -196,9 +230,11 @@ git clone https://github.com/username/username.github.io    # 克隆仓库到本
 
 前进到本地仓库目录，然后执行命令 `bundle update`，更新环境（不更新就会报错）。
 
-<figure class="post-content-img row justify-content-center">
-    <div class="col-12 col-lg-12">
-        <img class="w-100" src="/assets/post/2020-07-31-how-to-push-Jekyll's-blog-to-github/git_6.png" alt="jekyll 进入仓库目录">
+<figure class="post-body-img-wrap rounded">
+    <div class="row">
+        <div class="col-12 col-lg-12">
+            <img class="w-100 post-body-img" src="/assets/post/2020-07-31-how-to-push-Jekyll's-blog-to-github/git_6.png" alt="jekyll 进入仓库目录">
+        </div>
     </div>
 </figure>
 

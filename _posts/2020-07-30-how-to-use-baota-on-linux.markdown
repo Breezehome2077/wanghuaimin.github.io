@@ -28,9 +28,11 @@ yum install -y wget && wget -O install.sh http://download.bt.cn/install/install_
 bt  #运行宝塔工具箱，之后选择“选项14”即可。
 {% endhighlight %}
 
-<figure class="post-content-img row justify-content-center">
-    <div class="col-12 col-lg-12">
-        <img class="w-100" src="/assets/post/2020-07-30-how-to-use-baota-on-linux/bt.PNG" alt="宝塔工具箱">
+<figure class="post-body-img-wrap rounded">
+    <div class="row">
+        <div class="col-12 col-lg-12">
+            <img class="w-100 post-body-img" src="/assets/post/2020-07-30-how-to-use-baota-on-linux/bt.PNG" alt="宝塔工具箱">
+        </div>
     </div>
 </figure>
 
@@ -40,9 +42,11 @@ bt  #运行宝塔工具箱，之后选择“选项14”即可。
 
 在“服务器管理控制台”找到“安全组-入站规则”，填写以下信息即可。
 
-<figure class="post-content-img row justify-content-center">
-    <div class="col-12 col-lg-12">
-        <img class="w-100" src="/assets/post/2020-07-30-how-to-use-baota-on-linux/bt_port.PNG" alt="宝塔端口设置">
+<figure class="post-body-img-wrap rounded">
+    <div class="row">
+        <div class="col-12 col-lg-12">
+            <img class="w-100 post-body-img" src="/assets/post/2020-07-30-how-to-use-baota-on-linux/bt_port.PNG" alt="宝塔端口设置">
+        </div>
     </div>
 </figure>
 
@@ -59,9 +63,11 @@ SSH连接服务器后，输入命令 `bt` 启动工具箱，修改用户名和�
 
 解决办法：放行端口“39000-40000”。
 
-<figure class="post-content-img row justify-content-center">
-    <div class="col-12 col-lg-12">
-        <img class="w-100" src="/assets/post/2020-07-30-how-to-use-baota-on-linux/bt_ftp.PNG" alt="宝塔FTP设置">
+<figure class="post-body-img-wrap rounded">
+    <div class="row">
+        <div class="col-12 col-lg-12">
+            <img class="w-100 post-body-img" src="/assets/post/2020-07-30-how-to-use-baota-on-linux/bt_ftp.PNG" alt="宝塔FTP设置">
+        </div>
     </div>
 </figure>
 

@@ -1,39 +1,37 @@
 <aside class="site-aside">
-    <div class="site-aside-button-group">
-        <div class="container-lg">
-            <ul class="list-unstyled mb-0 row row-cols-3 row-cols-lg-5 row-cols-xl-1">
-                <li class="col">
-                    <a href='{{ "/" | relative_url }}' title="前往主页">
-                        <img class="d-none d-xl-block" src='{{ "/assets/img/home.svg" | relative_url }}' alt="">
-                        <span class="d-xl-none">前往主页</span>
-                    </a>
-                </li>
-                <li class="col">
-                    <a href="#site-content" title="回到顶部">
-                        <img class="d-none d-xl-block" src='{{ "/assets/img/arrow-up.svg" | relative_url }}' alt="">
-                        <span class="d-xl-none">回到顶部</span>
-                    </a>
-                </li>
-                <li class="col">
-                    <a href="https://jinshuju.net/f/JT1dBa" target="_blank" title="发现错误">
-                        <img class="d-none d-xl-block" src='{{ "/assets/img/email.svg" | relative_url }}' alt="">
-                        <span class="d-xl-none">发现错误</span>
-                    </a>
-                </li>
-                <li class="col back-to-bottom d-none d-lg-block">
-                    <a href="#site-footer" title="回到底部">
-                        <img class="d-none d-xl-block" src='{{ "/assets/img/arrow-up.svg" | relative_url }}' alt="">
-                        <span class="d-xl-none">回到底部</span>
-                    </a>
-                </li>
-                <li class="col d-none d-lg-block">
-                    <a href="javascript:void(0)" onClick="javascript:history.back(-1);" title="返回上一页">
-                        <img class="d-none d-xl-block" src='{{ "/assets/img/history.svg" | relative_url }}' alt="">
-                        <span class="d-xl-none">返回上一页</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
+    <div class="container-lg">
+        <ul class="list-unstyled mb-0 row row-cols-3 row-cols-lg-5 row-cols-xl-1">
+            <li class="col site-aside-item">
+                <a href='{{ "/" | relative_url }}' title="前往主页">
+                    <img class="d-none d-xl-block" src='{{ "/assets/img/home.svg" | relative_url }}' alt="">
+                    <span class="d-xl-none">前往主页</span>
+                </a>
+            </li>
+            <li class="col site-aside-item">
+                <a href="#site-content" title="回到顶部">
+                    <img class="d-none d-xl-block" src='{{ "/assets/img/arrow-up.svg" | relative_url }}' alt="">
+                    <span class="d-xl-none">回到顶部</span>
+                </a>
+            </li>
+            <li class="col site-aside-item">
+                <a href="https://jinshuju.net/f/JT1dBa" target="_blank" title="发现错误">
+                    <img class="d-none d-xl-block" src='{{ "/assets/img/email.svg" | relative_url }}' alt="">
+                    <span class="d-xl-none">发现错误</span>
+                </a>
+            </li>
+            <li class="col back-to-bottom d-none d-lg-block site-aside-item">
+                <a href="#site-footer" title="回到底部">
+                    <img class="d-none d-xl-block" src='{{ "/assets/img/arrow-up.svg" | relative_url }}' alt="">
+                    <span class="d-xl-none">回到底部</span>
+                </a>
+            </li>
+            <li class="col d-none d-lg-block site-aside-item">
+                <a href="javascript:void(0)" onClick="javascript:history.back(-1);" title="返回上一页">
+                    <img class="d-none d-xl-block" src='{{ "/assets/img/history.svg" | relative_url }}' alt="">
+                    <span class="d-xl-none">返回上一页</span>
+                </a>
+            </li>
+        </ul>
     </div>
 </aside>
 <footer id="site-footer" class="site-footer">
@@ -43,15 +41,14 @@
         </div>
     </div>
 </footer>
-<!-- JavaScript -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-<script src='{{ "/assets/js/MooTools.min.js" | relative_url }}'></script>
-<script src='{{ "/assets/js/wzm.js" | relative_url }}'></script>
+<script src="{{ '/assets/js/jquery-3.5.1.slim.min.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/bootstrap.bundle.min.js' | relative_url }}"></script>
+<!--<script src="https://gongxiang-1256119950.cos.ap-chengdu.myqcloud.com/jquery-3.5.1/jquery-3.5.1.slim.min.js"></script>-->
+<!--<script src="https://gongxiang-1256119950.cos.ap-chengdu.myqcloud.com/bootstrap-4.5.3-dist/js/bootstrap.bundle.min.js"></script>-->
+<script src="{{ '/assets/js/wzm.js' | relative_url }}"></script>
 {%- if {{page.url}} == '/page/tags/' -%}
-<script src='{{ "/assets/js/wzm_tags.js" | relative_url }}'></script>
+<script src="{{ '/assets/js/wzm_tags.js' | relative_url }}"></script>
 {%- endif -%}
 {%- if {{page.url}} == '/page/categories/' -%}
-<script src='{{ "/assets/js/wzm_categories.js" | relative_url }}'></script>
+<script src="{{ '/assets/js/wzm_categories.js' | relative_url }}"></script>
 {%- endif -%}
