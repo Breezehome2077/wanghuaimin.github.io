@@ -5,9 +5,11 @@
         function(){
             p = $(this).scrollTop();
             if (t<=p) {
+                // 向下滚动
                 $('.site-aside-wrap').css({'bottom':'-40px'});
             }
             else {
+                // 向上滚动
                 $('.site-aside-wrap').css({'bottom':'0'});
             }
         }
