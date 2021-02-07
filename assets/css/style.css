@@ -64,16 +64,11 @@ a,a:hover {
     font-size: 12px;
 }
 /*网页侧边栏*/
-.site-aside-wrap {
+.site-aside {
     position: fixed;
     left: 0;
     bottom: 0;
-    width: 100%;
-}
-.site-aside {
-    position: absolute;
-    left: 0;
-    bottom: 0;
+    -webkit-transform: translateZ(0);
     width: 100%;
     height: 40px;
     background: #f5efe0;
