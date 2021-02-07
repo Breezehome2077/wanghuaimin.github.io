@@ -6,8 +6,6 @@ categories: blog
 tags:   blog
 ---
 
-萌新博客的修改记录。
-
 ## 遵循规则
 
 1. 以下内容书写过程中空一格。
