@@ -64,6 +64,9 @@ a,a:hover {
     font-size: 12px;
 }
 /*网页侧边栏*/
+.site-aside-wrap {
+    transform: translateZ(0);
+}
 .site-aside {
     position: absolute;
     left: 0;
