@@ -65,10 +65,12 @@ a,a:hover {
 }
 /*网页侧边栏*/
 .site-aside-wrap {
-    transform: translateZ(0);
+    width: 100%;
+    height: 40px;
+    background-color: #000;
 }
 .site-aside {
-    position: absolute;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100vw;
