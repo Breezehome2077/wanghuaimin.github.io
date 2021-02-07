@@ -3,12 +3,11 @@ $(function (){
     let t = 0;//滚动条到顶部的初始高度
     $(window).scroll(function(){
         let p = $(this).scrollTop();//滚动条到顶部的垂直高度
-        if(p>t){ //p>0，表示页面在向下滚动
+        if(p>=t){ //p>0，表示页面在向下滚动
             $('.site-aside-wrap').css({'position':'fixed','bottom':'-40px'});
             t = p;
         }else{
             $('.site-aside-wrap').css({'position':'fixed','bottom':'0px'});
         }
-        setTimeout(function(){t = p;},20);
     });
 })
