@@ -3,24 +3,10 @@ layout: default
 ---
 <div class="container-lg">
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 post-list">
-    {%- if site.posts.size > 0 -%}
-    {%- assign date_format = site.minima.date_format | default: "%Y年%m月%d日" -%}
-    {%- for post in paginator.posts -%}
-        <article class="col post-list-item">
-            <div class="card h-100">
-                <header class="card-header">
-                    <h2 class="card-title mb-0">
-                        <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-                    </h2>
-                </header>
-                <div class="card-body">
-                    <p>{{ post.excerpt | strip_html }}</p>
-                </div>
-                <footer class="card-footer">
-                    <small class="text-muted">{{ post.date | date: date_format }}</small>
-                </footer>
-            </div>
-        </article>
+        {%- if site.posts.size > 0 -%}
+        {%- assign date_format = site.minima.date_format | default: "%Y年%m月%d日" -%}
+        {%- for post in paginator.posts -%}
+        {%- include post-list-item.html -%}
         {%- endfor -%}
         {%- endif -%}
     </div>

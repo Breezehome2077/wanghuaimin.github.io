@@ -8,22 +8,7 @@ permalink: /jekyll/
         {%- if site.jekyll.size > 0 -%}
         {%- assign date_format = site.minima.date_format | default: "%Y年%m月%d日" -%}
         {%- for post in site.jekyll -%}
-        <article class="col post-list-item">
-            <div class="card h-100">
-                <header class="card-header">
-                    <h2 class="card-title mb-0">
-                        <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-                    </h2>
-                </header>
-                <div class="card-body">
-
-                    {{ post.excerpt }}
-                </div>
-                <footer class="card-footer">
-                    <small class="text-muted">{{ post.date | date: date_format }}</small>
-                </footer>
-            </div>
-        </article>
+        {%- include post-list-item.html -%}
         {%- endfor -%}
         {%- endif -%}
     </div>
