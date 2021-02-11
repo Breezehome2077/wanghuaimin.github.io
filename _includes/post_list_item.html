@@ -4,6 +4,7 @@
             <h2 class="card-title mb-0">
                 <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
             </h2>
+        </header>
         <div class="card-body">
             {{ post.excerpt | strip_html }}
         </div>
