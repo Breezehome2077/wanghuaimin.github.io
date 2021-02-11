@@ -8,7 +8,7 @@ permalink: /jekyll/
         {%- if site.jekyll.size > 0 -%}
         {%- assign date_format = site.minima.date_format | default: "%Y年%m月%d日" -%}
         {%- for post in site.jekyll -%}
-        {%- include post-list-item.html -%}
+        {%- include post_list_item.html -%}
         {%- endfor -%}
         {%- endif -%}
     </div>
