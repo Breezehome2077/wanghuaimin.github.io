@@ -6,9 +6,9 @@ $(document).ready(function(){
         $(window).scroll(function(){
             p = $(this).scrollTop();
             if(t<=p){//向下滚
-                $('.site-aside').css({'transform':'translateY(-40px)','display':'none'});
+                $('.site-aside').css({'transform':'translateY(40px)'});
             }else{//向上滚
-                $('.site-aside').css({'transform':'translateY(0px)','display':'block'});
+                $('.site-aside').css({'transform':'translateY(0px)'});
             }
             setTimeout(function(){t = p;},0);
         });
