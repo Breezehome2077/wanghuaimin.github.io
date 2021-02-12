@@ -9,7 +9,7 @@ $(document).ready(function(){
             if(t<=p){//向下滚
                 $('.site-aside-wrap').css({'position':'fixed','bottom':'-40px','display':'none'});
             }else{//向上滚
-                $('.site-aside-wrap').css({'position':'fixed','bottom':'0px','display':'black'});
+                $('.site-aside-wrap').css({'position':'fixed','bottom':'0px','display':'block'});
             }
             setTimeout(function(){t = p;},0);
         });
