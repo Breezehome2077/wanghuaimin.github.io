@@ -12,7 +12,7 @@ $(function (){
                 $('.site-aside-wrap').css({'position':'fixed','bottom':'-40px','display':'none'});
                 t = p;
             }else{
-                $('.site-aside-wrap').css({'position':'fixed','bottom':'0px','display':'block'});
+                $('.site-aside-wrap').css({'position':'fixed','bottom':'0px','display':'black'});
             }
         })
     }
