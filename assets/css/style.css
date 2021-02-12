@@ -69,7 +69,7 @@ a,a:hover {
     background: #f5efe0;
 }
 .site-aside {
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     width: 100%;
