@@ -1,19 +1,17 @@
-$(function (){
-    console.log(
-        '20210211新的认识：一屋不扫，何以扫天下',
-        '人对了，世界就对了。这一句话个人认为有两种解释：第一种是“改变自己，认识世界”，第二种是“认识自己，改变世界”。愿人人都能通过第二种获得幸福生活。'
-    );
+$(document).ready(function(){
+    // 当DIV使用fixed定位时，在手机上滑动页面，该DIV会不停抖动，
+    // 所以这里使用jq将DIV在抖动方向上进行隐藏。
     let screen_w=window.innerWidth;
-    if (screen_w < 768) {
-        let t=0,p=0;
+    if (screen_w <= 768) {
+        let p=0,t=0;
         $(window).scroll(function(){
-            p = $(this).scrollTop();//滚动条到顶部的垂直高度
-            if(p>=t){ //p>0，表示页面在向下滚动
+            p = $(this).scrollTop();
+            if(t<=p){//向下滚
                 $('.site-aside-wrap').css({'position':'fixed','bottom':'-40px','display':'none'});
-                t = p;
-            }else{
+            }else{//向上滚
                 $('.site-aside-wrap').css({'position':'fixed','bottom':'0px','display':'black'});
             }
-        })
+            setTimeout(function(){t = p;},0);
+        });
     }
-})
+});
