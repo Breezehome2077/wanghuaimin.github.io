@@ -9,10 +9,10 @@ $(function (){
         $(window).scroll(function(){
             p = $(this).scrollTop();//滚动条到顶部的垂直高度
             if(p>=t){ //p>0，表示页面在向下滚动
-                $('.site-aside-wrap').css({'position':'fixed','bottom':'-40px'});
+                $('.site-aside-wrap').css({'position':'fixed','bottom':'-40px','display':'none'});
                 t = p;
             }else{
-                $('.site-aside-wrap').css({'position':'fixed','bottom':'0px'});
+                $('.site-aside-wrap').css({'position':'fixed','bottom':'0px','display':'block'});
             }
         })
     }
