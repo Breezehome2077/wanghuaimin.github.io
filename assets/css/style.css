@@ -72,15 +72,13 @@ a,a:hover {
     width: 100%;
     opacity: 0;
     transition: opacity .3s ease-out;
+    transition-delay: .1s;
 }
 .site-aside-wrap.wzm-fixed-down {
-    opacity: 0;
-    transition-delay: 0;
-    pointer-events: none;
+    display: none;
 }
 .site-aside-wrap.wzm-fixed-up {
     opacity: 1;
-    transition-delay: .1s;
 }
 .site-aside {
     width: 100%;
