@@ -84,8 +84,8 @@ a,a:hover,a:focus {
     height: 46px;
     background: #f5efe0;
     opacity: 0;
-    transition: opacity .3s ease-in;
-    transition-delay: .1s;
+    /*transition: opacity .3s ease-in;*/
+    transition-delay: .3s;
 }
 .site-aside-wrap.wzm-fixed-up .site-aside {
     opacity: 1;
