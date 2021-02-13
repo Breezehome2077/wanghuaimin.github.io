@@ -74,21 +74,20 @@ a,a:hover,a:focus {
     height: 46px;
 }
 .site-aside-wrap.wzm-fixed-down {
-    visibility: hidden;
+    top: calc( 100vh - 46px );
+    bottom: initial;
 }
 .site-aside-wrap.wzm-fixed-up {
-    visibility: visible;
+    top: initial;
+    bottom: 0;
 }
 .site-aside {
     width: 100%;
     height: 46px;
     background: #f5efe0;
-    opacity: 0;
-    /*transition: opacity .3s ease-in;*/
-    transition-delay: .3s;
-}
-.site-aside-wrap.wzm-fixed-up .site-aside {
     opacity: 1;
+    /*transition: opacity .3s ease-in;*/
+    /*transition-delay: .2s;*/
 }
 .site-aside-item {
     padding: 10px;
