@@ -71,13 +71,13 @@ a,a:hover {
     width: 100%;
     z-index: 100%;
 }
-.site-aside-wrap.wzm-fixed-top {
+.site-aside-wrap.wzm-fixed-down {
+    display: block;
     top: calc( 100vh - 50px );
     bottom: auto;
 }
-.site-aside-wrap.wzm-fixed-bottom {
-    top: auto;
-    bottom: 0;
+.site-aside-wrap.wzm-fixed-up {
+    display: none;
 }
 .site-aside {
     width: 100%;

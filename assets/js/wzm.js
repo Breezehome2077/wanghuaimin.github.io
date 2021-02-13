@@ -6,14 +6,14 @@ $(document).ready(function(){
         $(window).scroll(function(){
             p = $(this).scrollTop();
             if(t<=p){//向下滚
-                $('.site-aside-wrap').addClass('wzm-fixed-top');
-                if($('.site-aside-wrap').hasClass('wzm-fixed-bottom')){
-                    $('.site-aside-wrap').removeClass('wzm-fixed-bottom');
+                $('.site-aside-wrap').addClass('wzm-fixed-down');
+                if($('.site-aside-wrap').hasClass('wzm-fixed-up')){
+                    $('.site-aside-wrap').removeClass('wzm-fixed-up');
                 }
             }else{//向上滚
-                $('.site-aside-wrap').addClass('wzm-fixed-bottom');
-                if($('.site-aside-wrap').hasClass('wzm-fixed-top')){
-                    $('.site-aside-wrap').removeClass('wzm-fixed-top');
+                $('.site-aside-wrap').addClass('wzm-fixed-up');
+                if($('.site-aside-wrap').hasClass('wzm-fixed-down')){
+                    $('.site-aside-wrap').removeClass('wzm-fixed-down');
                 }
             }
             setTimeout(function(){t = p;},0);
