@@ -74,8 +74,7 @@ a,a:hover,a:focus {
     bottom: 46px;
     z-index: 1030;
     width: 100%;
-    transition: visibility .3s ease-in, opacity .3s ease-in;
-    transition-delay: .2s;
+    transition: visibility .5s ease-in, opacity .5s ease-in;
     opacity: 0;
 }
 .site-aside {
