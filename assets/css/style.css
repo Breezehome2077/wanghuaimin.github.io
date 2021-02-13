@@ -105,10 +105,14 @@ a,a:hover,a:focus {
 .site-aside-wrap.wzm-fixed-up .site-aside::after,
 .site-aside-wrap.wzm-fixed-up .site-aside {
     opacity: 1;
+    transition: opacity .3s ease-in;
+    transition-delay: .2s;
 }
 .site-aside-wrap.wzm-fixed-down .site-aside::after,
 .site-aside-wrap.wzm-fixed-down .site-aside {
     opacity: 0;
+    transition: opacity .3s ease-in;
+    transition-delay: .2s;
 }
 .site-aside-item {
     padding: 10px 0 0;
