@@ -68,20 +68,31 @@ a,a:hover {
     position: fixed;
     left: 0;
     bottom: 0;
-    z-index: 1030;
     width: 100%;
-    height: 42px;
+    z-index: 1030;
+}
+.site-aside-wrap.wzm-fixed-down {
+    display: none;
+}
+.site-aside-wrap.wzm-fixed-up {
+    display: block;
+    top: auto;
+    bottom: 0;
+}
+.site-aside {
+    width: 100%;
+    height: 50px;
     background: #f5efe0;
 }
 .site-aside-item {
-    padding: 7px;
+    padding: 10px;
 }
 .site-aside-item a {
     display: block;
     width: 100%;
     height: 100%;
-    height: 28px;
-    line-height: 28px;
+    height: 30px;
+    line-height: 30px;
     font-size: 14px;
     text-align: center;
     border-right: 1px solid rgba(0,0,0,.1);
