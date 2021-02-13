@@ -16,9 +16,12 @@ a,a:hover,a:focus {
 /*页面背景*/
 .page-bg {
     position: fixed;
+    left: 0;
+    top: 0;
     z-index: -1;
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
 }
 .page-bg::after {
     content: '';
@@ -26,8 +29,8 @@ a,a:hover,a:focus {
     left: 0;
     top: 0;
     display: block;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background: #f5efe0;
     transition: opacity 1200ms ease-in-out;
     opacity: .75;
@@ -68,13 +71,23 @@ a,a:hover,a:focus {
 .site-aside-wrap {
     position: fixed;
     left: 0;
-    bottom: 200px;
+    bottom: 1px;
     z-index: 1030;
     width: 100%;
     height: 46px;
 }
+.site-aside-wrap::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-bottom: -1px;
+    width: 100%;
+    height: 0;
+    border-bottom: 1px solid #f5efe0;
+}
 .site-aside-wrap.wzm-fixed-down {
-    visibility: visible;
+    visibility: hidden;
 }
 .site-aside-wrap.wzm-fixed-up {
     visibility: visible;
@@ -89,6 +102,9 @@ a,a:hover,a:focus {
 }
 .site-aside-wrap.wzm-fixed-up .site-aside {
     opacity: 1;
+}
+.site-aside-wrap.wzm-fixed-down .site-aside {
+    opacity: 0;
 }
 .site-aside-item {
     padding: 10px;
