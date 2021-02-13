@@ -68,19 +68,17 @@ a,a:hover {
     position: fixed;
     left: 0;
     bottom: 0;
-    width: 100%;
     z-index: 1030;
-    overscroll-behavior: none;
+    width: 100%;
+    opacity: 0;
+    transition: opacity .3s ease-out;
+    transition-delay: .1s;
 }
 .site-aside-wrap.wzm-fixed-down {
-    display: block;
-    top: auto;
-    bottom: 0;
+    opacity: 0;
 }
 .site-aside-wrap.wzm-fixed-up {
-    display: block;
-    top: auto;
-    bottom: 0;
+    opacity: 1;
 }
 .site-aside {
     width: 100%;
