@@ -68,14 +68,21 @@ a,a:hover {
     position: fixed;
     left: 0;
     bottom: 0;
-    z-index: 1030;
     width: 100%;
-    height: 50px;
-    background: #f5efe0;
+    z-index: 100%;
+}
+.site-aside-wrap.wzm-fixed-top {
+    top: calc( 100vh - 50px );
+    bottom: auto;
+}
+.site-aside-wrap.wzm-fixed-bottom {
+    top: auto;
+    bottom: 0;
 }
 .site-aside {
     width: 100%;
-    height: 40px;
+    height: 50px;
+    background: #f5efe0;
 }
 .site-aside-item {
     padding: 10px;
