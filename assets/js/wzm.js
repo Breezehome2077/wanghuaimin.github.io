@@ -1,5 +1,7 @@
 $(document).ready(function(){
-    // fixed抖动的原因：手机浏览器自带的回弹效果（过度滚动）
+    // fixed抖动的原因：手机浏览器自带回弹效果（过度滚动）
+    // 向下滚动时，隐藏该DIV
+    // 附相关介绍一篇：https://www.smashingmagazine.com/2018/08/scroll-bouncing-websites/
     let screen_w=window.innerWidth;
     if (screen_w <= 768) {
         let p=0,t=0;
