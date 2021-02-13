@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    // fixed 抖动的解决办法
+    // fixed抖动的原因：手机浏览器自带的回弹效果（过度滚动）
     let screen_w=window.innerWidth;
     if (screen_w <= 768) {
         let p=0,t=0;

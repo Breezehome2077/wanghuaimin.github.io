@@ -70,9 +70,12 @@ a,a:hover {
     bottom: 0;
     width: 100%;
     z-index: 1030;
+    overscroll-behavior: none;
 }
 .site-aside-wrap.wzm-fixed-down {
-    display: none;
+    display: block;
+    top: auto;
+    bottom: 0;
 }
 .site-aside-wrap.wzm-fixed-up {
     display: block;
