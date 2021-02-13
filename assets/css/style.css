@@ -67,23 +67,25 @@ a,a:hover {
 .site-aside-wrap {
     position: fixed;
     left: 0;
-    bottom: 0;
     z-index: 1030;
     width: 100%;
     opacity: 0;
-}
-.site-aside-wrap.wzm-fixed-down {
-    opacity: 0;
-    transition-delay: 0;
-}
-.site-aside-wrap.wzm-fixed-up {
-    opacity: 1;
     transition: opacity .3s ease-out;
     transition-delay: .1s;
 }
+.site-aside-wrap.wzm-fixed-down {
+    top: calc( 100vh - 46px );
+    bottom: auto;
+    opacity: 0;
+}
+.site-aside-wrap.wzm-fixed-up {
+    top: auto;
+    bottom: 0;
+    opacity: 1;
+}
 .site-aside {
     width: 100%;
-    height: 50px;
+    height: 46px;
     background: #f5efe0;
 }
 .site-aside-item {
@@ -93,8 +95,8 @@ a,a:hover {
     display: block;
     width: 100%;
     height: 100%;
-    height: 30px;
-    line-height: 30px;
+    height: 26px;
+    line-height: 26px;
     font-size: 14px;
     text-align: center;
     border-right: 1px solid rgba(0,0,0,.1);
