@@ -74,7 +74,7 @@ a,a:hover,a:focus {
     height: 46px;
 }
 .site-aside-wrap.wzm-fixed-down {
-    visibility: hidden;
+    visibility: visible;
 }
 .site-aside-wrap.wzm-fixed-up {
     visibility: visible;
