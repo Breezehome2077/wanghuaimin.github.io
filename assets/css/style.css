@@ -8,9 +8,10 @@ body {
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
 }
-a,a:hover {
+a,a:hover,a:focus {
     color: #cd2653;
     text-decoration: none;
+    box-shadow: none;
 }
 /*页面背景*/
 .page-bg {
@@ -77,6 +78,8 @@ a,a:hover {
     top: calc( 100vh - 46px );
     bottom: auto;
     opacity: 0;
+    /*点击穿透，点击下层，不点击上层*/
+    pointer-events: none;
 }
 .site-aside-wrap.wzm-fixed-up {
     top: auto;
