@@ -71,14 +71,15 @@ a,a:hover {
     z-index: 1030;
     width: 100%;
     opacity: 0;
-    transition: opacity .3s ease-out;
-    transition-delay: .1s;
 }
 .site-aside-wrap.wzm-fixed-down {
-    display: none;
+    opacity: 0;
+    transition-delay: 0;
 }
 .site-aside-wrap.wzm-fixed-up {
     opacity: 1;
+    transition: opacity .3s ease-out;
+    transition-delay: .1s;
 }
 .site-aside {
     width: 100%;
