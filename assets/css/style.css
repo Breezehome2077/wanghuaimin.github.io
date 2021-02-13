@@ -72,12 +72,12 @@ a,a:hover {
     z-index: 100%;
 }
 .site-aside-wrap.wzm-fixed-down {
-    display: block;
-    top: calc( 100vh - 50px );
-    bottom: auto;
+    display: none;
 }
 .site-aside-wrap.wzm-fixed-up {
-    display: none;
+    display: block;
+    top: auto;
+    bottom: 0;
 }
 .site-aside {
     width: 100%;
