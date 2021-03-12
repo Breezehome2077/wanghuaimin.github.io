@@ -1,0 +1,24 @@
+---
+layout: default
+title: 文档
+abstract: 已整理成系列的文章目录
+---
+<div class="container-lg">
+    <div class="post-wrap">
+        <article class="post rounded">
+            <header class="post-header">
+                <h1 class="post-title text-center font-weight-bold">
+                    {{ page.title | escape }}
+                </h1>
+                <p class="text-center">{{ page.description | escape }}</p>
+            </header>
+            <div class="post-body">
+                <ol>
+                    <li>
+                        <a href="{{ site.baseurl | relative_url }}/docs/jekyll/">《萌新的jekyll学习笔记：从零到勉强能用》v1.1</a>
+                    </li>
+                </ol>
+            </div>
+        </article>
+    </div>
+</div>

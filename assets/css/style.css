@@ -4,6 +4,8 @@ html {
     scroll-behavior: smooth;
 }
 body {
+    font-size: .875rem;
+    line-height: 1.8;
     background: #f5efe0;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -43,29 +45,19 @@ a,a:hover,a:focus {
     filter: grayscale(100%);
 }
 /*首页*/
-.post-list-item {
-    padding-top: 15px;
-}
 .post-list-item .card {
     border: none;
 }
 .post-list-item .card-header {
     background-color: #cd2653;
-    padding: 15px;
+    padding: 1rem 1.25rem;
 }
 .post-list-item .card-title a {
     display: block;
     width: 100%;
     height: 100%;
     color: #fff;
-    font-size: 18px;
-    line-height: 2;
-}
-.post-list-item .card-body {
-    font-size: 14px;
-}
-.post-list-item .card-footer {
-    font-size: 12px;
+    font-size: 1.125rem;
 }
 /*网页侧边栏*/
 .site-aside-wrap {
@@ -101,7 +93,6 @@ a,a:hover,a:focus {
     width: 100%;
     height: 26px;
     line-height: 26px;
-    font-size: 14px;
     text-align: center;
     border-right: 1px solid rgba(0,0,0,.1);
 }
@@ -111,26 +102,17 @@ a,a:hover,a:focus {
 /*网页底部*/
 .site-footer {
     margin: 15px;
-    font-size: 14px;
 }
 .site-footer a {
     color: #fff;
 }
 /*文章内容页样式*/
-.post-wrap {
-    padding-top: 15px;
-}
 .post {
-    padding: 15px;
     background: url(../img/article-bg.png) repeat;
 }
 .post-title {
     color: #cd2653;
     font-size: 18px;
-    line-height: 1.7;
-}
-.post-body {
-    font-size: 14px;
 }
 .post-body h2,
 .post-body h3,
@@ -141,19 +123,19 @@ a,a:hover,a:focus {
     font-weight: bold;
 }
 .post-body h2::before {
-    content: '#';
-}
-.post-body h3::before {
     content: '##';
 }
-.post-body h4::before {
+.post-body h3::before {
     content: '###';
 }
-.post-body h5::before {
+.post-body h4::before {
     content: '####';
 }
-.post-body h6::before {
+.post-body h5::before {
     content: '#####';
+}
+.post-body h6::before {
+    content: '######';
 }
 .post-body h2::before,
 .post-body h3::before,
@@ -162,6 +144,10 @@ a,a:hover,a:focus {
 .post-body h6::before {
     display: inline-block;
     margin-right: 15px;
+}
+.post-body-bottom-mark {
+    background-color: rgba(0,0,0,.03);
+    padding: .75rem 1.25rem;
 }
 /*特定标签添加颜色，以突出显示*/
 i,b {
@@ -196,13 +182,12 @@ pre code::after {
 
 /*代码高亮*/
 figure.highlight {
-    padding: 15px;
+    padding: 1rem;
     background-color: #001628;
     border-radius: .25rem;
 }
 figure.highlight pre {
     margin-bottom: 0;
-    padding-bottom: 15px;
     color: #fff;
     background-color: #001628;
 }

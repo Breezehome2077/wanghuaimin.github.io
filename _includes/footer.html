@@ -3,32 +3,32 @@
         <div class="container-lg">
             <ul class="list-unstyled mb-0 row row-cols-3 row-cols-lg-5 row-cols-xl-1">
                 <li class="col site-aside-item">
-                    <a href='{{ "/" | relative_url }}' title="前往主页">
-                        <img class="d-none d-xl-block" src='{{ "/assets/img/home.svg" | relative_url }}' alt="">
+                    <a href='{{ site.baseurl | relative_url }}/' title="前往主页">
+                        <img class="d-none d-xl-block" src="{{ site.baseurl | relative_url }}/assets/img/home.svg" alt="">
                         <span class="d-xl-none">前往主页</span>
                     </a>
                 </li>
                 <li class="col site-aside-item">
                     <a href="#site-content" title="回到顶部">
-                        <img class="d-none d-xl-block" src='{{ "/assets/img/arrow-up.svg" | relative_url }}' alt="">
+                        <img class="d-none d-xl-block" src="{{ site.baseurl | relative_url }}/assets/img/arrow-up.svg" alt="">
                         <span class="d-xl-none">回到顶部</span>
                     </a>
                 </li>
                 <li class="col site-aside-item">
                     <a href="https://jinshuju.net/f/JT1dBa" target="_blank" title="发现错误">
-                        <img class="d-none d-xl-block" src='{{ "/assets/img/email.svg" | relative_url }}' alt="">
+                        <img class="d-none d-xl-block" src="{{ site.baseurl | relative_url }}/assets/img/email.svg" alt="">
                         <span class="d-xl-none">发现错误</span>
                     </a>
                 </li>
                 <li class="col back-to-bottom d-none d-lg-block site-aside-item">
                     <a href="#site-footer" title="回到底部">
-                        <img class="d-none d-xl-block" src='{{ "/assets/img/arrow-up.svg" | relative_url }}' alt="">
+                        <img class="d-none d-xl-block" src="{{ site.baseurl | relative_url }}/assets/img/arrow-up.svg" alt="">
                         <span class="d-xl-none">回到底部</span>
                     </a>
                 </li>
                 <li class="col d-none d-lg-block site-aside-item">
                     <a href="javascript:void(0)" onClick="javascript:history.back(-1);" title="返回上一页">
-                        <img class="d-none d-xl-block" src='{{ "/assets/img/history.svg" | relative_url }}' alt="">
+                        <img class="d-none d-xl-block" src="{{ site.baseurl | relative_url }}/assets/img/history.svg" alt="">
                         <span class="d-xl-none">返回上一页</span>
                     </a>
                 </li>
@@ -43,14 +43,11 @@
         </div>
     </div>
 </footer>
-<script src="{{ '/assets/js/jquery-3.5.1.slim.min.js' | relative_url }}"></script>
-<script src="{{ '/assets/js/bootstrap.bundle.min.js' | relative_url }}"></script>
+<script src="{{ site.baseurl | relative_url }}/assets/js/jquery-3.5.1.slim.min.js"></script>
+<script src="{{ site.baseurl | relative_url }}/assets/js/bootstrap.bundle.min.js"></script>
 <!--<script src="https://gongxiang-1256119950.cos.ap-chengdu.myqcloud.com/jquery-3.5.1/jquery-3.5.1.slim.min.js"></script>-->
 <!--<script src="https://gongxiang-1256119950.cos.ap-chengdu.myqcloud.com/bootstrap-4.5.3-dist/js/bootstrap.bundle.min.js"></script>-->
-<script src="{{ '/assets/js/wzm.js' | relative_url }}"></script>
+<script src="{{ site.baseurl | relative_url }}/assets/js/wzm.js"></script>
 {%- if {{page.url}} == '/page/tags/' -%}
-<script src="{{ '/assets/js/wzm_tags.js' | relative_url }}"></script>
-{%- endif -%}
-{%- if {{page.url}} == '/page/categories/' -%}
-<script src="{{ '/assets/js/wzm_categories.js' | relative_url }}"></script>
+<script src="{{ site.baseurl | relative_url }}/assets/js/wzm_tags.js"></script>
 {%- endif -%}

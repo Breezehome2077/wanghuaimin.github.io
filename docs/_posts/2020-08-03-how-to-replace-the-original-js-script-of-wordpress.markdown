@@ -2,7 +2,6 @@
 layout: post
 title:  "如何替换wordpress原有的js脚本"  
 date:   2020-08-03 08:40 +0800
-categories: wordpress
 tags:   wordpress jquery
 ---
 

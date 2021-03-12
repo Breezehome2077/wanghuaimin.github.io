@@ -1,58 +1,53 @@
-# Welcome to Jekyll!
-#
-#此配置文件用于影响整个博客的设置值
-#你需要设置一次，之后很少再编辑。如果你发现
-#如果您经常编辑此文件，请考虑使用Jekyll的数据文件
-#需要经常更新的数据的特性。
-#
-#由于技术原因，使用时不会自动重新加载此文件
-#'bundle exec jekyll serve'。如果更改此文件，请重新启动服务器进程。
-#
-# 如果您需要有关YAML语法的帮助，以下是一些快速参考资料：
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-#站点设置
-#这些是用来个性化你的新网站。如果你查看HTML文件，
-#您将看到它们通过{{site.title}}, {{ site.email }}，以此类推。
-#您可以创建任何您想要的自定义变量，并且可以访问它们
-#在模板中通过{{ site.*** }}.
+# 欢迎查看我的配置文件
+#   划重点：配置文件在修改后不会自动重新加载，需要重启服务器进程。
+#   停止命令：组合按键Ctrl+C；
+#   重启命令：bundle exec jekyll serve
 
+# 站点信息
+#   在这里创建自定义变量，然后在模板中通过“{{site.xxx}}”进行调用。
 title: 望朝门
-email: hetieliancheng@outlook.com
-description: >- # 这意味着在“baseurl:”之前忽略换行符：
-  人对了，世界就对了。
-baseurl: "" # 站点的子路径，例如/blog
-url: "" # 站点的基本主机名和协议，例如：http://example.com
+description: 人对了，世界就对了。
+author:
+  name: wangzhaomin
+  email: hetieliancheng@outlook.com #承接展示型网站的外包工作
+baseurl: '' #调用指定路径的时候需要它，比如“header部分”中“ico图标”的路径编写
+url: "https://www.wangzhaomin.com" #配合插件“page-sitemap”使用
 
-# 生成设置
-theme: minima
+# 配置主题
+theme: minima #minima为默认主题，如果不加的话就无法启用/assets/css/style.css文件
+
+# 文章日期格式（这里是定义而非设置）
+#   补充：在循环开始前调用：{%- assign date_format = site.minima.date_format | default: "%Y年%m月%d日" -%}
+date_format: "%Y年%m月%d日"
+
+
+# 已安装插件
 plugins:
   - jekyll-feed
   - jekyll-paginate
+  - jekyll-sitemap
 
-# 分页代码
+# 分页插件-设置
 paginate: 12
 
 # 集合
+#   collections_dir: xxx 自定义合集目录，目录名为 xxx。
+#   注：自定义目录名称不能以下划线“_”开头。
+#   当启用时，需要将“_post目录（这也是合集，默认的文章合集）”也移到该目录下。
+collections_dir: docs
 collections:
-  jekyll: # 这是专题名称
-    output: true  # 允许渲染输出
-    permalink: /jekyll/:path/ # 设置文章路径
+  jekyll: # 这是集合名称，在目录中名称为“_jekyll”
+    output: true  # 是否允许集合内文档作为单个文件进行输出
+    permalink: /docs/jekyll/:title/ #设置url格式
+    # 补充：这里jekyll不会使用集合jekyll目录下的index.html，而是生成自己的index.html。
+    # 解决办法：在集合jekyll目录下的index.html上添加属性“permalink: /docs/jekyll/”。
 
-# 默认设置，文章类型不同，使用的模板也不同
+# 头信息默认值
 defaults:
-  - scope:
-      path: ""
-      type: "jekyll"
-    values:
-      layout: "jekyll"
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-  - scope:
-      path: ""
-    values:
-      layout: "default"
+  -
+    scope:  # 确认适用范围
+      path: "" # 一个空的字符串代表项目中所有的文件
+    values: # 创建变量和对应的默认值
+      abstract: "暂无摘要" # 创建变量“abstract”，内容为“暂无摘要”；
+      # 创建原因是 /docs/jekyll/index.html 调用 post.excerpt 会报错，用其他单词代替则没有问题
+      # 为此要做的：需要手动编写摘要

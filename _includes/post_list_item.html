@@ -1,4 +1,4 @@
-<article class="col post-list-item">
+<article class="col post-list-item pt-3">
     <div class="card h-100">
         <header class="card-header">
             <h2 class="card-title mb-0">
@@ -6,7 +6,7 @@
             </h2>
         </header>
         <div class="card-body">
-            {{ post.excerpt | strip_html }}
+            <p>{{ post.abstract | strip_html }}</p>
         </div>
         <footer class="card-footer">
             <small class="text-muted">{{ post.date | date: date_format }}</small>

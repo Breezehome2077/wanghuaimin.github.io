@@ -1,8 +1,7 @@
 ---
 title:  "如何在 Windos 上使用 Jekyll"  
 date:   2020-07-23 13:05 +0800
-categories: jekyll
-tags:   jekyll
+abstract: 13
 ---
 
 萌新第一次在 windows 使用 jekyll 的记录贴。

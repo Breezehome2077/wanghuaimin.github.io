@@ -1,14 +1,32 @@
 ---
 layout: default
+note: 部分语法参考（https://liquid.bootcss.com/filters/truncate/）
 ---
 <div class="container-lg">
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 post-list">
-        {%- if site.posts.size > 0 -%}
-        {%- assign date_format = site.minima.date_format | default: "%Y年%m月%d日" -%}
-        {%- for post in paginator.posts -%}
-        {%- include post_list_item.html -%}
-        {%- endfor -%}
-        {%- endif -%}
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 post-list pt-3">
+        <article class="col post-list-item">
+            <div class="card h-100">
+                <header class="card-header">
+                    <h2 class="card-title mb-0">
+                        <a href="{{ site.baseurl | relative_url }}/docs/jekyll/">《萌新的jekyll学习笔记：从零到勉强能用》v1.1</a>
+                    </h2>
+                </header>
+                <div class="card-body">
+                    <p>
+                        该笔记详细介绍了“如何在本地搭建jekyll，并将内容推送到github”的方法。
+                    </p>
+                </div>
+                <footer class="card-footer">
+                    <small class="text-muted">2021年2月16日</small>
+                </footer>
+            </div>
+        </article>
+        {% if site.posts.size > 0 %}
+        {% assign date_format = site.date_format %}
+        {% for post in paginator.posts %}
+        {% include post_list_item.html %}
+        {% endfor %}
+        {% endif %}
     </div>
-    {%- include page_paginate.html -%}
+    {% include page_paginate.html %}
 </div>

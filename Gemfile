@@ -6,16 +6,14 @@ source "https://rubygems.org"
 #     bundle exec jekyll serve
 #
 #这将有助于确保运行正确的Jekyll版本。
-# Happy Jekylling!
-#这是新的Jekyll网站的默认主题。你可以把这个改成你喜欢的任何东西。
-gem "minima", "~> 2.5"
 #如果您想使用GitHub页面，请删除上面的“gem”jekyll“”，然后
 #取消注释下面的行。若要升级，请运行“bundle update github pages”。
 gem "github-pages",group: :jekyll_plugins
 #如果你有任何插件，把它们放在这里！
 group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.12"
-  gem "jekyll-paginate", "~> 1.1.0"
+  gem "jekyll-feed"
+  gem "jekyll-paginate"
+  gem "jekyll-sitemap"
 end
 
 #Windows和JRuby不包括zoneinfo文件，所以要捆绑tzinfo数据gem以及相关联的库。

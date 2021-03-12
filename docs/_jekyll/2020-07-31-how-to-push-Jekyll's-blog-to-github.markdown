@@ -1,8 +1,7 @@
 ---
 title:  "如何将 Jekyll 博客推送到 GitHub"  
 date:   2020-07-31 15:06 +0800
-categories: jekyll
-tags:   jekyll github
+abstract: 13
 ---
 
 如何将之前搭建的 jekyll 博客和 github 两者联系起来。

@@ -1,8 +1,7 @@
 ---
 title:  "关于Jekyll的一些相关设置"  
 date:   2020-07-25 21:12 +0800
-categories: jekyll
-tags:   jekyll
+abstract: 13
 ---
 
 一些不成系统的记录。

@@ -1,8 +1,7 @@
 ---
 title:  "如何使用 jekyll 的集合（collections）功能"  
 date:   2020-09-05 10:27 +0800
-categories: jekyll
-tags:   jekyll
+abstract: 13
 ---
 
 jekyll 的集合（collections）功能相当于将围绕同一主题的多篇文章集合起来，组织成“专题”形式。
