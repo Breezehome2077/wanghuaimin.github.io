@@ -56,20 +56,24 @@ qinyuanchunxue.github.io
 
 修改前的<mark>jekyll.html</mark>主题内容：
 
-<figure class="post-body-img-wrap rounded">
-    <div class="row">
+<figure class="post-body-img-figure">
+    <div class="row justify-content-center">
         <div class="col-12 col-lg-12">
-            <img class="w-100 post-body-img" src="/assets/post/2020-09-05-how-to-use-jekyll-collections-function/jekyll-html-before.png" alt="开通 github pages 界面">
+            <a class="d-block" href="{{ site.baseurl | relative_url }}/assets/post/2020-09-05-how-to-use-jekyll-collections-function/jekyll-html-before.png" target="_blank">
+                <img class="w-100" src="{{ site.baseurl | relative_url }}/assets/post/2020-09-05-how-to-use-jekyll-collections-function/jekyll-html-before.png" alt="开通 github pages 界面 1">
+            </a>
         </div>
     </div>
 </figure>
 
 修改后的<mark>jekyll.html</mark>主题内容：
 
-<figure class="post-body-img-wrap rounded">
-    <div class="row">
+<figure class="post-body-img-figure">
+    <div class="row justify-content-center">
         <div class="col-12 col-lg-12">
-            <img class="w-100 post-body-img" src="/assets/post/2020-09-05-how-to-use-jekyll-collections-function/jekyll-html-after.png" alt="开通 github pages 界面">
+            <a class="d-block" href="{{ site.baseurl | relative_url }}/assets/post/2020-09-05-how-to-use-jekyll-collections-function/jekyll-html-after.png" target="_blank">
+                <img class="w-100" src="{{ site.baseurl | relative_url }}/assets/post/2020-09-05-how-to-use-jekyll-collections-function/jekyll-html-after.png" alt="开通 github pages 界面 2">
+            </a>
         </div>
     </div>
 </figure>
@@ -77,10 +81,12 @@ qinyuanchunxue.github.io
 其中 `{% assign mod3 = forloop.index | modulo: 2 %} *** {% if mod3 == 0 %}<div class="w-100"></div>{% endif %}`的作用是：
 每两个div后添加一个新的div。
 
-<figure class="post-body-img-wrap rounded">
-    <div class="row">
+<figure class="post-body-img-figure">
+    <div class="row justify-content-center">
         <div class="col-12 col-lg-12">
-            <img class="w-100 post-body-img" src="/assets/post/2020-09-05-how-to-use-jekyll-collections-function/jekyll-html-modulo.png" alt="开通 github pages 界面">
+            <a class="d-block" href="{{ site.baseurl | relative_url }}/assets/post/2020-09-05-how-to-use-jekyll-collections-function/jekyll-html-modulo.png" target="_blank">
+                <img class="w-100" src="{{ site.baseurl | relative_url }}/assets/post/2020-09-05-how-to-use-jekyll-collections-function/jekyll-html-modulo.png" alt="开通 github pages 界面 3">
+            </a>
         </div>
     </div>
 </figure>
@@ -94,10 +100,12 @@ qinyuanchunxue.github.io
 4. 编辑专题内容页（根目录/_layouts/jekyll.html），删除“标签”和“分类”的超链接；
 5. 访问<mark>http://localhost:4000/jekyll/</mark>即可浏览到最终效果。
 
-<figure class="post-body-img-wrap rounded">
-    <div class="row">
+<figure class="post-body-img-figure">
+    <div class="row justify-content-center">
         <div class="col-12 col-lg-12">
-            <img class="w-100 post-body-img" src="/assets/post/2020-09-05-how-to-use-jekyll-collections-function/jekyll-html-end.png" alt="开通 github pages 界面">
+            <a class="d-block" href="{{ site.baseurl | relative_url }}/assets/post/2020-09-05-how-to-use-jekyll-collections-function/jekyll-html-end.png" target="_blank">
+                <img class="w-100" src="{{ site.baseurl | relative_url }}/assets/post/2020-09-05-how-to-use-jekyll-collections-function/jekyll-html-end.png" alt="开通 github pages 界面 4">
+            </a>
         </div>
     </div>
 </figure>

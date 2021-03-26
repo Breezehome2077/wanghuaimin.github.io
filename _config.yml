@@ -27,6 +27,10 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
 
+# 代码高亮设置（https://jekyllrb.com/docs/liquid/tags/#code-snippet-highlighting）
+#   参考：https://mazhuang.org/rouge-themes/
+#   我的高亮规则是复制自 CSS-Tricks（https://css-tricks.com/）
+
 # 分页插件-设置
 paginate: 12
 
@@ -48,6 +52,7 @@ defaults:
     scope:  # 确认适用范围
       path: "" # 一个空的字符串代表项目中所有的文件
     values: # 创建变量和对应的默认值
-      abstract: "暂无摘要" # 创建变量“abstract”，内容为“暂无摘要”；
+      layout: "post" #设置默认模板为文章模板
+      abstract: "暂无摘要" # 创建变量“abstract”，内容为“暂无摘要”
       # 创建原因是 /docs/jekyll/index.html 调用 post.excerpt 会报错，用其他单词代替则没有问题
       # 为此要做的：需要手动编写摘要

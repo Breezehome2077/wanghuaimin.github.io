@@ -1,7 +1,7 @@
 ---
-title:  "给 Jekyll 添加一个标签页面"  
+title:  给 Jekyll 添加一个标签页面  
 date:   2020-07-27 18:02 +0800
-abstract: 13
+abstract: 
 ---
 
 根据[别人的方法](https://blog.fooleap.org/jekyll-tags-page.html)修改而来，稍微改改还可以做“目录页”和“时光轴”。
