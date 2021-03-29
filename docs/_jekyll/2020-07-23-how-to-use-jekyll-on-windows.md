@@ -145,9 +145,9 @@ categories: jekyll update
 <br>
 1. 对于变量 <code>categories</code> 和 <code>tags</code>，请参考这里<a href="https://jekyllrb.com/docs/posts/#tags">《标签和类别》</a>。
 <br>
-2. tag(单数形式)后面的字符串，中间有空行也算是一个，示例：tag: classic hollywood,标签为“classic hollywood”。
+2. tag(单数形式)后面的字符串，中间有空行也算是一个，示例：tag: classic hollywood，标签为“classic hollywood”。
 <br>
-3. tags(复数形式)后面的字符串，中间有空行则算为多个，示例：tags: classic hollywood,标签为“classic”和“hollywood”。
+3. tags(复数形式)后面的字符串，中间有空行则算为多个，示例：tags: classic hollywood，标签为“classic”和“hollywood”。
 </p>
 
 OK，现在我们已经了解了 [“YAML 头信息(YAML front- matter)”](http://jekyllcn.com/docs/frontmatter/)的规则，
