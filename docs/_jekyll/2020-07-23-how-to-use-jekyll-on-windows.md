@@ -276,8 +276,8 @@ tags:   jekyll
 <figure class="post-body-img-figure">
     <div class="row justify-content-center">
         <div class="col-12 col-lg-12">
-            <a class="d-block" href="{{ site.baseurl | relative_url }}/assets/post/2020-07-23-how-to-use-jekyll-on-windows/post_new.png">
-                <img class="w-100" src="{{ site.baseurl | relative_url }}/assets/post/2020-07-23-how-to-use-jekyll-on-windows/post_new.png" alt="jekyll 文章内容页修改后的最终效果图">
+            <a class="d-block" href="{{ site.baseurl | relative_url }}/assets/post/2020-07-23-how-to-use-jekyll-on-windows/post_new.jpg">
+                <img class="w-100" src="{{ site.baseurl | relative_url }}/assets/post/2020-07-23-how-to-use-jekyll-on-windows/post_new.jpg" alt="jekyll 文章内容页修改后的最终效果图">
             </a>
         </div>
     </div>

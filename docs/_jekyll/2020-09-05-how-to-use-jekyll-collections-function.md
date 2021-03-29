@@ -61,8 +61,8 @@ qinyuanchunxue.github.io
 <figure class="post-body-img-figure">
     <div class="row justify-content-center">
         <div class="col-12 col-lg-12">
-            <a class="d-block" href="{{ site.baseurl | relative_url }}/assets/post/2020-09-05-how-to-use-jekyll-collections-function/jekyll-html-before.png">
-                <img class="w-100" src="{{ site.baseurl | relative_url }}/assets/post/2020-09-05-how-to-use-jekyll-collections-function/jekyll-html-before.png" alt="jekyll 目录页的代码-修改前">
+            <a class="d-block" href="{{ site.baseurl | relative_url }}/assets/post/2020-09-05-how-to-use-jekyll-collections-function/jekyll-html-before.jpg">
+                <img class="w-100" src="{{ site.baseurl | relative_url }}/assets/post/2020-09-05-how-to-use-jekyll-collections-function/jekyll-html-before.jpg" alt="jekyll 目录页的代码-修改前">
             </a>
         </div>
     </div>
@@ -73,8 +73,8 @@ qinyuanchunxue.github.io
 <figure class="post-body-img-figure">
     <div class="row justify-content-center">
         <div class="col-12 col-lg-12">
-            <a class="d-block" href="{{ site.baseurl | relative_url }}/assets/post/2020-09-05-how-to-use-jekyll-collections-function/jekyll-html-after.png">
-                <img class="w-100" src="{{ site.baseurl | relative_url }}/assets/post/2020-09-05-how-to-use-jekyll-collections-function/jekyll-html-after.png" alt="专题 jekyll 目录页的代码-修改后">
+            <a class="d-block" href="{{ site.baseurl | relative_url }}/assets/post/2020-09-05-how-to-use-jekyll-collections-function/jekyll-html-after.jpg">
+                <img class="w-100" src="{{ site.baseurl | relative_url }}/assets/post/2020-09-05-how-to-use-jekyll-collections-function/jekyll-html-after.jpg" alt="专题 jekyll 目录页的代码-修改后">
             </a>
         </div>
     </div>
@@ -86,8 +86,8 @@ qinyuanchunxue.github.io
 <figure class="post-body-img-figure">
     <div class="row justify-content-center">
         <div class="col-12 col-lg-12">
-            <a class="d-block" href="{{ site.baseurl | relative_url }}/assets/post/2020-09-05-how-to-use-jekyll-collections-function/jekyll-html-modulo.png">
-                <img class="w-100" src="{{ site.baseurl | relative_url }}/assets/post/2020-09-05-how-to-use-jekyll-collections-function/jekyll-html-modulo.png" alt="语法 mods 的效果展示">
+            <a class="d-block" href="{{ site.baseurl | relative_url }}/assets/post/2020-09-05-how-to-use-jekyll-collections-function/jekyll-html-modulo.jpg">
+                <img class="w-100" src="{{ site.baseurl | relative_url }}/assets/post/2020-09-05-how-to-use-jekyll-collections-function/jekyll-html-modulo.jpg" alt="语法 mod 的效果展示">
             </a>
         </div>
     </div>
@@ -104,8 +104,8 @@ qinyuanchunxue.github.io
 <figure class="post-body-img-figure">
     <div class="row justify-content-center">
         <div class="col-12 col-lg-12">
-            <a class="d-block" href="{{ site.baseurl | relative_url }}/assets/post/2020-09-05-how-to-use-jekyll-collections-function/jekyll-html-end.png">
-                <img class="w-100" src="{{ site.baseurl | relative_url }}/assets/post/2020-09-05-how-to-use-jekyll-collections-function/jekyll-html-end.png" alt="专题 jekyll 的目录页效果">
+            <a class="d-block" href="{{ site.baseurl | relative_url }}/assets/post/2020-09-05-how-to-use-jekyll-collections-function/jekyll-html-end.jpg">
+                <img class="w-100" src="{{ site.baseurl | relative_url }}/assets/post/2020-09-05-how-to-use-jekyll-collections-function/jekyll-html-end.jpg" alt="专题 jekyll 的目录页效果">
             </a>
         </div>
     </div>
@@ -186,8 +186,8 @@ qinyuanchunxue.github.io
 <figure class="post-body-img-figure">
     <div class="row justify-content-center">
         <div class="col-12 col-lg-12">
-            <a class="d-block" href="{{ site.baseurl | relative_url }}/assets/post/2020-09-05-how-to-use-jekyll-collections-function/jekyll-html-after-new.png">
-                <img class="w-100" src="{{ site.baseurl | relative_url }}/assets/post/2020-09-05-how-to-use-jekyll-collections-function/jekyll-html-after-new.png" alt="专题 jekyll 目录页的代码-新">
+            <a class="d-block" href="{{ site.baseurl | relative_url }}/assets/post/2020-09-05-how-to-use-jekyll-collections-function/jekyll-html-after-new.jpg">
+                <img class="w-100" src="{{ site.baseurl | relative_url }}/assets/post/2020-09-05-how-to-use-jekyll-collections-function/jekyll-html-after-new.jpg" alt="专题 jekyll 目录页的代码-新">
             </a>
         </div>
     </div>

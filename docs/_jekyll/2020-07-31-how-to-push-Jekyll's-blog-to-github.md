@@ -129,8 +129,8 @@ OK，又回到了之前的仓库界面，继续点击 <b>Settings</b> 选项，�
 <figure class="post-body-img-figure">
     <div class="row justify-content-center">
         <div class="col-12 col-lg-12">
-            <a class="d-block" href="{{ site.baseurl | relative_url }}/assets/post/2020-07-31-how-to-push-Jekyll's-blog-to-github/public_new.png">
-                <img class="w-100" src="{{ site.baseurl | relative_url }}/assets/post/2020-07-31-how-to-push-Jekyll's-blog-to-github/public_new.png" alt="GitHub Pages 开通了">
+            <a class="d-block" href="{{ site.baseurl | relative_url }}/assets/post/2020-07-31-how-to-push-Jekyll's-blog-to-github/public_new.jpg">
+                <img class="w-100" src="{{ site.baseurl | relative_url }}/assets/post/2020-07-31-how-to-push-Jekyll's-blog-to-github/public_new.jpg" alt="GitHub Pages 开通了">
             </a>
         </div>
     </div>

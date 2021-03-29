@@ -72,8 +72,8 @@ abstract: 将所有文章的标题、标签和超链接转换成 json 格式的�
 <figure class="post-body-img-figure">
     <div class="row justify-content-center">
         <div class="col-12 col-lg-12">
-            <a class="d-block" href="{{ site.baseurl | relative_url }}/assets/post/2020-07-27-add-a-tag-page-to-jekyll/page_tags_0727.png">
-                <img class="w-100" src="{{ site.baseurl | relative_url }}/assets/post/2020-07-27-add-a-tag-page-to-jekyll/page_tags_0727.png" alt="标签页当前效果（2020年7月27日）">
+            <a class="d-block" href="{{ site.baseurl | relative_url }}/assets/post/2020-07-27-add-a-tag-page-to-jekyll/page_tags_0727.jpg">
+                <img class="w-100" src="{{ site.baseurl | relative_url }}/assets/post/2020-07-27-add-a-tag-page-to-jekyll/page_tags_0727.jpg" alt="标签页当前效果（2020年7月27日）">
             </a>
         </div>
     </div>
