@@ -30,9 +30,8 @@ end
 {% endhighlight %}
 
 <p class="post-body-mark">
-注：在编辑这一步时，有的主题在后面添加了版本（<code>gem 'jekyll-paginate', '~> 1.1.0'</code>），有的没添加；
-jekyll-paginate 这边官方书写是没有添加的（<a href="https://github.com/jekyll/jekyll-paginate#installation">点击查看</a>），
-因此这里就取消了所有的版本。
+2021.03.31 补充：在编辑这一步时，有的主题在后面添加了版本（<code>gem 'jekyll-paginate', '~> 1.1.0'</code>），有的没添加；
+个人推荐添加，版本号可以在<a href="https://pages.github.com/versions/">这里</a>找到。
 </p>
 
 3.&nbsp;编辑网站根目录下文件 <b>_config.yml</b>，找到下面的位置：
