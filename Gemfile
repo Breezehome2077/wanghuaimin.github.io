@@ -3,11 +3,11 @@ source "https://rubygems.org"
 #如果要使用其他版本，请在下面更改，保存
 #文件并运行“bundle install”。使用“bundle exec”运行Jekyll，如下所示：
 #
-#     bundle exec jekyll serve
+#     bundle exec jekyll serve(s)
 #
 #这将有助于确保运行正确的Jekyll版本。
-#如果您想使用GitHub页面，请删除上面的“gem”jekyll“”，然后
-#取消注释下面的行。若要升级，请运行“bundle update github pages”。
+#如果您想使用GitHub页面，请删除上面的“gem”jekyll“”，然后取消注释下面的行。
+#若要升级，请运行“bundle update github-pages”（划重点，“github”和“pages”之间有“-”）。
 gem "github-pages",group: :jekyll_plugins
 #如果你有任何插件，把它们放在这里！
 group :jekyll_plugins do
@@ -24,4 +24,3 @@ end
 
 #监视Windows目录的性能提升程序
 gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
-
