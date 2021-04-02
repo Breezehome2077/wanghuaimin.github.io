@@ -369,7 +369,7 @@ git push -u origin master   # 推送到线上仓库，之后直接输入 git pus
 我这边也是出现了多次，但之后推送的时候又好了，没有这个提示了；而且有提示的时候发现线上也依旧更改过来了，所以只好无视它了。
 
 附2：如果推送失败，导致再次推送时出现以下错误：`hint: Updates were rejected because the remote contains work that you do`，
-你可以执行命令 `git push origin master -f`（强制推送）即可，该命令会直接用本地数据覆盖掉远程数据，但也因此有损失数据的可能，所以请谨慎使用。
+你可以执行命令 `git push origin master -f`（强制推送），该命令会直接用本地数据覆盖掉远程数据，因此存在损失数据的可能，所以请谨慎使用（备份后再使用）。
 
 <figure class="post-body-img-figure">
     <div class="row justify-content-center">
