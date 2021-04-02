@@ -1,11 +1,11 @@
 <aside class="site-aside-wrap">
     <div class="site-aside">
         <div class="container-lg">
-            <ul class="list-unstyled mb-0 row row-cols-3 row-cols-lg-5 row-cols-xl-1">
+            <ul class="list-unstyled mb-0 row row-cols-3 row-cols-xl-1">
                 <li class="col site-aside-item">
-                    <a href='{{ site.baseurl | relative_url }}/' title="前往主页">
-                        <img class="d-none d-xl-block" src="{{ site.baseurl | relative_url }}/assets/img/home.svg" alt="">
-                        <span class="d-xl-none">前往主页</span>
+                    <a href="javascript:void(0)" onClick="javascript:history.back(-1);" title="返回上一页">
+                        <img class="d-none d-xl-block" src="{{ site.baseurl | relative_url }}/assets/img/history.svg" alt="">
+                        <span class="d-xl-none">返回上一页</span>
                     </a>
                 </li>
                 <li class="col site-aside-item">
@@ -15,21 +15,9 @@
                     </a>
                 </li>
                 <li class="col site-aside-item">
-                    <a href="https://jinshuju.net/f/JT1dBa" target="_blank" title="发现错误">
+                    <a href="mailto:wangzhaomin@wangzhaomin.com?subject=发现错误" target="_blank" title="发现错误">
                         <img class="d-none d-xl-block" src="{{ site.baseurl | relative_url }}/assets/img/email.svg" alt="">
                         <span class="d-xl-none">发现错误</span>
-                    </a>
-                </li>
-                <li class="col back-to-bottom d-none d-lg-block site-aside-item">
-                    <a href="#site-footer" title="回到底部">
-                        <img class="d-none d-xl-block" src="{{ site.baseurl | relative_url }}/assets/img/arrow-up.svg" alt="">
-                        <span class="d-xl-none">回到底部</span>
-                    </a>
-                </li>
-                <li class="col d-none d-lg-block site-aside-item">
-                    <a href="javascript:void(0)" onClick="javascript:history.back(-1);" title="返回上一页">
-                        <img class="d-none d-xl-block" src="{{ site.baseurl | relative_url }}/assets/img/history.svg" alt="">
-                        <span class="d-xl-none">返回上一页</span>
                     </a>
                 </li>
             </ul>
@@ -39,7 +27,7 @@
 <footer id="site-footer" class="site-footer">
     <div class="container-lg">
         <div class="beian">
-            <a href="javascript:void(0)" onClick="javascript:history.back(-1);" title="返回最后一个页面">艾斯登提亚羽毛</a>
+            <a href="javascript:void(0)" onClick="javascript:history.back(-1);" title="回到过去的地点">艾斯登提亚羽毛</a>
         </div>
     </div>
 </footer>

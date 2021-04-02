@@ -11,27 +11,11 @@ abstract: 之前讲的都是本地的一些设置，这次讲如何将本地网�
 2. 安装 GitBish；
 3. 运行 GitBish，克隆仓库到本地；
 4. 运行 Ruby，安装 jekyll
-   1. 进入到仓库目录， 运行命令 `bundle update` 更新环境；
-   2. 运行命令 `bundle exec jekyll s` 在当前文件夹创建站点；
-
-步骤到此结束，接下来就是修改网站内容，然后推送到 Github 观看了。
-
-另外，进行以下操作，可以避免每次推送都被要求输入账号密码的情形。
-
-<p><strong>参考文档：</strong></p>
-
-1. [《Connecting to GitHub with SSH》](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh)；
-2. [《GitHub教程 SSH keys配置》](https://blog.csdn.net/qq_36667170/article/details/79094257)；
-3. [《GitHub教程 Git Bash详细教程》](https://blog.csdn.net/qq_36667170/article/details/79085301)。
-
-<p class="post-body-mark">
-注：参考文档1为官方文档，如果看迷糊了就去看参考文档2和参考文档3。
-</p>
-
-按照官方提示一步步操作即可，就是需要注意这里：
-
-在提示输入 “passphrases” 时，一定要要输入密码，而不是直接按回车键；如果不这样的话就会卡在密码登录环节，无法实现自动登录。
-
+   1. 进入到仓库目录，运行命令 `bundle install` 安装捆绑包；
+   2. 运行命令 `bundle update github-pages`，更新环境；
+   3. 运行命令 `bundle exec jekyll s` 在当前文件夹创建站点；
+   3. <a href="{{ site.baseurl | relative_url }}/docs/jekyll/jekyll-uses-ssh-to-connect-to-github/">《配置 SSH 密钥，避免每次都要输密码》</a>。
+   
 <p class="post-body-mark">
 注：由于重装的时候没有截图，所以现在要截图的话还需要卸载然后一步步重装，显得有些麻烦；
 而且内容还和本系列的两篇文章有所冲突，但又不能替代这两篇文章，所以决定目前不做截图了，留待下次重装系统时再做。

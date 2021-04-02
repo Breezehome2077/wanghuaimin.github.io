@@ -2,13 +2,14 @@
 <html lang="zh-cn">
 {% include header.html %}
 <body>
-<div id="site-content"></div>
-<div class="page-bg">
-    <img class="page-bg-img" src="https://api.dujin.org/bing/1920.php" alt="这是背景图片">
-</div>
-<div class="page-content">
-    {{ content }}
-</div>
-{% include footer.html %}
+    {% include header_nav.html %}
+    <div id="site-content"></div>
+    <div class="page-bg">
+        <img class="page-bg-img" src="https://api.dujin.org/bing/1920.php" alt="这是背景图片">
+    </div>
+    <div class="page-content">
+        {{ content }}
+    </div>
+    {% include footer.html %}
 </body>
 </html>

@@ -111,7 +111,7 @@ qinyuanchunxue.github.io
     </div>
 </figure>
 
-另外，如果不想每次写文章都手动注明“布局的名称”，那就可以在 <b>_config.yml</b>文件底部添加以下内容：
+另外，如果不想每次写文章都手动注明“布局的名称”，那就可以在 <b>_config.yml</b> 文件底部添加以下内容：
 
 参考文档：[《Front matter defaults》](https://jekyllrb.com/docs/step-by-step/09-collections/#front-matter-defaults")
 

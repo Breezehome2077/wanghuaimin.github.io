@@ -1,0 +1,54 @@
+@charset "utf-8";
+/*屏幕宽度大于1200px*/
+
+/*全局*/
+body {
+    font-size: 1rem;
+}
+
+/*首页*/
+.header-nav .navbar {
+    padding: 1rem;
+}
+.header-nav .navbar-brand {
+    font-size: 1.5rem;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-left: 1.5rem;
+    padding-right: 0;
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+.post-list-item {
+    margin-top: 1rem;
+}
+.page-content {
+    margin-top: 5rem;
+}
+
+/*文章内容页*/
+.post-wrap {
+    max-width: 768px;
+    margin: 0 auto;
+    padding-top: 1rem;
+}
+.post-title {
+    font-size: 1.5rem;
+}
+.post-body h2,
+.post-body h3,
+.post-body h4,
+.post-body h5,
+.post-body h6 {
+    font-size: 1.25rem;
+}
+.post-body *+h2,
+.post-body *+h3,
+.post-body *+h4,
+.post-body *+h5,
+.post-body *+h6 {
+    margin-top: 3rem;
+}
+figure.highlight {
+    padding: 1.25rem;
+}

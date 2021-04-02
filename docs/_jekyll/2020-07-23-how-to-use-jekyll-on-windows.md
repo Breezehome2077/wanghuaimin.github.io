@@ -197,7 +197,7 @@ tags:   jekyll
 建议：先复制一下原文件，然后再去修改；如忘记备份，可通过<a href="https://github.com/jekyll/minima">这里</a>下载原版文件。
 </p>
 
-继续之前打开的命令行窗口，按<kbd><kbd>Ctrl</kbd> + <kbd>C</kbd></kbd>组合键2次关闭服务器，
+继续之前打开的命令行窗口，按快捷键<kbd>Ctrl+C</kbd>关闭服务器，
 然后运行命令 `bundle info --path minima` （“minima”为当前使用的默认主题名称）得到当前主题的所在地址：C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/minima-2.5.1。
 
 <p class="post-body-mark">

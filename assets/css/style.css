@@ -15,6 +15,12 @@ a,a:hover,a:focus {
     text-decoration: none;
     box-shadow: none;
 }
+button {
+    outline: #fff;
+}
+button:focus {
+    outline: none;
+}
 /*页面背景*/
 .page-bg {
     position: fixed;
@@ -44,8 +50,38 @@ a,a:hover,a:focus {
     object-fit: cover;
     filter: grayscale(100%);
 }
+/*页眉导航*/
+.header-nav {
+    background-color: #cd2653;
+}
+.header-nav a,
+.header-nav a:hover,
+.header-nav a:focus {
+    color: #fff;
+}
+.header-nav .navbar-brand {
+    padding: 0;
+    color: #fff;
+    font-weight: bold;
+}
+.header-nav .nav-link.disabled {
+    color: rgba(255,255,255,.5);
+}
+.header-nav .navbar-toggler {
+    padding: 0;
+}
+.header-nav-menu-icon {
+    width: 1.5rem;
+    height: 1.25rem;
+    border-top: .25rem solid #fff;
+    border-bottom: .25rem solid #fff;
+    background-color: #fff;
+    padding: .25rem 0;
+    background-clip:content-box;
+}
 /*首页*/
 .page-content {
+    margin-top: 3rem;
     padding-top: .5rem;
 }
 .post-wrap {
@@ -122,14 +158,14 @@ a,a:hover,a:focus {
 }
 .post-title {
     color: #cd2653;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 .post-body h2,
 .post-body h3,
 .post-body h4,
 .post-body h5,
 .post-body h6 {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: bold;
 }
 .post-body h2::before {
@@ -219,14 +255,6 @@ figure.highlight pre {
 }
 figure.highlight pre span {
     color: #fff;
-}
-@media (min-width: 992px) {
-    figure.highlight {
-        padding: 3rem 4rem 0;
-    }
-    figure.highlight pre {
-        padding-bottom: 3rem;
-    }
 }
 /*高亮颜色设置*/
 .highlight pre { background-color: #001628; }
