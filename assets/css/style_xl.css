@@ -26,6 +26,49 @@
         margin-top: 5rem;
     }
 
+    /*侧边栏*/
+    .site-aside-wrap {
+        top: 40%;
+        right: 2rem;
+        bottom: auto;
+        left: auto;
+        width: 3.5rem;
+        overflow: hidden;
+        border-radius: .25rem;
+        opacity: 1;
+    }
+    .site-aside {
+        margin-bottom: 0;
+        height: auto;
+    }
+    .site-aside-item {
+        width: 3.5rem;
+        height: 3.5rem;
+        padding: 1rem 1rem 0;
+    }
+    .site-aside-item a {
+        width: 1.5rem;
+        height: 2.5rem;
+        padding-bottom: 1rem;
+        border-right: none;
+        border-bottom: 1px solid rgba(0,0,0,.1);
+    }
+    .site-aside-item:nth-child(4) a {
+        border-bottom: none;
+    }
+    .site-aside-item a img {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .site-aside-item-bottom-down-icon {
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+
+
     /*文章内容页*/
     .post-wrap {
         max-width: 768px;

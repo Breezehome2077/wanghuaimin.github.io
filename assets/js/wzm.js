@@ -3,7 +3,7 @@ $(document).ready(function(){
     // 向下滚动时，隐藏该DIV
     // 附相关介绍一篇：https://www.smashingmagazine.com/2018/08/scroll-bouncing-websites/
     let screen_w=window.innerWidth;
-    if (screen_w <= 1140) {
+    if (screen_w <= 1200) {
         let p=0,t=0;
         $(window).scroll(function(){
             p = $(this).scrollTop();
