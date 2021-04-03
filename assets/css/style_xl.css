@@ -26,6 +26,7 @@
         margin-top: 5rem;
     }
 
+
     /*侧边栏*/
     .site-aside-wrap {
         top: 40%;
@@ -94,5 +95,12 @@
     }
     figure.highlight {
         padding: 1.25rem;
+    }
+
+    /*底部提示语 羽毛*/
+    .beian {
+        max-width: 768px;
+        margin: 0 auto;
+        text-align: center;
     }
 }
