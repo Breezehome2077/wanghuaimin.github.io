@@ -7,16 +7,8 @@
     }
 
     /*首页*/
-    .header-nav .navbar {
-        padding: 1rem;
-    }
-    .header-nav .navbar-brand {
-        font-size: 1.5rem;
-    }
-    .navbar-expand-lg .navbar-nav .nav-link {
-        padding-left: 1.5rem;
-        padding-right: 0;
-        font-size: 1.125rem;
+    .header-nav .nav-link {
+        padding: 0 0 0 1.5rem !important;
         font-weight: bold;
     }
     .post-list-item {
@@ -54,12 +46,12 @@
         border-right: none;
         border-bottom: 1px solid rgba(0,0,0,.1);
     }
-    .site-aside-item:nth-child(4) a {
+    .site-aside .site-aside-item:last-child a {
         border-bottom: none;
     }
     .site-aside-item a img {
-        width: 1.5rem;
-        height: 1.5rem;
+        width: 1.3rem;
+        height: 1.3rem;
     }
     .site-aside-item-bottom-down-icon {
         -webkit-transform: rotate(180deg);
@@ -93,14 +85,39 @@
     .post-body *+h6 {
         margin-top: 3rem;
     }
-    figure.highlight {
-        padding: 1.25rem;
-    }
 
     /*底部提示语 羽毛*/
     .beian {
         max-width: 768px;
         margin: 0 auto;
         text-align: center;
+    }
+
+    .highlight {
+        padding: 1.25rem 1.25rem 1rem;
+    }
+    .highlight pre {
+        padding-bottom: .25rem;
+    }
+    /*滚动条样式设置 属性介绍：https://webkit.org/blog/363/styling-scrollbars/ */
+    .highlight pre::-webkit-scrollbar {
+        /* width 表示垂直滚动条的宽度*/
+        width: .5rem;
+        /* height 表示水平滚动条的高度*/
+        height: .5rem;
+    }
+    /*滚动条的样式*/
+    .highlight pre::-webkit-scrollbar-thumb {
+        border-radius: 50rem;
+        background-color: rgba(255,255,255,.3);
+    }
+    /*滚动条轨道的样式*/
+    .highlight pre::-webkit-scrollbar-track {
+        background: #001628;
+    }
+    /* 滚动条样式 —— 新兴的W3C标准，目前只有火狐支持 */
+    .highlight pre {
+        scrollbar-width: thin;
+        scrollbar-color: rgba(255,255,255,.3);
     }
 }

@@ -5,10 +5,12 @@ permalink: /docs/jekyll/
 tag: hidden
 note: 本页摘要部分使用“post.excerpt”会提示报错，但将excerpt换成别的单词后就没有问题了；谷歌说是无限循环，但不知道为什么会产生无限循环。
 ---
+
 <div class="container-lg">
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 post-list">
         {% assign date_format = site.date_format %}
-        {% for post in site.jekyll -%}
+        {% assign sortJekyll = site.jekyll | sort: "order" %}
+        {% for post in sortJekyll %}
         {% if post.tag contains "hidden" %}
         {% else %}
         {% include post_list_item.html %}

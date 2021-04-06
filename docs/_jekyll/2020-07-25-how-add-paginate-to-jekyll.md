@@ -1,7 +1,8 @@
 ---
-title:  如何在 Jekyll 上添加分页功能  
+title:  功能：如何在 Jekyll 上添加分页功能  
 date: 2020-07-25 16:39 +0800
 abstract: 在 Jekyll v4.1.1 上实现，应该兼容后续版本。
+order:   4
 ---
 
 ## 安装分页插件 jekyll-paginate
@@ -48,7 +49,7 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   
-paginate: 12    #数字12表示每页显示的数量
+paginate: 12    # 数字12表示每页显示的数量
 {% endhighlight %}
 
 ## 修改和添加代码
@@ -125,8 +126,8 @@ paginate: 12    #数字12表示每页显示的数量
 <figure class="post-body-img-figure">
     <div class="row justify-content-center">
         <div class="col-12 col-lg-12">
-            <a class="d-block" href="{{ site.baseurl | relative_url }}/assets/post/2020-07-23-how-to-use-jekyll-on-windows/page_paginate.png">
-                <img class="w-100" src="{{ site.baseurl | relative_url }}/assets/post/2020-07-23-how-to-use-jekyll-on-windows/page_paginate.png" alt="jekyll 分页效果展示">
+            <a class="d-block" href="{{ site.baseurl | relative_url }}/assets/post/2020-07-23-how-to-use-jekyll-on-windows/page_paginate.jpg">
+                <img class="w-100" src="{{ site.baseurl | relative_url }}/assets/post/2020-07-23-how-to-use-jekyll-on-windows/page_paginate.jpg" alt="jekyll 分页效果展示">
             </a>
         </div>
     </div>

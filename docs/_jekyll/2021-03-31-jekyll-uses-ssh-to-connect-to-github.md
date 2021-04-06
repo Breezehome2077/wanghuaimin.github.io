@@ -1,7 +1,8 @@
 ---
-title: Jekyll 通过 SSH 链接到 GitHub
+title: 教程：Jekyll 通过 SSH 链接到 GitHub
 date: 2021-03-31 12:53 +0800
 abstract: 使用 SSH 密钥连接到 GitHub 后就不用每次推送都要输入账号和密码了。
+order:   3
 ---
 
 ## 第一步：创建 SSH密钥
@@ -30,8 +31,8 @@ eval "ssh-agent -s"
 &nbsp;&nbsp;&nbsp;&nbsp;2.&nbsp;自动启动 SSH 代理（不用每次推送都要输密码）
 
 {% highlight ruby %}
-#在您的用户文件夹（C:/User/username）中创建文件 “.profile”。
-#文件内容如下：
+# 在您的用户文件夹（C:/User/username）中创建文件 “.profile”。
+# 文件内容如下：
 env=~/.ssh/agent.env
 
 agent_load_env () { test -f "$env" && . "$env" >| /dev/null ; }
@@ -56,7 +57,7 @@ unset env
 {% endhighlight %}
 
 {% highlight ruby %}
-#添加完文件后执行下面的命令，然后重启 Git Bash。
+# 添加完文件后执行下面的命令，然后重启 Git Bash。
 ssh-agent ~/.profile
 {% endhighlight %}
 

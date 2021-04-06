@@ -1,5 +1,5 @@
 ---
-title: 如何替换 WordPress 原有的 JQuery 版本
+title: 技巧：如何替换 WordPress 原有的 JQuery 版本
 date: 2020-08-03 08:40 +0800
 abstract: 自wordpress 5.6发布后，jquery脚本已升级到最新，无需再进行手动替换。
 ---

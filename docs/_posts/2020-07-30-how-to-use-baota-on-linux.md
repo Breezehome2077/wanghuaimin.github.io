@@ -1,5 +1,5 @@
 ---
-title: 如何在 Linux 系统上使用宝塔面板  
+title: 教程：如何在 Linux 系统上使用宝塔面板  
 date: 2020-07-30 11:25 +0800
 abstract: 萌新第一次使用宝塔面板的记录贴。
 ---
@@ -22,7 +22,7 @@ yum install -y wget && wget -O install.sh http://download.bt.cn/install/install_
 
 {% highlight plaintext %}
 /etc/init.d/bt start    # 启动宝塔
-bt  #运行宝塔工具箱，之后选择“选项14”即可。
+bt  # 运行宝塔工具箱，之后选择“选项14”即可。
 {% endhighlight %}
 
 <figure class="post-body-img-figure">

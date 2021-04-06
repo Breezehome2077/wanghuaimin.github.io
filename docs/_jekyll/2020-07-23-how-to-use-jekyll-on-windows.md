@@ -1,7 +1,8 @@
 ---
-title:  如何在 Windos 上使用 Jekyll  
+title:  教程：如何在 Windos 上使用 Jekyll  
 date:   2020-07-23 13:05 +0800
 abstract: 记录第一次安装 Jekyll 的过程。
+order:   1
 ---
 
 ## 安装 Jekyll
@@ -32,13 +33,13 @@ abstract: 记录第一次安装 Jekyll 的过程。
 
 {% highlight ruby %}
 
-gem install jekyll bundler  #安装 Jekyll 和 bundler、gems
+gem install jekyll bundler  # 安装 Jekyll 和 bundler、gems
 
-gem jekyll new myblog   #建立站点“myblog”
+gem jekyll new myblog   # 建立站点“myblog”
     
-cd myblog   #转到站点目录
+cd myblog   # 转到站点目录
     
-bundle exec jekyll serve(s)    #运行站点
+bundle exec jekyll serve(s)    # 运行站点
 
 {% endhighlight %}
 

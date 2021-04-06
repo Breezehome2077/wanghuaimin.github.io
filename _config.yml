@@ -46,13 +46,13 @@ collections:
     # 补充：这里jekyll不会使用集合jekyll目录下的index.html，而是生成自己的index.html。
     # 解决办法：在集合jekyll目录下的index.html上添加属性“permalink: /docs/jekyll/”。
 
-# 头信息默认值
+# 头信息的默认值设置
 defaults:
   -
     scope:  # 确认适用范围
       path: "" # 一个空的字符串代表项目中所有的文件
     values: # 创建变量和对应的默认值
-      layout: "post" #设置默认模板为文章模板
+      layout: "post" # 设置默认模板为文章模板
       abstract: "暂无摘要" # 创建变量“abstract”，内容为“暂无摘要”
       # 创建原因是 /docs/jekyll/index.html 调用 post.excerpt 会报错，用其他单词代替则没有问题
       # 为此要做的：需要手动编写摘要
