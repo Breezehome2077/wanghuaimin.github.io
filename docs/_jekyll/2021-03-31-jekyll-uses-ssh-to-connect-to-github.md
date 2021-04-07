@@ -30,7 +30,7 @@ eval "ssh-agent -s"
 
 &nbsp;&nbsp;&nbsp;&nbsp;2.&nbsp;自动启动 SSH 代理（不用每次推送都要输密码）
 
-{% highlight ruby %}
+{% highlight plaintext %}
 # 在您的用户文件夹（C:/User/username）中创建文件 “.profile”。
 # 文件内容如下：
 env=~/.ssh/agent.env

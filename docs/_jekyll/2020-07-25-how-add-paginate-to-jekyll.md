@@ -2,7 +2,7 @@
 title:  功能：如何在 Jekyll 上添加分页功能  
 date: 2020-07-25 16:39 +0800
 abstract: 在 Jekyll v4.1.1 上实现，应该兼容后续版本。
-order:   4
+order:   11
 ---
 
 ## 安装分页插件 jekyll-paginate

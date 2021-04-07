@@ -2,7 +2,7 @@
 title:  功能：如何使用 jekyll 的 Collections 功能  
 date:   2020-09-05 10:27 +0800
 abstract: 将和同一主题相关的多篇文章集合起来，组织成“专题”的形式。
-order:   6
+order:   13
 ---
 
 <p class="post-body-mark">
