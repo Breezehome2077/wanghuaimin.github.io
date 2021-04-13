@@ -18,7 +18,7 @@ order:   3
 ssh-keygen -p -f ~/.ssh/id_ed25519
 {% endhighlight %}
 
-### 将密钥添加SSH代理
+## 第二步：将密钥添加 SSH 代理
 
 1.&nbsp;启动 SSH 代理
 
@@ -78,8 +78,8 @@ ssh-add ~/.ssh/id_ed25519
 <figure class="post-body-img-figure">
     <div class="row justify-content-center">
         <div class="col-12 col-lg-12">
-            <a class="d-block" href="{{ site.baseurl | relative_url }}/assets/post/2021-03-31-jekyll-uses-ssh-to-connect-to-github /github-ssh-key-settings.jpg">
-                <img class="w-100" src="{{ site.baseurl | relative_url }}/assets/post/2021-03-31-jekyll-uses-ssh-to-connect-to-github /github-ssh-key-settings.jpg" alt="GitHub SSH密钥设置">
+            <a class="d-block" href="{{ site.baseurl | relative_url }}/assets/post/2021-03-31-jekyll-uses-ssh-to-connect-to-github/github-ssh-key-settings.jpg">
+                <img class="w-100" src="{{ site.baseurl | relative_url }}/assets/post/2021-03-31-jekyll-uses-ssh-to-connect-to-github/github-ssh-key-settings.jpg" alt="GitHub SSH密钥设置">
             </a>
         </div>
     </div>
@@ -93,8 +93,8 @@ ssh-add ~/.ssh/id_ed25519
 <figure class="post-body-img-figure">
     <div class="row justify-content-center">
         <div class="col-12 col-lg-12">
-            <a class="d-block" href="{{ site.baseurl | relative_url }}/assets/post/2021-03-31-jekyll-uses-ssh-to-connect-to-github /jekyll-set-up-ssh-successfully.png">
-                <img class="w-100" src="{{ site.baseurl | relative_url }}/assets/post/2021-03-31-jekyll-uses-ssh-to-connect-to-github /jekyll-set-up-ssh-successfully.png" alt="jekyll 设置SSH密钥成功">
+            <a class="d-block" href="{{ site.baseurl | relative_url }}/assets/post/2021-03-31-jekyll-uses-ssh-to-connect-to-github/jekyll-set-up-ssh-successfully.png">
+                <img class="w-100" src="{{ site.baseurl | relative_url }}/assets/post/2021-03-31-jekyll-uses-ssh-to-connect-to-github/jekyll-set-up-ssh-successfully.png" alt="jekyll 设置SSH密钥成功">
             </a>
         </div>
     </div>
