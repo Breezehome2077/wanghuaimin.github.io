@@ -1,5 +1,5 @@
 ---
-title:  教程：如何将 Jekyll 博客推送到 GitHub  
+title:  教程：将 Jekyll 博客推送到 GitHub  
 date:   2020-07-31 15:06 +0800
 abstract: 之前讲的都是本地的一些设置，这次讲如何将本地网站放到网上。
 order:   2
