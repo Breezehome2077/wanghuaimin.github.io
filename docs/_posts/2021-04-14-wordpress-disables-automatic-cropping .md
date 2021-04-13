@@ -10,14 +10,14 @@ abstract: wordpress 5.7 测试有效，复制代码到主题的 functions.php �
 
 禁止是不能禁止的，只能说：如何不触发 WordPress 的图片自动裁剪操作。
 
-首先，我们要明确 WordPress 对图片进行自动裁剪的原因是：上传的图片尺寸与 WordPress 内注册的图片尺寸不同，
+首先，我们要明确 WordPress 对图片进行自动裁剪的原因是：上传的图片尺寸与 WordPress 内注册的图片尺寸不同; 
 当上传图片尺寸大于注册的图片时， WordPress 就会对上传图片进行裁剪，生成符合注册尺寸要求的副本图片。 
 
-因此，我们搜索的关键词就是 “WordPress abc 图片尺寸”，<b>abc</b> 可以是“删除”，可以是“移除”，也可以是其他同义词。
+因此，我们搜索的关键词就是 “WordPress abc 图片尺寸”，“abc” 可以是“删除”，可以是“移除”，也可以是其他同义词。
 
-然后，我们就可以通过搜索引擎搜索关键词了，只要多搜搜就可以查到删除注册尺寸的方式有两种：`unset()` 和 `remove_image_size()`。
+然后，我们就可以通过搜索引擎搜索关键词了，只要多搜搜就可以查到删除注册尺寸的方式有两种，分别是 `unset()` 和 `remove_image_size()`。
 
-示例：
+示例1：
 
 {% highlight php %}
 // unset()
@@ -28,6 +28,8 @@ function paulund_remove_default_image_sizes( $sizes) {
 add_filter('intermediate_image_sizes_advanced', 'paulund_remove_default_image_sizes');
 {% endhighlight %}
 
+示例2：
+
 {% highlight php %}
 // remove_image_size()
 add_filter( 'init', 'wzm_disable_auto_crop_img' );
@@ -36,21 +38,11 @@ function wzm_disable_auto_crop_img() {
 }
 {% endhighlight %}
 
-接下来，我们要为 WordPress 安装插件 <b>Regenerate thumbnail</b>，来检测代码是否起效。
+接下来，我们要检测代码是否管用；该步骤要通过 WordPress 插件 <b>Regenerate thumbnail</b> 来实现。
 
-等待插件安装完成后，点击启用，进入插件管理页面，就可以在页面的下方看到当前 WordPress 内注册图片有哪些了。
+进入后台，安装并启用插件 “Regenerate thumbnail”；在插件的管理页面可以看到当前 WordPress 内注册图片尺寸有哪些了。
 
-<figure class="post-body-img-figure">
-    <div class="row justify-content-center">
-        <div class="col-12 col-lg-12">
-            <a class="d-block" href="{{ site.baseurl | relative_url }}/assets/post/2021-04-14-wordpress-disables-automatic-cropping/all-thumbnail-sizes.png">
-                <img class="w-100" src="{{ site.baseurl | relative_url }}/assets/post/2021-04-14-wordpress-disables-automatic-cropping/all-thumbnail-sizes.png" alt="WordPress 已注册的图片尺寸 一览">
-            </a>
-        </div>
-    </div>
-</figure>
-
-在将前面提到的两段代码复制到主题的 functions.php 文件后，我们可以看到：
+然后将前面提到的两段代码复制到主题的 functions.php 文件后，我们可以看到：
 
 1. “thumbnail” 的注册大小依旧和“设置-媒体”中的图片尺寸大小相同（这里我设置的是 996）;
 2. “2048x2048” 的注册大小还是 2048x2048;
@@ -68,16 +60,6 @@ function wzm_disable_auto_crop_img() {
     add_image_size( 'small', 0, 0, false ); // false 表示：不使用自动裁剪功能
 }
 {% endhighlight %}
-
-<figure class="post-body-img-figure">
-    <div class="row justify-content-center">
-        <div class="col-12 col-lg-12">
-            <a class="d-block" href="{{ site.baseurl | relative_url }}/assets/post/2021-04-14-wordpress-disables-automatic-cropping/thumbnail-small-size.png">
-                <img class="w-100" src="{{ site.baseurl | relative_url }}/assets/post/2021-04-14-wordpress-disables-automatic-cropping/thumbnail-small-size.png" alt="WordPress 注册图片尺寸small">
-            </a>
-        </div>
-    </div>
-</figure>
 
 这样一通操作下来之后，大部分注册尺寸就搞定了，但还是有几个需要额外设置，他们分别是：
 “thumbnail”（缩略图大小/原图）、“meidum”（中等尺寸/300px）、"medium-large"（隐藏起来的768px）和 "large"（大尺寸/1024px）。
