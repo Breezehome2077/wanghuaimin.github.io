@@ -5,7 +5,8 @@ abstract: wordpress 5.7 测试有效，复制代码到主题的 functions.php �
 ---
 
 <p class="post-body-mark">
-    20210414 补充：完整代码见文章末尾。
+    20210414 补充1：完整代码见文章末尾。<br>
+    20210414 补充2：代码中的crop项表示的是自动裁剪的方式：“0”表示按比例进行裁剪；“1”表示直接裁剪。
 </p>
 
 禁止是不能禁止的，只能说：如何不触发 WordPress 的图片自动裁剪操作。
@@ -57,7 +58,7 @@ function wzm_disable_auto_crop_img() {
 add_filter( 'init', 'wzm_disable_auto_crop_img' );
 function wzm_disable_auto_crop_img() {
     remove_image_size( 'small'); // 150px
-    add_image_size( 'small', 0, 0, false ); // false 表示：不使用自动裁剪功能
+    add_image_size( 'small', 0, 0, false );     // false 表示：按比例大小裁剪；true 表示：直接裁剪（中心为左下角）。
 }
 {% endhighlight %}
 
@@ -76,7 +77,7 @@ function wzm_disable_auto_crop_img() {
 // 从 “wp-admin/options.php” 中可以看到长、宽、自动裁剪是分开进行设置的。
 update_option( 'thumbnail_size_w', 0 );
 update_option( 'thumbnail_size_h', 0 );
-update_option( 'thumbnail_crop', 0 );   // 自动裁剪：“0”表示关闭；“1”表示开启。
+update_option( 'thumbnail_crop', 0 );   // 自动裁剪方式：“0”表示按比例进行裁剪；“1”表示直接裁剪。
 {% endhighlight %}
 
 至此，所有的注册尺寸我们就都搞定了。
@@ -111,7 +112,7 @@ function wzm_disable_auto_crop_img() {
 // 注意：update_option()函数设置的值会覆盖掉“后台-设置-媒体”中的值
 update_option( 'thumbnail_size_w', 0 );
 update_option( 'thumbnail_size_h', 0 );
-update_option( 'thumbnail_crop', 0 );   // 自动裁剪：“0”表示关闭；“1”表示开启。
+update_option( 'thumbnail_crop', 0 );   // 自动裁剪方式：“0”表示按比例进行裁剪；“1”表示直接裁剪。
 update_option( 'medium_size_w', 0 );
 update_option( 'medium_size_h', 0 );
 update_option( 'medium_large_size_w', 0 );  // 隐藏起来的 “768px”。
