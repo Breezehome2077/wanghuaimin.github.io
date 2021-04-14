@@ -94,7 +94,7 @@ ssh-add ~/.ssh/id_ed25519
     <div class="row justify-content-center">
         <div class="col-12 col-lg-12">
             <a class="d-block" href="{{ site.baseurl | relative_url }}/assets/post/2021-03-31-jekyll-uses-ssh-to-connect-to-github/jekyll-set-up-ssh-successfully.png">
-                <img class="w-100" src="{{ site.baseurl | relative_url }}/assets/post/2021-03-31-jekyll-uses-ssh-to-connect-to-github/jekyll-set-up-ssh-successfully.png" alt="jekyll 设置SSH密钥成功">
+                <img class="w-100" src="{{ site.baseurl | relative_url }}/assets/post/2021-03-31-jekyll-uses-ssh-to-connect-to-github/jekyll-set-up-ssh-successfully.png" alt="jekyll 设置 SSH 密钥成功">
             </a>
         </div>
     </div>
