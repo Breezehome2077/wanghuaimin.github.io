@@ -5,8 +5,12 @@ abstract: wordpress 5.7 测试有效，复制代码到主题的 functions.php �
 ---
 
 <p class="post-body-mark">
-    20210414 补充1：完整代码见文章末尾。<br>
-    20210414 补充2：代码中的crop项表示的是自动裁剪的方式：“0”表示按比例进行裁剪；“1”表示直接裁剪。
+    20210414 补充1：完整代码见文章末尾。
+</p>
+<p class="post-body-mark">
+    20210414 补充2：代码中的crop项表示的是自动裁剪的方式：“0”表示按比例进行裁剪；“1”表示直接裁剪；
+默认的裁剪中心为左下角，你可以通过将crop项设置为 <b>array( 'left', 'top' )</b> 的方式来进行调整。
+更多介绍，请参考<a href="https://developer.wordpress.org/reference/functions/add_image_size/">官网对add_image_size()函数的说明</a>。
 </p>
 
 禁止是不能禁止的，只能说：如何不触发 WordPress 的图片自动裁剪操作。
@@ -49,7 +53,7 @@ function wzm_disable_auto_crop_img() {
 2. “2048x2048” 的注册大小还是 2048x2048;
 3. 已注册的图片尺寸 "small" 不见了。
 
-所以，我们要使用的代码是 `remove_image_size()`，但由于注册的尺寸其他插件可能会用到，
+所以，我们要使用的代码是 `remove_image_size()`；但由于注册的尺寸其他插件可能会用到，
 例如：Woocommerce 的画廊功能就要用到 <b>woocommerce_gallery_thumbnail</b>）。
 因此我们用 `add_image_size()` 来注册一个具有相同名称，但尺寸为“0x0”的新的图片尺寸
 （尺寸设置为0x0，就可以保证上传图片大于图片尺寸了）。
@@ -58,7 +62,7 @@ function wzm_disable_auto_crop_img() {
 add_filter( 'init', 'wzm_disable_auto_crop_img' );
 function wzm_disable_auto_crop_img() {
     remove_image_size( 'small'); // 150px
-    add_image_size( 'small', 0, 0, false );     // false 表示：按比例大小裁剪；true 表示：直接裁剪（中心为左下角）。
+    add_image_size( 'small', 0, 0, false );     // false 表示：按比例大小裁剪；true 表示：直接裁剪。
 }
 {% endhighlight %}
 

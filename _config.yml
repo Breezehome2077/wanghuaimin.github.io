@@ -45,6 +45,9 @@ collections:
     permalink: /docs/jekyll/:title/ #设置url格式
     # 补充：这里jekyll不会使用集合jekyll目录下的index.html，而是生成自己的index.html。
     # 解决办法：在集合jekyll目录下的index.html上添加属性“permalink: /docs/jekyll/”。
+  wpseo:  #记录自己为wp进行seo优化的实行的一系列工作
+      output: true
+      permalink: /docs/wpseo/:title/
 
 # 头信息的默认值设置
 defaults:
