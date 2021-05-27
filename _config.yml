@@ -6,7 +6,7 @@
 # 站点信息
 #   在这里创建自定义变量，然后在模板中通过“{{site.xxx}}”进行调用。
 title: 望朝门
-description: 人对了，世界就对了。
+description: 人的一生应该这样度过:回首往事,他不会因为虚度年华而悔恨,也不会因为碌碌无为而羞愧。
 author:
   name: wangzhaomin
   email: hetieliancheng@outlook.com #承接展示型网站的外包工作
@@ -45,9 +45,9 @@ collections:
     permalink: /docs/jekyll/:title/ #设置url格式
     # 补充：这里jekyll不会使用集合jekyll目录下的index.html，而是生成自己的index.html。
     # 解决办法：在集合jekyll目录下的index.html上添加属性“permalink: /docs/jekyll/”。
-  wpseo:  #记录自己为wp进行seo优化的实行的一系列工作
+  wordpress:  #记录自己为wp进行seo优化的实行的一系列工作
       output: true
-      permalink: /docs/wpseo/:title/
+      permalink: /docs/wordpress/:title/
 
 # 头信息的默认值设置
 defaults:

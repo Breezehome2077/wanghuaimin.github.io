@@ -1,10 +1,23 @@
 ---
-layout: page
-title: 记录：博客历史  
-date: 2020-07-30 13:21 +0800
-abstract: 历次修改的时间和原因。
-permalink: /blog-history/
+layout:        page
+title:         记录：博客历史  
+date:          2020-07-30 13:21 +0800
+description:   历次修改的时间和原因。
+permalink:     /blog-history/
 ---
+
+## 2021.05.27
+1. 关于对齐：
+   1. 页面的头部信息，用 tab键 做好对齐，以属性 `description` 为基准，四个空格的距离。
+   2. 其他地方，能对齐就对齐；不能全对齐也要争取能对齐大部分。
+2. 2021.03.12 提到 post.excerpt 调用错误，改成 post.description 后调用同样正常；
+   同时页面也能正确显示页面描述了。
+3. 关于自定义排序（order）：
+   1. 教程：0    - 1000
+   2. 功能：1001 - 2000
+   3. 技巧：2001 - 3000
+   4. 代码块（wordpress）：3001 - 4000
+   5. 代码块（woocommerce）：4001 - 5000
 
 ## 2021.04.06
 1. PC端顶部导航宽度变小，并为链接添加 `title` 属性；

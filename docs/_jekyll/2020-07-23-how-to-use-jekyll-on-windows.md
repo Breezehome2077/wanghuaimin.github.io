@@ -1,8 +1,8 @@
 ---
-title:  教程：如何在 Windos 上使用 Jekyll  
-date:   2020-07-23 13:05 +0800
-abstract: 记录第一次安装 Jekyll 的过程。
-order:   1
+title:         教程：在 Windos 上使用 Jekyll  
+date:          2020-07-23 13:05 +0800
+description:   记录第一次安装 Jekyll 的过程。
+order:         1
 ---
 
 ## 安装 Jekyll

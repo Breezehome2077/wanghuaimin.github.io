@@ -1,7 +1,8 @@
 ---
-title: 技巧：如何禁止 WordPress 的图片自动裁剪功能
-date: 2021-04-14 05:26 +0800
-abstract: wordpress 5.7 测试有效，复制代码到主题的 functions.php 文件即可。
+title:          技巧：禁止 WordPress 的图片自动裁剪功能
+date:           2021-04-14 05:26 +0800
+description:    测试版本 WP 5.7.2 测试有效，复制代码到主题的 functions.php 文件即可。
+order:          2002
 ---
 
 <p class="post-body-mark">
@@ -43,7 +44,7 @@ function wzm_disable_auto_crop_img() {
 }
 {% endhighlight %}
 
-接下来，我们要检测代码是否管用；该步骤要通过 WordPress 插件 <b>Regenerate thumbnail</b> 来实现。
+接下来，我们要检测代码是否管用，该步骤通过 WordPress 插件 <b>Regenerate thumbnail</b> 来实现。
 
 进入后台，安装并启用插件 “Regenerate thumbnail”；在插件的管理页面可以看到当前 WordPress 内注册图片尺寸有哪些了。
 
@@ -54,9 +55,9 @@ function wzm_disable_auto_crop_img() {
 3. 已注册的图片尺寸 "small" 不见了。
 
 所以，我们要使用的代码是 `remove_image_size()`；但由于注册的尺寸其他插件可能会用到，
-例如：Woocommerce 的画廊功能就要用到 <b>woocommerce_gallery_thumbnail</b>）。
-因此我们用 `add_image_size()` 来注册一个具有相同名称，但尺寸为“0x0”的新的图片尺寸
-（尺寸设置为0x0，就可以保证上传图片大于图片尺寸了）。
+例如：Woocommerce 的画廊功能就要用到 <b>woocommerce_gallery_thumbnail</b>；
+因此我们就用 `add_image_size()` 来注册一个具有相同名称，但长宽为“0x0”的新的图片尺寸
+（尺寸设置为0x0，就可以保证上传图片百分百大于注册的图片尺寸了）。
 
 {% highlight php %}
 add_filter( 'init', 'wzm_disable_auto_crop_img' );
@@ -75,7 +76,7 @@ function wzm_disable_auto_crop_img() {
 然后回车打开设置页面，接下来按快捷键 <kbd>CTRL+F</kbd> 搜索 “medium_large_size_w”，找到后将数值“768”改为“0”，
 最后点击页面底部的保存按钮，进行保存即可。
 
-如果客户对这方面没有需要的话，可以使用函数 update_option() 进行设置（该设置会覆盖掉“后台-设置-媒体”中的设置）。
+如果客户对这方面没有需要的话，可以使用函数 update_option() 进行设置，但需要注意的是该设置会覆盖掉上面的操作，也就是说客户不能自己在后台进行更改了。
 
 {% highlight php %}
 // 从 “wp-admin/options.php” 中可以看到长、宽、自动裁剪是分开进行设置的。
@@ -91,7 +92,7 @@ update_option( 'thumbnail_crop', 0 );   // 自动裁剪方式：“0”表示按
 {% highlight php %}
 //  禁用图片自动裁剪
 //  添加完代码后，新上传的图片会接受此设置，
-//  但之前上传的图片，需要手动删除或者使用插件 Regenerate thumbnail 进行删除。
+//  但之前上传的图片，需要手动删除或者使用插件 Regenerate thumbnail 进行重新生成。
 add_filter( 'init', 'wzm_disable_auto_crop_img' );
 function wzm_disable_auto_crop_img() {
     remove_image_size( 'small'); // 150px
