@@ -2,7 +2,7 @@
 title:          教程：Jekyll 通过 SSH 链接到 GitHub
 date:           2021-03-31 12:53 +0800
 description:    使用 SSH 密钥连接到 GitHub 后就不用每次推送都要输入账号和密码了。
-order:          3
+order:          103
 ---
 
 ## 第一步：创建 SSH密钥

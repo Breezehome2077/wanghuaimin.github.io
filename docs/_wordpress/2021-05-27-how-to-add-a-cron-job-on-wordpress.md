@@ -2,7 +2,7 @@
 title:          教程：在 WordPress 上创建一个定时任务
 date:           2021-05-27 13:40 +0800
 description:    你写了一些函数，但又不想手动触发的时候，就可以利用 WP-Cron 功能创建一个定时任务，让 WordPress 自动触发函数。
-order:          3
+order:          102
 ---
 
 <p class="post-body-mark">

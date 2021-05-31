@@ -2,7 +2,7 @@
 title:          技巧：关于 Jekyll 的一些相关设置 
 date:           2020-07-25 21:12 +0800
 description:    一些不成系统的记录。
-order:          21
+order:          2101
 ---
 
 ## Liquid语法

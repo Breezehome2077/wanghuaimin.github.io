@@ -48,6 +48,9 @@ collections:
   wordpress:  #记录自己为wp进行seo优化的实行的一系列工作
       output: true
       permalink: /docs/wordpress/:title/
+  vuejs: # VUE.JS 学习笔记
+    output: true
+    permalink: /docs/vuejs/:title/
 
 # 头信息的默认值设置
 defaults:

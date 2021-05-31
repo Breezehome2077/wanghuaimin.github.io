@@ -1,15 +1,26 @@
 ---
-layout: default
-note: 部分语法参考（https://liquid.bootcss.com/filters/truncate/）
+layout:         default
 ---
-<div class="container-lg pt-2">
+
+<div class="container-lg">
+    <p>
+        首页改版中，将就看一下，正在学vue，很快就改好。
+    </p>
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 post-list">
-        {% if site.posts.size > 0 %}
         {% assign date_format = site.date_format %}
-        {% for post in paginator.posts %}
+        {% assign sortJekyll = site.jekyll | sort: "order" %}
+        {% for post in sortJekyll %}
+        {% if post.tag contains "hidden" %}
+        {% else %}
         {% include post_list_item.html %}
-        {% endfor %}
         {% endif %}
+        {% endfor -%}
+        {% assign sortJekyll = site.wordpress | sort: "order" %}
+        {% for post in sortJekyll %}
+        {% if post.tag contains "hidden" %}
+        {% else %}
+        {% include post_list_item.html %}
+        {% endif %}
+        {% endfor -%}
     </div>
-    {% include page_paginate.html %}
 </div>

@@ -2,7 +2,7 @@
 title:          技巧：禁止 WordPress 的图片自动裁剪功能
 date:           2021-04-14 05:26 +0800
 description:    测试版本 WP 5.7.2 测试有效，复制代码到主题的 functions.php 文件即可。
-order:          2002
+order:          2102
 ---
 
 <p class="post-body-mark">

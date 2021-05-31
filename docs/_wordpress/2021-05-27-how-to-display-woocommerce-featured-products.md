@@ -1,15 +1,14 @@
 ---
 title:          代码块：WooCommerce 精选产品
 date:           2021-05-27 12:38 +0800
-description:    完整展示了调用（显示/设置） WooCommerce 的精选（特色/星标）产品的代码。
-order:          4001
+description:    完整展示了调用（显示/设置） WooCommerce 精选（特色/星标）产品的代码。
+order:          4101
 ---
 
 {% highlight html %}
 <!-- html 部分 -->
 wzm_product_featured();
 {% endhighlight %}
-
 
 {% highlight php %}
 //  php 部分

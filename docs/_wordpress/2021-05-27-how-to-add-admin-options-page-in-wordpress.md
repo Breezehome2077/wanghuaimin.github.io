@@ -2,7 +2,7 @@
 title:          教程：为主题或插件添加一个管理员选项设置页面
 date:           2021-05-27 13:40 +0800
 description:    按照教程一步步来你就可以创建自己的管理员选项设置页面了。
-order:          2
+order:          101
 ---
 <p class="post-body-mark">
     注：如果电脑浏览时有文字被右侧隐藏，可以按键盘上的方向键进行调整；如果是手机，直接按住屏幕拖动即可。
@@ -59,7 +59,7 @@ function wzm_cron_abc_options_html(){
         <form method="post" action="options.php">
             <?php
                 //  settings_fields($options_group) 配合 register_setting($options_group,$options_name) 
-                //  可以完成数据的自动保存。注意：这里两者的组名 $options_group 要相同。
+                //  可以完成数据的自动保存。注意：这里两者的组名 $options_group 虽然可以自定义，但两者要保持相同。
                 settings_fields('wzm_cron_abc_group'); 
             ?>
             <table class="form-table" role="presentation">

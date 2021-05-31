@@ -2,7 +2,7 @@
 title:          功能：使用 jekyll 的 Collections 功能 
 date:           2020-09-05 10:27 +0800
 description:    将和同一主题相关的多篇文章集合起来，组织成“专题”的形式。
-order:          13
+order:          1103
 ---
 
 <p class="post-body-mark">
