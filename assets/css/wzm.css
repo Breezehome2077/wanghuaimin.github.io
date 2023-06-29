@@ -1550,3 +1550,35 @@ div.highlight pre{margin:0;padding-bottom:.5em;overflow:auto}
         min-width: 16rem;
     }
 }
+
+/*文章合集（/docs页面） 结束*/
+/**********************************************************************************************************************/
+/*翻译小部件*/
+#gt_float_wrapper {
+    bottom: 0 !important;
+}
+.gt_float_switcher .gt-selected .gt-current-lang {
+    padding: .625rem !important;
+    border-radius: .25rem !important;
+}
+.gt_float_switcher .gt_options {
+    height: auto !important;
+    max-height: 30rem !important;
+    transition: none !important;
+}
+.gt_float_switcher {
+    font-size: .875rem !important;
+    line-height: initial !important;
+    box-shadow: 0 3px 8px 0 rgba(15,15,20,.2) !important;
+}
+.gt_float_switcher img {
+    width: 1.5rem;
+}
+@media (min-width: 1200px) {
+    #gt_float_wrapper {
+        left: 1rem !important;
+        right: auto !important;
+        top: 0 !important;
+        bottom: auto !important;
+    }
+}
