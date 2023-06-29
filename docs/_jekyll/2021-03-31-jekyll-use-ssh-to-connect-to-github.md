@@ -97,7 +97,9 @@ Are you sure you want to continue connecting (yes/no)?
 
 那么您可以这样做：
 ```ruby
-# 按 ctrl+c 退出选择，运行以下命令：
+# 按 ctrl+c 退出选择，
+
+#然后运行以下命令：
 # 参考文档：https://stackoverflow.com/questions/18710120/the-authenticity-of-host-github-com-192-30-252-128-cant-be-established
 # 参考文档2：https://security.stackexchange.com/questions/221610/does-ssh-keyscan-verify-the-legitimacy-of-the-hosts-it-scans/221614#221614
 ssh-keyscan github.com >> ~/.ssh/known_hosts
