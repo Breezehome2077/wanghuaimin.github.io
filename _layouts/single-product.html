@@ -1,0 +1,41 @@
+---
+layout: base
+---
+<div class="single-product">
+    <div class="single-header">
+        <h1 class="title">{{ page.title }}</h1>
+    </div>
+    <div class="single-banner" id="Banner">
+        <div class="wrap">
+            <img src="{{ page.thumbnail }}" alt="{{ page.title }}">
+        </div>
+    </div>
+    <section class="single-product-details">
+        <header class="header">
+            <h2 class="title">项目简介</h2>
+        </header>
+        <div class="content">
+            <div class="single-product-description">
+                <h5 class="title">摘要</h5>
+                <p class="excerpt">{{ page.excerpt }}</p>
+            </div>
+            <div class="single-product-info">
+                <ul>
+                    <li>开始时间：<span>{{ page.order }}</span></li>
+                    <li>完成时间：<span>{{ page.final }}</span></li>
+                    <li>当前状态：<span>{{ page.status }}</span></li>
+                    <li>客户：<span>{{ page.client }}</span></li>
+                    <li>地址：<span>{{ page.location }}</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="single-product-result">
+        <header class="header">
+            <h2 class="title">项目展示</h2>
+        </header>
+        <div class="single-content" id="SingleContent">
+            {{ content }}
+        </div>
+    </section>
+</div>

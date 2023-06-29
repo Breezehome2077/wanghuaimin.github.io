@@ -1,17 +1,14 @@
 ---
-layout:         page
-title:          关于我
-description:    想成为一个成功者的普通人
-permalink:      /about/
+layout: single-page
+thumbnail: "/assets/images/thumbnail-page/about.webp"
+title: 关于我
+excerpt: 探索。
+permalink: /about.html
 ---
-想成为一个成功者的普通人。
 
-## 2021.05.27
-人最宝贵的就是生命,生命对于每个人来说只有一次。
-人的一生应该这样度过:回首往事,他不会因为虚度年华而悔恨,也不会因为碌碌无为而羞愧。
+<b>理想循环</b>
 
-—— 保尔·安德烈耶维奇·柯察金 （小说《钢铁是怎样炼成的》中的主人公）
-
-## 2021.05.27 之前
-回首往昔，记忆里空空如也，就像做梦一样，什么痕迹也没有留下；
-现在不能这样了，不强求每分每秒都轰轰烈烈，刻骨铭心，但最差也得知道时间都去做什么去了。
+1. 学习制作wordpress网站；
+2. 承接wordpress网站外包；
+3. 记录并总结制作过程中的经验和客户的反馈；
+4. 学习并制作更好的wordpress网站。

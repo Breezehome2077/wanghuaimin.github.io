@@ -1,0 +1,20 @@
+{%- if page.previous.url or page.next.url != null -%}
+<div class="single-navigation">
+    <ul>
+        {%- if page.previous.url -%}
+        <li class="prev">
+            <a href="{{page.previous.url}}">
+                <svg class="icon"><use xlink:href="#chevron"></use></svg><span>{{page.previous.title}}</span>
+            </a>
+        </li>
+        {%- endif -%}
+        {%- if page.next.url -%}
+        <li class="next">
+            <a href="{{page.next.url}}">
+                <span>{{page.next.title}}</span><svg class="icon"><use xlink:href="#chevron"></use></svg>
+            </a>
+        </li>
+        {%- endif -%}
+    </ul>
+</div>
+{%- endif -%}

@@ -1,6 +1,4 @@
-#被记录到这里的目录，在推送时不会推送到github上。
 _site
-.idea
 .sass-cache
 .jekyll-cache
 .jekyll-metadata

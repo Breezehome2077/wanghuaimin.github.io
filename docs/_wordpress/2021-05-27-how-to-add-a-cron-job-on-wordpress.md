@@ -1,15 +1,15 @@
 ---
-title:          教程：在 WordPress 上创建一个定时任务
-date:           2021-05-27 13:40 +0800
-description:    你写了一些函数，但又不想手动触发的时候，就可以利用 WP-Cron 功能创建一个定时任务，让 WordPress 自动触发函数。
-order:          102
+title: "教程：在 WordPress 上创建一个定时任务"
+thumbnail: "/assets/images/thumbnail-post/wordpress/wordpress.png"
+excerpt: "创建过程记录。"
+date: 2021-05-27 5:40:00 +0800
+modified-date: 2021-05-27 5:40:00 +0800
+tag: wordpress,cron
+category: wordpress
 ---
 
-<p class="post-body-mark">
-    注：如果你在步骤 2.1 中实现了“绑定钩子 add_action('updated_option')”，请一定发邮件告诉我你是怎么做的，可以吗？
-</p>
 
-{% highlight php %}
+```php
 /**
  *  定时器
  *
@@ -71,4 +71,4 @@ if(isset($_POST)) {
     //  创建新的定时器。
     wzm_cron_abc_event();
 }
-{% endhighlight %}
+```

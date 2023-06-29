@@ -1,14 +1,16 @@
 ---
-title:          教程：为主题或插件添加一个管理员选项设置页面
-date:           2021-05-27 13:40 +0800
-description:    按照教程一步步来你就可以创建自己的管理员选项设置页面了。
-order:          101
+title: "教程：为主题或插件添加一个管理员选项设置页面"
+thumbnail: "/assets/images/thumbnail-post/wordpress/wordpress.png"
+excerpt: "添加过程记录。"
+date: 2021-05-27 5:40:00 +0800
+modified-date: 2021-05-27 5:40:00 +0800
+tag: wordpress
+category: wordpress
 ---
-<p class="post-body-mark">
-    注：如果电脑浏览时有文字被右侧隐藏，可以按键盘上的方向键进行调整；如果是手机，直接按住屏幕拖动即可。
-</p>
 
-{% highlight php %}
+参考文档：[《创建WordPress后台选项界面》](https://www.solagirl.net/creating-an-admin-interface.html)
+
+```php
 /**
  *  1. 注册选项
  *      1.1. 在数据表 wp-options 中注册相应的属性名，用于保存数据。
@@ -97,13 +99,11 @@ function wzm_cron_abc_register() {
     register_setting('wzm_cron_abc_group','wzm_cron_abc_time');
 }
 add_action('admin_init','wzm_cron_abc_register');
-{% endhighlight %}
+```
 
-{% highlight php %}
-//  1. 删除设置页面
+```php
+// 1. 删除设置页面
 //     直接移除上面的代码即可。
 //  2. 删除选项
 delete_option('wzm_posts_per_page');
-{% endhighlight %}
-
-如果还是有些不懂的话，可以看一下这个朋友写的文章[《创建WordPress后台选项界面》](https://www.solagirl.net/creating-an-admin-interface.html)。
+```

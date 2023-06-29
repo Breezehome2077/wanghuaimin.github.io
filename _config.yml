@@ -1,64 +1,97 @@
-# 欢迎查看我的配置文件
-#   划重点：配置文件在修改后不会自动重新加载，需要重启服务器进程。
-#   停止命令：组合按键Ctrl+C；
-#   重启命令：bundle exec jekyll serve
+title: "望朝门"
+email: "181007265@qq.com"
+description: "记录学习，展示工作，承接外包，保质保量。"
+baseurl: ""
+url: "https://www.wangzhaomin.com"
+github_username: "qinyuanchunxue"
 
-# 站点信息
-#   在这里创建自定义变量，然后在模板中通过“{{site.xxx}}”进行调用。
-title: 望朝门
-description: 人的一生应该这样度过:回首往事,他不会因为虚度年华而悔恨,也不会因为碌碌无为而羞愧。
-author:
-  name: wangzhaomin
-  email: hetieliancheng@outlook.com #承接展示型网站的外包工作
-baseurl: '' #调用指定路径的时候需要它，比如“header部分”中“ico图标”的路径编写
-url: "https://www.wangzhaomin.com" #配合插件“page-sitemap”使用
-
-# 配置主题
-theme: minima #minima为默认主题，如果不加的话就无法启用/assets/css/style.css文件
-
-# 文章日期格式（这里是定义而非设置）
-#   补充：在循环开始前调用：{%- assign date_format = site.minima.date_format | default: "%Y年%m月%d日" -%}
-date_format: "%Y年%m月%d日"
-
-
-# 已安装插件
+# Build settings
+theme: minima
 plugins:
   - jekyll-feed
-  - jekyll-paginate
+  - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-include-cache
 
-# 代码高亮设置（https://jekyllrb.com/docs/liquid/tags/#code-snippet-highlighting）
-#   参考：https://mazhuang.org/rouge-themes/
-#   我的高亮规则是复制自 CSS-Tricks（https://css-tricks.com/）
-
-# 分页插件-设置
-paginate: 12
-
-# 集合
-#   collections_dir: xxx 自定义合集目录，目录名为 xxx。
-#   注：自定义目录名称不能以下划线“_”开头。
-#   当启用时，需要将“_post目录（这也是合集，默认的文章合集）”也移到该目录下。
+#专题功能
+#自定义合集目录名称不能以下划线“_”开头。
+#当启用时，需要将“_post目录（这也是合集：默认的文章合集）”也移到该目录下。
 collections_dir: docs
 collections:
-  jekyll: # 这是集合名称，在目录中名称为“_jekyll”
-    output: true  # 是否允许集合内文档作为单个文件进行输出
-    permalink: /docs/jekyll/:title/ #设置url格式
-    # 补充：这里jekyll不会使用集合jekyll目录下的index.html，而是生成自己的index.html。
-    # 解决办法：在集合jekyll目录下的index.html上添加属性“permalink: /docs/jekyll/”。
-  wordpress:  #记录自己为wp进行seo优化的实行的一系列工作
-      output: true
-      permalink: /docs/wordpress/:title/
-  vuejs: # VUE.JS 学习笔记
+  portfolio: #作品集
+    collection: "作品集"
     output: true
-    permalink: /docs/vuejs/:title/
+    permalink: /docs/:collection/:title.html
+  jekyll: # 这是新专题的名称，它会和类别产生路径冲突，所以不要重名。
+    collection: "Jekyll 学习笔记"
+    output: true  # 是否允许集合内文档作为单个文件进行输出
+    permalink: /docs/:collection/:title.html # 设置url格式，参考：http://jekyllcn.com/docs/permalinks/
+  web: #web前端开发
+    collection: "Web 学习笔记"
+    output: true
+    permalink: /docs/:collection/:title.html
+  wordpress: #wordpress相关
+    collection: "WordPress 学习笔记"
+    output: true
+    permalink: /docs/:collection/:title.html
+  posts: #笔记
+    collection: "笔记"
+    output: true
+    permalink: /docs/:collection/:title.html
+  manuals: #手册，用于创建用户手册，或者未来可能用到的手册
+    collection: "使用手册"
+    output: true
+    permalink: /docs/:collection/:title.html
+  favorite: #收藏夹，用于收藏网址和其他网站的文章
+    collection: "收藏夹"
+    output: true
+    permalink: /docs/:collection/:title.html
 
-# 头信息的默认值设置
+
+
+#给不同专题设置相应的默认布局。
+#参考文档1：https://jekyllrb.com/docs/configuration/front-matter-defaults/
+#参考文档2：https://www.typeerror.org/docs/jekyll~4/configuration/front-matter-defaults/index
 defaults:
   -
-    scope:  # 确认适用范围
-      path: "" # 一个空的字符串代表项目中所有的文件
-    values: # 创建变量和对应的默认值
-      layout: "post" # 设置默认模板为文章模板
-      abstract: "暂无摘要" # 创建变量“abstract”，内容为“暂无摘要”
-      # 创建原因是 /docs/jekyll/index.html 调用 post.excerpt 会报错，用其他单词代替则没有问题
-      # 为此要做的：需要手动编写摘要
+    scope:
+      path: ""
+      type: "portfolio" # a collection in your site, in plural form
+    values:
+      layout: "single-product"
+  -
+    scope:
+      path: ""
+      type: "jekyll"
+    values:
+      layout: "single-post"
+  -
+    scope:
+      path: ""
+      type: "web"
+    values:
+      layout: "single-post"
+  -
+    scope:
+      path: ""
+      type: "wordpress"
+    values:
+      layout: "single-post"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "single-post"
+  -
+    scope:
+      path: ""
+      type: "manuals"
+    values:
+      layout: "single-post"
+  -
+    scope:
+      path: ""
+      type: "favorite"
+    values:
+      layout: "single-post"

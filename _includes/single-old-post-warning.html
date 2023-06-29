@@ -1,0 +1,9 @@
+{%- assign wzmTime1 = site.time | date:"%Y" -%}
+{%- assign wzmTime3 = page.modified-date | date:"%Y" -%}
+{%- assign wzmTime4 = wzmTime1 | minus: wzmTime3 -%}
+{%- if wzmTime4 >= 3 -%}
+<div class="post-mark single-old-post-warning">
+    <h5 class="title">警告！这篇文章很旧！</h5>
+    <p>文章上次更新时间是 {{ wzmTime3 }} 年，距离现在已经 {{ wzmTime4 }} 年没有未更新/维护了，请根据实际情况谨慎使用。</p>
+</div>
+{% endif %}

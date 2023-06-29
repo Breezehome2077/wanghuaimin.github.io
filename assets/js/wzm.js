@@ -1,21 +1,16 @@
-$(document).ready(function(){
-    // fixed抖动的原因：手机浏览器自带回弹效果（又称：过度滚动）
-    // 向下滚动时，隐藏该DIV
-    // 附相关介绍一篇：https://www.smashingmagazine.com/2018/08/scroll-bouncing-websites/
-    let screen_w=window.innerWidth;
-    if (screen_w <= 1200) {
-        let p=0,t=0;
-        $(window).scroll(function(){
-            p = $(this).scrollTop();
-            if(t<=p){//向下滚
-                $(".site-aside-wrap").css({"visibility":"hidden","opacity":"0"});
-            }else{//向上滚
-                $(".site-aside-wrap").css({"visibility":"visible","opacity":"1"});
+//https://jekyllcodex.org/without-plugin/new-window-fix/
+function external_new_window() {
+    try {
+        for(let c = document.getElementById('SingleContent').getElementsByTagName("a"), a = 0; a < c.length; a++) {
+            const b = c[a];
+            if(b.getAttribute("href") && b.hostname !== location.hostname) {
+                b.target = "_blank";
+                b.rel = "noopener";
             }
-            setTimeout(function(){t = p;},0);
-        });
+        }
     }
-    // 给文章内部超链接添加“新窗口”打开功能（target="_black"）
-    // 网站安全，使“新窗口打开”避免钓鱼攻击（rel="noopener noreferrer"）
-    $(".post-body a[href]").attr({"target":"_black","rel":"noopener noreferrer"});
-});
+    catch(err) {
+
+    }
+}
+external_new_window();

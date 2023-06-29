@@ -1,0 +1,64 @@
+<nav class="offcanvas offcanvas-end wzm-navbar" tabindex="-1" id="wzmNavbar" aria-labelledby="Navbar">
+    <div class="button">
+        <button type="button" class="wzm-btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+            <svg class="icon"><use xlink:href="#list" /></svg>
+        </button>
+    </div>
+    <div class="header">
+        <h2 class="title">Menu</h2>
+    </div>
+    <div class="body">
+        <ul>
+            <li class="{%- if page.url == '/' -%}active{%- endif -%}">
+                <a href="/">首页<svg class="icon"><use xlink:href="#caret2"></use></svg></a>
+            </li>
+            <li class="{%- if page.url contains '/portfolio' -%}active{%- endif -%}">
+                <a href="/docs/portfolio">作品集<svg class="icon"><use xlink:href="#caret2"></use></svg></a>
+            </li>
+            <li class="d-none">
+                <a href="#">历史<svg class="icon"><use xlink:href="#caret2"></use></svg></a>
+            </li>
+            <li>
+                <a class="disabled" data-bs-toggle="collapse" href="#collapseBlog" role="button" aria-expanded="false" aria-controls="collapseBlog" >
+                    博客<svg class="icon"><use xlink:href="#caret"></use></svg>
+                </a>
+                <ul class="collapse" id="collapseBlog">
+                    <li class="{%- if page.url contains '/web' -%}active{%- endif -%}">
+                        <a href="/docs/web">Web 前端学习笔记</a>
+                    </li>
+                    <li class="{%- if page.url contains '/wordpress' -%}active{%- endif -%}">
+                        <a href="/docs/wordpress">WordPress学习笔记</a>
+                    </li>
+                    <li class="{%- if page.url contains '/jekyll' -%}active{%- endif -%}">
+                        <a href="/docs/jekyll">Jekyll学习笔记</a>
+                    </li>
+                    <li class="{%- if page.url contains '/posts' -%}active{%- endif -%}">
+                        <a href="/docs/posts">笔记（随便写写）</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="{%- if page.url contains '/manuals' -%}active{%- endif -%}">
+                <a href="/docs/manuals">使用手册<svg class="icon"><use xlink:href="#caret2"></use></svg></a>
+            </li>
+            <li>
+                <a class="disabled" data-bs-toggle="collapse" href="#collapseFavorite" role="button" aria-expanded="false" aria-controls="collapseFavorite" >
+                    收藏夹<svg class="icon"><use xlink:href="#caret"></use></svg>
+                </a>
+                <ul class="collapse" id="collapseFavorite">
+                    <li class="{%- if page.url == '/website-collection.html' -%}active{%- endif -%}">
+                        <a href="/website-collection.html">网址收藏</a>
+                    </li>
+                    <li class="{%- if page.url == '/other-peoples-websites.html' -%}active{%- endif -%}">
+                        <a href="/other-peoples-websites.html">其他人的博客<svg class="icon"><use xlink:href="#caret2"></use></svg></a>
+                    </li>
+                    <li class="{%- if page.url contains '/favorite' -%}active{%- endif -%}">
+                        <a href="/docs/favorite">文章收藏</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="{%- if page.url == '/about.html' -%}active{%- endif -%}">
+                <a href="/about.html">关于我<svg class="icon"><use xlink:href="#caret2"></use></svg></a>
+            </li>
+        </ul>
+    </div>
+</nav>

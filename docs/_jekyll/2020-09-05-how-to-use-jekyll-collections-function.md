@@ -1,195 +1,152 @@
 ---
-title:          功能：使用 jekyll 的 Collections 功能 
-date:           2020-09-05 10:27 +0800
-description:    将和同一主题相关的多篇文章集合起来，组织成“专题”的形式。
-order:          1103
+title:  "教程：使用 Jekyll 的 Collections 功能"
+thumbnail: "/assets/images/thumbnail-post/jekyll/jekyll.jpg"
+excerpt: "介绍 Jekyll 的 Collections 功能，可以用它制作专题功能。"
+date:   2020-09-05 10:40:00 +0800
+modified-date: 2020-09-05 10:40:00 +0800
+tag: jekyll,collections
+category: jekyll
 ---
+<figure class="post-mark">
+   <p>前言：下文中提到的“专题”、“收藏夹”、“集合”都是指“Collections功能”。</p>
+</figure>
 
-<p class="post-body-mark">
-2021.04.04 补充：下文中提到的“专题”、“收藏夹”、“集合”都是指 Collections 功能。
-</p>
 
-<p><strong>参考文档：</strong></p>
 
-1. <a href="http://jekyllcn.com/docs/collections/">《集合（Collections）》</a>
-2. <a href="https://learn.cloudcannon.com/jekyll/introduction-to-jekyll-collections/">《11. Introduction to collections》</a>
+## 参考文档
 
-## 第一步：修改配置文件，注册新专题
+1. [《文档-集合（Collections）》][jekyll-docs-zh-collections]
+2. [《11. Introduction to collections》][11.Introduction to collections]
 
-首先我们要修改配置文件 <b>_config.yml</b>，在文章底部添加以下内容：
 
-{% highlight plaintext %}
+
+## 第一步：修改配置文件，注册新的专题
+
+1. 将下面的代码加入您的 <b>_config.yml文件</b> 中。
+```text
 collections:
-  jekyll: # 这是新专题的名称
-    output: true  # 是否允许集合内文档作为单个文件进行输出
-    permalink: /docs/jekyll/:title/ # 设置url格式
-{% endhighlight %}
+    # 这是新专题的名称，不要让它和类别重名，以免发生路径冲突;且英文字母之间不推荐使用连字符进行连接。
+    jekyllStudy: 
+        # 是否允许集合内文档作为单个文件进行输出
+        output: true
+        # 设置url格式，参考：http://jekyllcn.com/docs/permalinks/，https://github.com/jekyll/jekyll/issues/2293
+        # 示例：http://localhost:4000/jekyllStudy/how-to-use-jekyll-collections-function.html
+        permalink: /:collection/:title.html 
+```
 
-如此就完成了专题 <b>jekyll</b> 的注册；接下来重启 jekyll 服务，以使更改生效。
+2. 重启 jekyll 服务，以使设置生效。
+```ruby
+# 组合键 Ctrl+C，退出服务
+bundle exec jekyll s # 重新运行服务
+```
 
-## 第二步：创建专题目录
 
-专题目录必须放在 <b>根目录</b> 下，和文件夹 <b>_post</b> 平级，文件名格式为“下划线+英文字母”，示例：<b>_abc</b>（英文字母之间不推荐使用连字符）。
 
-由于我们注册的专题名为 <b>jekyll</b>，所以我们要创建专题目录的为 <b>_jekyll</b>,创建完成后的网站结构为：
+## 第二步：创建专题文件夹
 
-{% highlight plaintext %}
-qinyuanchunxue.github.io
-    |- _includes
-    |- _jekyll  # 创建的专题目录
-    |- _layouts
-    |- _posts
-    ......
-    ......
-    ......
-{% endhighlight %}
+1. 专题文件夹需要放置于根目录下，和“<b>_post文件夹</b>”平级；且文件名格式为“<b>下划线+英文字母</b>”。示例：
+```text
+|— MyBlog
+    |— _JekyllStudy
+    |— _posts
+```
 
-## 第三步：创建专题内容页
-    
-在 <b>_layouts</b> 模板目录下创建专题内容页模板 <b>jekyll.html</b>。
-  * 如果需要修改，可在此模板文件中修改；
-  * 如果不需要修改，可直接复制 <b>post.html</b> 文件中的内容放到此处。
-  
-## 第四步：创建专题列表页  
+2. 将相应的文件放入专题文件夹中。
+```text
+|— MyBlog
+    |— _JekyllStudy
+       |— 2023-05-06-how-to-use-jekyll-on-windows.md
+       |— 2023-05-07-how-to-use-jekyll-collections-function.md
+    |— _posts
+```
 
-1. 复制根目录下的 <b>index.html</b>，并更名为 <b>jekyll.html</b>;
-2. 将其中的 `site_posts` 更改为 `site_jekyll`；
-3. 将其中的 `paginator.posts` 更改为 `site_post.posts`；
-4. 移除 `{\%- include page_paginate.html -%}`（这里为了防止冲突，多写了一个“\”）；
 
-修改前的 <b>jekyll.html</b> 主题内容：
 
-<figure class="post-body-img-figure">
-    <div class="row justify-content-center">
-        <div class="col-12 col-lg-12">
-            <a class="d-block" href="{{ site.baseurl | relative_url }}/assets/post/2020-09-05-how-to-use-jekyll-collections-function/jekyll-html-before.jpg">
-                <img class="w-100" src="{{ site.baseurl | relative_url }}/assets/post/2020-09-05-how-to-use-jekyll-collections-function/jekyll-html-before.jpg" alt="jekyll 目录页的代码-修改前">
-            </a>
-        </div>
-    </div>
-</figure>
+## 第三步：制作专题列表页
 
-修改后的 <b>jekyll.html</b> 主题内容：
+1. 制作方式很简单，在根目录下创建与专题同名的网页文件即可。
+```text
+|— MyBlog
+    |— JekyllStudy.md # 复制“index.markdown”文件并重命名为“JekyllStudy.md”
+    |— index.markdown
+```
+2. 返回浏览器并刷新专题列表页“http://localhost:4000/JekyllStudy/”，可以看到页面发生了更改。
+3. 编辑专题列表页，让它显示属于该专题的全部文章。
+   1. 复制[《文档-集合（Collections）》][jekyll-docs-zh-collections]中的最后一段代码到“<b>JekyllStudy.md</b>”中。
+   2. 更改代码中调用的集合。
+```html
+   for album in site.albums 
+   更改为
+   for album in site.JekyllStudy
+```
+   3. 返回浏览器并刷新页面，可以看到属于该专题内的文章全部出现了。
+4. 创建专题列表页的模板。
+   1. 在“<b>_layouts文件夹</b>”中创建专题模板“<b>collections.html</b>”。
+```html
+   # 为了正常显示，这里使用了转义符号“/”。
+   /{/% include header-collections.html %}
+   /<div class="main">
+    /{/{ content }} # content是全局变量，参见介绍：http://jekyllcn.com/docs/variables/
+   /</div>
+   /{/% include footer.html %}
+```
 
-<figure class="post-body-img-figure">
-    <div class="row justify-content-center">
-        <div class="col-12 col-lg-12">
-            <a class="d-block" href="{{ site.baseurl | relative_url }}/assets/post/2020-09-05-how-to-use-jekyll-collections-function/jekyll-html-after.jpg">
-                <img class="w-100" src="{{ site.baseurl | relative_url }}/assets/post/2020-09-05-how-to-use-jekyll-collections-function/jekyll-html-after.jpg" alt="专题 jekyll 目录页的代码-修改后">
-            </a>
-        </div>
-    </div>
-</figure>
+   2. 在“<b>_includes文件夹</b>”复制“<b>header.html</b>”，然后重命名为“<b>header-collections.html</b>”；
+```html
+   # 为了正确显示页面标题，将 site.title 更改为 page.title。
+   /<title>/{/{ site.title }} - /{/{ site.description }}</title>
+   更改为
+   /<title>/{/{ page.title }} - /{/{ site.title }}</title>
+```
 
-其中 `{\ % assign mod3 = forloop.index | modulo: 2 %} ... {\ % if mod3 == 0 %}<div class="w-100"></div>{\% endif %}` 的作用是：
-每两个 div 后添加一个新的 div。
+   3. 修改专题文件“<b>JekyllStudy.md</b>”的“<b>YAML头信息</b>”。
+```html
+   layout: home
+   更改为
+   layout: collections
+```
 
-<figure class="post-body-img-figure">
-    <div class="row justify-content-center">
-        <div class="col-12 col-lg-12">
-            <a class="d-block" href="{{ site.baseurl | relative_url }}/assets/post/2020-09-05-how-to-use-jekyll-collections-function/jekyll-html-modulo.jpg">
-                <img class="w-100" src="{{ site.baseurl | relative_url }}/assets/post/2020-09-05-how-to-use-jekyll-collections-function/jekyll-html-modulo.jpg" alt="语法 mod 的效果展示">
-            </a>
-        </div>
-    </div>
-</figure>
+   4. 返回浏览器并刷新页面，内容可以正常显示。
 
-## 第五步：文件搬家
 
-1. 将 <b>_posts</b> 目录中和 jekyll 相关的文章移动到 <b>_jekyll</b> 目录中;
-2. 编辑相应的文章，修改文章布局：`layout: post` => `layout: jekyll`；
-3. 编辑专题列表页（根目录/jekyll.html），设置固定链接：`permalink: /jekyll/`；
-4. 编辑专题内容页（根目录/_layouts/jekyll.html），删除“标签”和“分类”的超链接；
-5. 访问 <b>http://localhost:4000/jekyll/</b> 即可浏览到最终效果。
 
-<figure class="post-body-img-figure">
-    <div class="row justify-content-center">
-        <div class="col-12 col-lg-12">
-            <a class="d-block" href="{{ site.baseurl | relative_url }}/assets/post/2020-09-05-how-to-use-jekyll-collections-function/jekyll-html-end.jpg">
-                <img class="w-100" src="{{ site.baseurl | relative_url }}/assets/post/2020-09-05-how-to-use-jekyll-collections-function/jekyll-html-end.jpg" alt="专题 jekyll 的目录页效果">
-            </a>
-        </div>
-    </div>
-</figure>
 
-另外，如果不想每次写文章都手动注明“布局的名称”，那就可以在 <b>_config.yml</b> 文件底部添加以下内容：
+## 第四步：样式设置
 
-参考文档：[《Front matter defaults》](https://jekyllrb.com/docs/step-by-step/09-collections/#front-matter-defaults")
+经过前面的几步，你已经拥有了一个专题和对应的专题列表页，现在你可以对专题列表页的样式进行详细设置了。
 
-{% highlight plaintext %}
-defaults:   # 默认设置属性
-  - scope:
-      path: ""
-      type: "jekyll"
-    values:
-      layout: "jekyll"
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-  - scope:
-      path: ""
-    values:
-      layout: "default"
-{% endhighlight %}
+如果需要的话，你还可以为专题内的文章设置不同的样式，复制并重命名“<b>_layouts文件夹</b>”中的“<b>post.html文件</b>”即可；
+还有就是设置完后别忘了修改专题文章的“<b>YAML头信息</b>”。
 
-## 2021.03.29 补充:
 
-这里还可以注册自定义合集的名称，代码为 `collections_dir: docs`，如果启用该项，则：
 
-1. 需要在根目录下创建文件夹 "docs"；
-2. 所有专题文件夹（如 _jekyll）和默认文件夹 “_post” 都要移动到 “docs” 文件夹下
-3. 专题文章链接会由 “abc.com/jekyll/abc.html” 变为 “abc.com/docs/jekyll/abc.html”；置于 “_post”文件夹中的文件链接则不变。
+## 第五步：将所有集合放在同一个目录中
 
-第一步中的代码则变为：
-
-{% highlight plaintext %}
-#自定义合集目录名称不能以下划线“_”开头。
-#当启用时，需要将“_post目录（这也是合集：默认的文章合集）”也移到该目录下。
+1. 如果有很多专题的话，那为了方便管理，你指定一个目录将它们放在一起；但相应的你需要将“<b>\_posts文件夹（默认文章）</b>”和“<b>\_drafts文件夹（草稿）</b>”一起挪过去，因为它们也算是一种合集。
+2. 同时该目录的名字不能以下划线（“_”）开头。
+```text
+# 根目录下“_config.yml”文件
 collections_dir: docs
 collections:
-    jekyll: # 这是集合名称，在目录中名称为“_jekyll”
-        output: true  # 是否允许集合内文档作为单个文件进行输出
-        permalink: /docs/jekyll/:title/ #设置url格式
-{% endhighlight %}
+    JekyllStudy: # 这是新专题的名称，它会和类别产生路径冲突，所以不要重名。
+```
+```text
+# 根目录下文件和文件夹结构
+|— MyBlog
+    |— docs
+        |— _drafts
+        |— _JekyllStudy
+        |— _posts
+    |— index.markdown
+    |— JekyllStudy.md    
+```
+```ruby
+# 退出并重启服务
+组合键 Ctrl+C
+bundle exec jekyll s
+```
 
-第二步中的文章结构为：
 
-{% highlight plaintext %}
-qinyuanchunxue.github.io
-    |- _includes
-    |- _layouts
-    |- docs
-        |- _jekyll  # 创建的专题目录
-        |- _posts
-    ......
-    ......
-    ......
-{% endhighlight %}
 
-第三步中的创建文件改为在专题目录中创建 index.html 文件。
-
-{% highlight plaintext %}
-|- docs
-    |- _jekyll  # 专题目录
-        ......
-        |— index.html # 创建的文件（用作专题的目录页）
-        # 问题1：这里 jekyll 不会使用集合 jekyll 目录下的 index.html，而是生成自己的 index.html。
-        # 解决办法：在集合 jekyll 目录下的 index.html 上添加属性 “permalink: /docs/jekyll/”。
-        # 问题2：在 index.html 上添加目录代码时，会发现该 index.html 也会同时出现，除了影响阅读之外还会造成SEO抓取的死循环。
-        # 解决办法：利用判断语句隐藏该 index.html。
-    |- _posts
-{% endhighlight %}
-
-第四步的代码则为：
-
-<figure class="post-body-img-figure">
-    <div class="row justify-content-center">
-        <div class="col-12 col-lg-12">
-            <a class="d-block" href="{{ site.baseurl | relative_url }}/assets/post/2020-09-05-how-to-use-jekyll-collections-function/jekyll-html-after-new.jpg">
-                <img class="w-100" src="{{ site.baseurl | relative_url }}/assets/post/2020-09-05-how-to-use-jekyll-collections-function/jekyll-html-after-new.jpg" alt="专题 jekyll 目录页的代码-新">
-            </a>
-        </div>
-    </div>
-</figure>
+[jekyll-docs-zh-collections]: http://jekyllcn.com/docs/collections/
+[11.Introduction to collections]: https://learn.cloudcannon.com/jekyll/introduction-to-jekyll-collections/ "网站cloudcannon对集合的介绍"

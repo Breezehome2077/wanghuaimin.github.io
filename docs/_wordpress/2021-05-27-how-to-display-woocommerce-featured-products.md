@@ -1,16 +1,19 @@
 ---
-title:          代码块：WooCommerce 精选产品
-date:           2021-05-27 12:38 +0800
-description:    完整展示了调用（显示/设置） WooCommerce 精选（特色/星标）产品的代码。
-order:          4101
+title: "代码块：WooCommerce 精选产品"
+thumbnail: "/assets/images/thumbnail-post/wordpress/wordpress.png"
+excerpt: "上传过程记录。"
+date: 2021-05-27 5:40:00 +0800
+modified-date: 2021-05-27 5:40:00 +0800
+tag: wordpress,woocommerce,featured-products
+category: wordpress,woocommerce
 ---
 
-{% highlight html %}
+```html
 <!-- html 部分 -->
 wzm_product_featured();
-{% endhighlight %}
+```
 
-{% highlight php %}
+```php
 //  php 部分
 function wzm_product_featured() {
     //  1. 通过是否有 WooCommerce 注册的专有分类法 product_visibility；
@@ -64,4 +67,4 @@ function wzm_product_featured() {
         echo 'WooCommer 插件未启用';
     }
 }
-{% endhighlight %}
+```
