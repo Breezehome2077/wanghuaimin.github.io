@@ -18,6 +18,18 @@ permalink: /other-peoples-websites.html
 
 <hr class="hr">
 
+[https://www.stefanwille.com/](https://www.stefanwille.com/)
+
+[https://artinruins.com/](https://artinruins.com/)
+
+[https://www.paulirish.com/](https://www.paulirish.com/)
+
+[https://blog.jim-nielsen.com/](https://blog.jim-nielsen.com/)
+
+[https://yogwang.site/](https://yogwang.site/)
+
+[https://hyperzsb.io/](https://hyperzsb.io/)
+
 [https://carlosbecker.com/](https://carlosbecker.com/)
 
 [https://michaelsoolee.com/](https://michaelsoolee.com/)
