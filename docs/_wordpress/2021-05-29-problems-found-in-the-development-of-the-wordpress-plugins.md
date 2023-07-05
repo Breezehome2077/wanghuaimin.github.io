@@ -1,6 +1,6 @@
 ---
 title: "问题：WordPress 插件开发中发现的问题"
-thumbnail: "/assets/images/thumbnail-post/wordpress/wordpress.png"
+thumbnail: "/assets/images/thumbnail-post/wordpress/wordpress.webp"
 excerpt: "问题整理。"
 date: 2021-05-29 5:40:00 +0800
 modified-date: 2021-05-29 5:40:00 +0800

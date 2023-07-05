@@ -1,6 +1,6 @@
 ---
 title: "教程：为主题或插件添加一个管理员选项设置页面"
-thumbnail: "/assets/images/thumbnail-post/wordpress/wordpress.png"
+thumbnail: "/assets/images/thumbnail-post/wordpress/wordpress.webp"
 excerpt: "添加过程记录。"
 date: 2021-05-27 5:40:00 +0800
 modified-date: 2021-05-27 5:40:00 +0800

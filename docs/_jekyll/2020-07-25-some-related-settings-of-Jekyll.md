@@ -1,6 +1,6 @@
 ---
 title:  "技巧：关于 Jekyll 的一些相关设置"
-thumbnail: "/assets/images/thumbnail-post/jekyll/jekyll.jpg"
+thumbnail: "/assets/images/thumbnail-post/jekyll/jekyll.webp"
 excerpt: "一些零碎的设置和介绍。"
 date:   2020-07-25 13:12:00 +0800
 modified-date: 2023-06-26 10:40:00 +0800
@@ -69,15 +69,6 @@ vendor
 ## 单页面
 
 可以直接网站根目录下新建 abc.html，然后手动设置固定链接 permalink 为“/abc.html”；最后将固定链接添加到导航栏中即可。
-
-
-
-## 新窗口打开
-
-```js
-$(".post-body a[href]").attr({"target":"_black","rel":"noopener noreferrer"});
-```
-
 
 
 ## 声明变量

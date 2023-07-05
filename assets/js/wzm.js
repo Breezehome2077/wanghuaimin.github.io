@@ -1,3 +1,4 @@
+//文章内部超链接新页面打开
 //https://jekyllcodex.org/without-plugin/new-window-fix/
 function external_new_window() {
     try {
@@ -9,8 +10,21 @@ function external_new_window() {
             }
         }
     }
-    catch(err) {
-
-    }
+    catch(err) {}
 }
 external_new_window();
+
+window.onload = function move_canvas() {
+    const button = document.getElementById("siteNavigationToggleBtn");
+    button.addEventListener("click", moveCanvas);
+    function moveCanvas() {
+        const abc = document.getElementById('siteBusiness').classList.contains('canvas-active');
+        if (abc) {
+            document.getElementById('siteBusiness').classList.remove('canvas-active');
+            document.getElementById('siteNavigation').classList.remove('canvas-active');
+        }else {
+            document.getElementById('siteBusiness').classList.add('canvas-active');
+            document.getElementById('siteNavigation').classList.add('canvas-active');
+        }
+    }
+}

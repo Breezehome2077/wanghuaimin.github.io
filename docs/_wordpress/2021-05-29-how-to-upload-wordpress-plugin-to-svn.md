@@ -1,6 +1,6 @@
 ---
 title: "教程：将 WordPress 插件上传到官方 SVN 存储库"
-thumbnail: "/assets/images/thumbnail-post/wordpress/wordpress.png"
+thumbnail: "/assets/images/thumbnail-post/wordpress/wordpress.webp"
 excerpt: "上传过程记录。"
 date: 2021-05-29 5:40:00 +0800
 modified-date: 2021-05-29 5:40:00 +0800

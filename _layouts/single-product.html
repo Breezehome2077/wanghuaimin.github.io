@@ -6,20 +6,18 @@ layout: base
         <h1 class="title">{{ page.title }}</h1>
     </div>
     <div class="single-banner" id="Banner">
-        <div class="wrap">
-            <img src="{{ page.thumbnail }}" alt="{{ page.title }}">
-        </div>
+        <img src="{{ page.thumbnail }}" alt="{{ page.title }}">
     </div>
     <section class="single-product-details">
         <header class="header">
             <h2 class="title">项目简介</h2>
         </header>
         <div class="content">
-            <div class="single-product-description">
-                <h5 class="title">摘要</h5>
+            <div class="single-product-description rounded shadow">
+                <h5 class="title d-none">摘要</h5>
                 <p class="excerpt">{{ page.excerpt }}</p>
             </div>
-            <div class="single-product-info">
+            <div class="single-product-info rounded shadow">
                 <ul>
                     <li>开始时间：<span>{{ page.order }}</span></li>
                     <li>完成时间：<span>{{ page.final }}</span></li>
@@ -34,8 +32,11 @@ layout: base
         <header class="header">
             <h2 class="title">项目展示</h2>
         </header>
-        <div class="single-content" id="SingleContent">
+        <div class="single-content rounded shadow" id="SingleContent">
             {{ content }}
         </div>
+        <footer class="single-footer">
+            {%- include single-navigation.html -%}
+        </footer>
     </section>
 </div>

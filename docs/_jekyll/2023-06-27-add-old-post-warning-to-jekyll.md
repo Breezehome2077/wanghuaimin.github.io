@@ -1,6 +1,6 @@
 ---
 title: "代码块：在 Jekyll 上添加旧文章警告/通知"
-thumbnail: "/assets/images/thumbnail-post/jekyll/jekyll.jpg"
+thumbnail: "/assets/images/thumbnail-post/jekyll/jekyll.webp"
 excerpt: "如题。"
 date:   2023-06-27 13:04:00 +0800
 modified-date: 2023-06-27 13:04:00 +0800

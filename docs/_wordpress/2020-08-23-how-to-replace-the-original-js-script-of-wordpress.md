@@ -1,6 +1,6 @@
 ---
 title: "技巧：替换 WordPress 原有的 JQuery 版本"
-thumbnail: "/assets/images/thumbnail-post/wordpress/wordpress.png"
+thumbnail: "/assets/images/thumbnail-post/wordpress/wordpress.webp"
 excerpt: "wordpress 5.6及其之后的版本，自带的jquery脚本已升级到最新，再也不需要手动进行替换了。"
 date: 2020-08-23 5:40:00 +0800
 modified-date: 2020-08-23 5:40:00 +0800

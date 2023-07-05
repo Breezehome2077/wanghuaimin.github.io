@@ -1,6 +1,6 @@
 ---
 title:  "教程：在 Windows 上安装并使用 Jekyll"
-thumbnail: "/assets/images/thumbnail-post/jekyll/jekyll.jpg"
+thumbnail: "/assets/images/thumbnail-post/jekyll/jekyll.webp"
 excerpt: "在 Win 系统上安装和使用 Jekyll 的详细步骤。"
 date: 2020-07-23 07:06:00 +0800
 modified-date: 2023-06-29 06:51:00 +0800

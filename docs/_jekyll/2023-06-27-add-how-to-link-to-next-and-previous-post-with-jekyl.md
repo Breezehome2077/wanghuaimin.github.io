@@ -1,6 +1,6 @@
 ---
 title: "代码块：在 Jekyll 上添加下一篇/上一篇文章的链接"
-thumbnail: "/assets/images/thumbnail-post/jekyll/jekyll.jpg"
+thumbnail: "/assets/images/thumbnail-post/jekyll/jekyll.webp"
 excerpt: "在文章内容页添加上一篇/下一篇文章的链接。"
 date:   2021-03-25 10:40:00 +0800
 modified-date: 2021-03-25 10:40:00 +0800

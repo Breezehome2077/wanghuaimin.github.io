@@ -1,6 +1,6 @@
 ---
 title: 其他人的博客
-thumbnail: "/assets/images/thumbnail-post/favorite/other-people-websites.jpg"
+thumbnail: "/assets/images/thumbnail-post/favorite/other-people-websites.webp"
 excerpt: "记录搜索资料时找到的博客，下次有空时再去转转。"
 date: 2023-06-24 5:40:00 +0800
 modified-date: 2023-06-24 5:40:00 +0800
@@ -11,12 +11,19 @@ permalink: /other-peoples-websites.html
 
 
 {{ page.excerpt }}
+[https://jakearchibald.com/](https://jakearchibald.com/)
 
 [https://www.solagirl.net/](https://www.solagirl.net/ "solagirl.net是原创个人博客，记录和分享WordPress网站建设的知识。")
 
 [http://david.elbe.me/](http://david.elbe.me/)
 
-<hr class="hr">
+[https://mycyberuniverse.com/index.html](https://mycyberuniverse.com/index.html)
+
+[https://usabilitypost.com/](https://usabilitypost.com/)
+
+[https://meyerweb.com/](https://meyerweb.com/)
+
+[https://www.joshwcomeau.com/](https://www.joshwcomeau.com/)
 
 [https://www.stefanwille.com/](https://www.stefanwille.com/)
 

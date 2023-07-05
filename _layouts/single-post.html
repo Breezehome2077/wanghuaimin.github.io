@@ -5,24 +5,18 @@ layout: base
     <header class="single-header">
         <h1 class="title">{{ page.title }}</h1>
         <div class="info">
-            <ul>
-                <li>发布于 <time class="date" datetime="{{ page.date | date_to_xmlschema }}" itemprop="date Published">{{ page.date|date:" %Y年 %m月 %d日" }}</time></li>
-                {%- if page.modified-date != page.date -%}
-                <li>更新于 <time class="date" datetime="{{ page.modified-date | date_to_xmlschema }}" itemprop="date Modified">{{ page.modified-date|date:" %Y年 %m月 %d日" }}</time></li>
-                {%- endif -%}
-            </ul>
+            <div class="item">发布于 <time class="date" datetime="{{ page.date | date_to_xmlschema }}" itemprop="date Published">{{ page.date|date:" %Y年 %m月 %d日" }}</time></div>
+            {%- if page.modified-date != page.date -%}
+            <div class="item">更新于 <time class="date" datetime="{{ page.modified-date | date_to_xmlschema }}" itemprop="date Modified">{{ page.modified-date|date:" %Y年 %m月 %d日" }}</time></div>
+            {%- endif -%}
         </div>
     </header>
-    <div class="single-banner" id="Banner">
-        <div class="wrap">
-            <img src="{{ page.thumbnail }}" alt="{{ page.title }}">
-        </div>
+    <div class="single-banner rounded shadow" id="Banner">
+        <img src="{{ page.thumbnail }}" alt="{{ page.title }}">
     </div>
-    <div class="single-content" id="SingleContent">
-        <div class="wrap">
-            {%- include single-old-post-warning.html -%}
-            {{ content }}
-        </div>
+    <div class="single-content rounded shadow" id="SingleContent">
+        {%- include single-old-post-warning.html -%}
+        {{ content }}
     </div>
     <footer class="single-footer">
         {%- include single-navigation.html -%}

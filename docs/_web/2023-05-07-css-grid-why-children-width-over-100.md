@@ -1,6 +1,6 @@
 ---
 title: "问题：Grid布局中子元素宽度超过100%的解决办法"
-thumbnail: "/assets/images/thumbnail-post/web/grid.jpg"
+thumbnail: "/assets/images/thumbnail-post/web/grid.webp"
 excerpt: "将宽度 fr 替换为 minmax(0,1fr) 的形式即可。"
 date: 2023-05-09 5:40:00 +0800
 modified-date: 2023-05-09 5:40:00 +0800

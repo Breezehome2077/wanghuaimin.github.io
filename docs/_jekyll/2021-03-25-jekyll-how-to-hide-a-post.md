@@ -1,6 +1,6 @@
 ---
 title: "技巧：Jekyll 如何隐藏某一篇文章"
-thumbnail: "/assets/images/thumbnail-post/jekyll/jekyll.jpg"
+thumbnail: "/assets/images/thumbnail-post/jekyll/jekyll.webp"
 excerpt: "添加变量 hidden，然后利用运算符 if 或者 contains 来判断文章是否存在该变量，如果存在就不显示该文章。"
 date:   2021-03-25 10:40:00 +0800
 modified-date: 2021-03-25 10:40:00 +0800

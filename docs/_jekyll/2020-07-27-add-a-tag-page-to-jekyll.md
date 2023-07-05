@@ -1,6 +1,6 @@
 ---
 title:  "教程：给 Jekyll 添加一个标签页面"
-thumbnail: "/assets/images/thumbnail-post/jekyll/jekyll.jpg"
+thumbnail: "/assets/images/thumbnail-post/jekyll/jekyll.webp"
 excerpt: "将所有文章的标题、标签、链接以数组的形式放入一个 json 文件中，然后用 js 读取筛选条件，然后遍历 json 文件，将符合条件的文章进行输出。"
 date:   2020-07-27 10:40:00 +0800
 modified-date: 2020-07-27 10:40:00 +0800

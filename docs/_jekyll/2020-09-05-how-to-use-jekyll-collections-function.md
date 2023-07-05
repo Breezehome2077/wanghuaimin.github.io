@@ -1,6 +1,6 @@
 ---
 title:  "教程：使用 Jekyll 的 Collections 功能"
-thumbnail: "/assets/images/thumbnail-post/jekyll/jekyll.jpg"
+thumbnail: "/assets/images/thumbnail-post/jekyll/jekyll.webp"
 excerpt: "介绍 Jekyll 的 Collections 功能，可以用它制作专题功能。"
 date:   2020-09-05 10:40:00 +0800
 modified-date: 2020-09-05 10:40:00 +0800

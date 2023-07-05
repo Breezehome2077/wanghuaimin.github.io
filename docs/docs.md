@@ -11,7 +11,7 @@ permalink: /docs
     </header>
     <div class="main">
         {%- for item in site.collections -%}
-        <div class="item">
+        <div class="item rounded shadow">
             <h2 class="title">{{ item.collection }}</h2>
             <ul class="list">
             {%- for post in site[item.label] %}

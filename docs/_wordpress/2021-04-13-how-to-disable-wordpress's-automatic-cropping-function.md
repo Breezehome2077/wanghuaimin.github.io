@@ -1,6 +1,6 @@
 ---
 title: "技巧：禁止 WordPress 的图片自动裁剪功能"
-thumbnail: "/assets/images/thumbnail-post/wordpress/wordpress.png"
+thumbnail: "/assets/images/thumbnail-post/wordpress/wordpress.webp"
 excerpt: "禁止是不能禁止的，只能说如何不触发 WordPress 的图片自动裁剪操作。"
 date: 2021-04-13 5:40:00 +0800
 modified-date: 2021-04-13 5:40:00 +0800

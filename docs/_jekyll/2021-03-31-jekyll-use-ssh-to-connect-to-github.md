@@ -1,6 +1,6 @@
 ---
 title: "教程：Jekyll 通过 SSH 链接到 GitHub"
-thumbnail: "/assets/images/thumbnail-post/wordpress/wordpress.png"
+thumbnail: "/assets/images/thumbnail-post/wordpress/wordpress.webp"
 excerpt: "如题。"
 date: 2021-03-31 5:40:00 +0800
 modified-date: 2023-06-29 11:40:00 +0800

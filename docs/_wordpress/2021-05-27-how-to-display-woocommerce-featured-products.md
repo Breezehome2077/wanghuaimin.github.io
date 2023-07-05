@@ -1,6 +1,6 @@
 ---
 title: "代码块：WooCommerce 精选产品"
-thumbnail: "/assets/images/thumbnail-post/wordpress/wordpress.png"
+thumbnail: "/assets/images/thumbnail-post/wordpress/wordpress.webp"
 excerpt: "上传过程记录。"
 date: 2021-05-27 5:40:00 +0800
 modified-date: 2021-05-27 5:40:00 +0800

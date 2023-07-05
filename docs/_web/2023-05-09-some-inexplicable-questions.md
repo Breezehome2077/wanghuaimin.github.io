@@ -1,6 +1,6 @@
 ---
 title: "问题：前端开发中遇到的一些莫名其妙的问题"
-thumbnail: "/assets/images/thumbnail-post/web/skyrim.jpg"
+thumbnail: "/assets/images/thumbnail-post/web/skyrim.webp"
 excerpt: "就是一些莫名其妙的问题。"
 date: 2023-05-09 5:40:00 +0800
 modified-date: 2023-05-09 5:40:00 +0800

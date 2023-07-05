@@ -1,6 +1,6 @@
 ---
 title: "教程：给 Jekyll 添加分页功能"
-thumbnail: "/assets/images/thumbnail-post/jekyll/jekyll.jpg"
+thumbnail: "/assets/images/thumbnail-post/jekyll/jekyll.webp"
 excerpt: "此功能由插件 jekyll-paginate 实现。"
 date:   2021-03-25 10:40:00 +0800
 modified-date: 2021-03-25 10:40:00 +0800

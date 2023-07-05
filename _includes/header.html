@@ -1,22 +1,17 @@
 <!doctype html>
-<html lang="zh-cn">
+<html lang="zh-CN">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    {%- seo -%}
-    <link href="/assets/bootstrap/5.3.0-dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/assets/css/wzm.css" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {{ jekyll.seo }}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" integrity="sha256-5uKiXEwbaQh9cgd2/5Vp6WmMnsUr3VZZw0a8rKnOKNU=" crossorigin="anonymous">
+<!--    <link href="/assets/css/splide-core.min.css" rel="stylesheet">-->
+    <link href="/assets/css/style.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="/assets/images/favicon.svg">
 </head>
 <body>
-<div class="body-wrap">
 {%- include header-icons.html -%}
-<header class="site-header-mobile sticky-top">
-    <button class="wzm-btn-open" type="button" data-bs-toggle="offcanvas" data-bs-target="#wzmBusinessCard" aria-controls="Business Card">
-        <svg class="icon"><use xlink:href="#vcard" /></svg>
-    </button>
-    <a class="site-logo" href="/">望朝門</a>
-    <button class="wzm-btn-open" type="button" data-bs-toggle="offcanvas" data-bs-target="#wzmNavbar" aria-controls="Navbar">
-        <svg class="icon"><use xlink:href="#list" /></svg>
-    </button>
-</header>
+<div class="site-bg">
+    <img src="https://api.dujin.org/bing/1920.php" alt="壁纸">
+</div>

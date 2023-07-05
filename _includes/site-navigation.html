@@ -1,0 +1,39 @@
+<nav class="site-navigation shadow" id="siteNavigation">
+    <div class="header">
+        <button class="btn" id="siteNavigationToggleBtn">
+            <span class="d-none">导航菜单</span><svg class="icon" role="img" aria-label="Primary menu"><use xlink:href="#list" /></svg>
+        </button>
+    </div>
+    <div class="body">
+        <div class="site-navigation-breadcrumb">
+            <div class="wrap">
+                {%- assign crumbs = page.url | remove:'/index.html' | split: '/' -%}
+                <a href="/">Home</a>
+                {%- for crumb in crumbs offset: 1 -%}
+                {%- if forloop.last -%}
+                &nbsp;/&nbsp;{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}
+                {%- else -%}
+                &nbsp;/&nbsp;<a href="{%- assign crumb_limit = forloop.index | plus: 1 -%}{%- for crumb in crumbs limit: crumb_limit -%}{{ crumb | append: '/' | replace:'without-plugin/','without-plugins/' }}{%- endfor -%}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a>
+                {%- endif -%}
+                {%- endfor -%}
+            </div>
+        </div>
+        <div class="site-navigation-nav">
+            <ul>
+                <li><a href="/">首页</a></li>
+                <li><a href="/docs/portfolio">作品集</a></li>
+                <li><a class="d-none" href="javascript:void(0)">历史</a></li>
+                <li><ul>
+                        <li><a href="/docs/web">Web 前端</a></li>
+                        <li><a href="/docs/wordpress">WordPress</a></li>
+                        <li><a href="/docs/jekyll">Jekyll</a></li>
+                        <li><a href="/docs/posts">笔记 随便写写</a></li>
+                    </ul>
+                </li>
+                <li><a href="/docs/manuals">使用手册</a></li>
+                <li><a href="/docs/manuals">收藏</a></li>
+                <li><a href="/about.html">关于我</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>

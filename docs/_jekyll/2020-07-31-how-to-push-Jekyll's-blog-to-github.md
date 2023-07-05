@@ -1,6 +1,6 @@
 ---
 title: "教程：将 Jekyll 博客推送到 GitHub"
-thumbnail: "/assets/images/thumbnail-post/wordpress/wordpress.png"
+thumbnail: "/assets/images/thumbnail-post/wordpress/wordpress.webp"
 excerpt: "上传过程记录。"
 date: 2020-07-31 5:40:00 +0800
 modified-date: 2021-03-29 5:40:00 +0800
