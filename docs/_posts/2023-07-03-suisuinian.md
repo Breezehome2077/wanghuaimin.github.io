@@ -1,6 +1,6 @@
 ---
 title:  "碎碎念"
-thumbnail: "/assets/images/thumbnail-post/jekyll/jekyll.jpg"
+thumbnail: "/assets/images/thumbnail-post/jekyll/jekyll.webp"
 excerpt: "如题。"
 date:   2023-05-06 06:30:30 +0800
 modified-date: 2023-07-04 06:30:30 +0800

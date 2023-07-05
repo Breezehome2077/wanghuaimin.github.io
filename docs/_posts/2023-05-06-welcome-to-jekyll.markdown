@@ -1,6 +1,6 @@
 ---
 title:  "Welcome to Jekyll!"
-thumbnail: "/assets/images/thumbnail-post/jekyll/jekyll.jpg"
+thumbnail: "/assets/images/thumbnail-post/jekyll/jekyll.webp"
 excerpt: "default post."
 date:   2023-05-06 06:30:30 +0800
 modified-date: 2023-05-06 06:30:30 +0800
