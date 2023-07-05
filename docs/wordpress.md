@@ -2,6 +2,7 @@
 layout: archive-post
 title: WordPress工作记录
 description: 记录使用WordPress过程中遇到的各种问题和收获
+permalink: /docs/wordpress/
 ---
 {%- for post in site.wordpress -%}
 <article class="item rounded shadow">

@@ -2,6 +2,7 @@
 layout: archive-post
 title: 收藏夹
 description: 用于收藏网址和其他网站上的文章。
+permalink: /docs/favorite/
 ---
 
 <article class="item rounded shadow">

@@ -2,6 +2,7 @@
 layout: archive-post
 title: 笔记
 description: 随便写
+permalink: /docs/posts/
 ---
 {%- for post in site.posts -%}
 <article class="item rounded shadow">

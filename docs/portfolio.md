@@ -2,6 +2,7 @@
 layout: archive-product
 title: 作品集
 description: 已完成的项目合集
+permalink: /docs/portfolio/
 ---
 {%- for post in site.portfolio -%}
 <article class="item rounded shadow">

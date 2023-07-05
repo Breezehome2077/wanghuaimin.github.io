@@ -2,6 +2,7 @@
 layout: archive-post
 title: 使用手册
 description: 用户手册、客户手册、或者其他手册等等。
+permalink: /docs/manuals/
 ---
 {%- for post in site.manuals -%}
 <article class="item rounded shadow">

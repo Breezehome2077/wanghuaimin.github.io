@@ -2,6 +2,7 @@
 layout: archive-post
 title: Web前端开发
 description: 记录制作制作网页时遇到的各种问题
+permalink: /docs/web/
 ---
 {%- for post in site.web -%}
 <article class="item rounded shadow">

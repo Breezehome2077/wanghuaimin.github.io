@@ -2,7 +2,7 @@
 layout: base
 title: 文档合集
 description: 显示网站所有文章。
-permalink: /docs
+permalink: /docs/
 ---
 
 <section class="archive-docs">
